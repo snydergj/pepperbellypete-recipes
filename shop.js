@@ -344,7 +344,7 @@
       if (!ing || ing.shop !== "meat" || ing.qty == null) return;
       if (ing.unit === "lb") oz += Number(ing.qty) * 16;
       else if (ing.unit === "oz") oz += Number(ing.qty);
-      else if (ing.unit === "count" && /chicken/.test(ing.item)) oz += Number(ing.qty) * 32;
+      else if (ing.unit === "count" && /(rotisserie chicken|cooked chicken|whole chicken)/.test(ing.item)) oz += Number(ing.qty) * 32;
     });
     return oz / 16;
   }

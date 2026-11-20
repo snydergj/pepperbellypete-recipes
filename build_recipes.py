@@ -11,7 +11,13 @@ CAT_ORDER = [
     "Chicken Chili",
     "Green Chili",
     "Chili Mac & Casserole",
+    "Chicken Soup & Stew",
+    "Chicken Pasta & Rice",
+    "Chicken Casserole",
+    "Fried Chicken & Wings",
+    "Chicken",
     "Dip",
+    "Turkey",
 ]
 
 def cat_key(r):
@@ -149,7 +155,7 @@ html_out = f'''<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Pepperbellypete Chili Recipes</title>
+<title>Pepperbellypete Recipes</title>
 <style>
 :root {{
   --bg: #f7f1e8;
@@ -452,8 +458,8 @@ a {{ color: var(--accent); }}
 </head>
 <body>
 <header>
-  <h1>Pepperbellypete Chili Recipes</h1>
-  <p class="lede">{len(recipes)} chili recipes from Pete's YouTube shorts. Duplicate posts of the same pot are merged; variations are kept separate. Check a few recipes to build a combined shopping list.</p>
+  <h1>Pepperbellypete Recipes</h1>
+  <p class="lede">{len(recipes)} recipes from Pete's YouTube shorts — chili, chicken, and turkey. Duplicate posts of the same recipe are merged; variations are kept separate. Check a few recipes to build a combined shopping list.</p>
 </header>
 <aside class="weekly" id="weekly-pick">
   <h2>This week's pick</h2>

@@ -29,15 +29,16 @@ UNIT_ALIASES = {
 LIQUIDS = {
     "beef broth", "chicken broth", "beer", "evaporated milk", "water",
     "olive oil", "oil", "ketchup", "worcestershire sauce", "hot sauce",
-    "habanero sauce", "zippy zap",
+    "habanero sauce", "zippy zap", "heavy cream", "buttermilk", "milk",
+    "half-and-half", "alfredo sauce",
 }
 
 SHOP_RULES = [
-    ("meat", r"ground beef|ground sirloin|chili-grind|breakfast sausage|rotisserie chicken|pork shoulder|chuck roast"),
-    ("produce", r"onion|jalapeños|^garlic$|cilantro|^lime$|potatoes|bell pepper|^peppers$|garden-fresh tomatoes|fresh corn"),
-    ("dairy", r"^(.*\bcheese|unsalted butter|cream cheese|evaporated milk)$"),
-    ("spices", r"chili powder|cumin|black pepper|garlic powder|onion powder|salt|paprika|oregano|coriander|cayenne|chili seasoning|williams|flavor-time|ranch seasoning|taco seasoning|fajita|adobo|bouillon|bay leaf|garlic salt|ground red pepper"),
-    ("canned", r"tomato paste|tomato sauce|diced tomatoes|rotel|fire-roasted tomatoes|crushed tomatoes|chili-style tomatoes|green chiles|chili magic|broth|beans|whole-kernel corn|refried"),
+    ("meat", r"ground beef|ground sirloin|chili-grind|breakfast sausage|rotisserie chicken|pork shoulder|chuck roast|chicken|turkey|sausage|bacon|wings|\bhen\b"),
+    ("produce", r"onion|jalapeños|^garlic$|cilantro|^lime$|potatoes|bell pepper|^peppers$|garden-fresh tomatoes|fresh corn|celery|carrot|broccoli|cauliflower|spinach|mushroom|okra|tomato|chile|green onion|thyme"),
+    ("dairy", r"^(.*\bcheese|unsalted butter|cream cheese|evaporated milk|heavy cream|buttermilk|sour cream|half-and-half|milk|velveeta|eggs?)$"),
+    ("spices", r"chili powder|cumin|black pepper|garlic powder|onion powder|salt|paprika|oregano|coriander|cayenne|chili seasoning|williams|flavor-time|ranch seasoning|taco seasoning|fajita|adobo|bouillon|bay leaf|garlic salt|ground red pepper|poultry seasoning|italian seasoning|creole|lemon pepper|cajun|parsley|baking powder"),
+    ("canned", r"tomato paste|tomato sauce|diced tomatoes|rotel|fire-roasted tomatoes|crushed tomatoes|chili-style tomatoes|green chiles|chili magic|broth|beans|whole-kernel corn|refried|cream of chicken|cream of mushroom|cream of celery|golden mushroom|alfredo"),
     ("other", r"."),
 ]
 
@@ -55,6 +56,16 @@ ITEM_ALIASES = [
     (r"ground (beef|meat)", "ground beef"),
     (r"(hot )?breakfast( or pan)? sausage", "breakfast sausage"),
     (r"rotisserie chicken", "rotisserie chicken"),
+    (r"chicken (leg quarters|leg quarter)", "chicken leg quarters"),
+    (r"chicken thighs", "chicken thighs"),
+    (r"chicken breasts?|chicken breast", "chicken breasts"),
+    (r"boneless chicken wings|chicken wings", "chicken wings"),
+    (r"whole chicken", "whole chicken"),
+    (r"chicken fritters", "chicken fritters"),
+    (r"ground turkey", "ground turkey"),
+    (r"jalapeño cheese smoked sausage", "smoked sausage"),
+    (r"smoked sausage", "smoked sausage"),
+    (r"^bacon$", "bacon"),
     (r"(hatch )?green chiles?", "green chiles"),
     (r"fire-?roasted rotel|rotel", "Rotel"),
     (r"petite diced tomatoes|diced tomatoes", "diced tomatoes"),
@@ -66,7 +77,19 @@ ITEM_ALIASES = [
     (r"tomato paste", "tomato paste"),
     (r"chili paste", "chili paste"),
     (r"beef (broth|stock)", "beef broth"),
-    (r"chicken broth", "chicken broth"),
+    (r"chicken (broth|stock)", "chicken broth"),
+    (r"cream of chicken( soup)?( with herbs?)?", "cream of chicken soup"),
+    (r"cream of celery( soup)?", "cream of celery soup"),
+    (r"golden mushroom soup", "golden mushroom soup"),
+    (r"cream of mushroom( soup)?", "cream of mushroom soup"),
+    (r"alfredo sauce", "Alfredo sauce"),
+    (r"(roasted garlic )?pasta sauce", "pasta sauce"),
+    (r"lipton onion soup mix", "Lipton onion soup mix"),
+    (r"better than bouillon", "Better Than Bouillon"),
+    (r"fully cooked and de-?boned hen|de-?boned hen", "cooked chicken"),
+    (r"fully cooked,? de-?boned chicken|fully cooked,? deboned chicken", "cooked chicken"),
+    (r"whole de-?boned chicken|de-?boned chicken", "cooked chicken"),
+    (r"fully cooked chicken|cooked chicken", "cooked chicken"),
     (r"stone-?ground mustard", "stone-ground mustard"),
     (r"(yellow )?mustard", "mustard"),
     (r"ancho chili powder", "ancho chili powder"),
@@ -76,19 +99,47 @@ ITEM_ALIASES = [
     (r"taco seasoning", "taco seasoning"),
     (r"ranch seasoning", "ranch seasoning"),
     (r"your favorite chili seasoning|chili seasoning", "chili seasoning"),
-    (r"tomato-chicken bouillon", "tomato-chicken bouillon"),
+    (r"tomato-chicken bouillon|chicken tomato bouillon", "tomato-chicken bouillon"),
+    (r"poultry seasoning", "poultry seasoning"),
+    (r"italian seasoning", "Italian seasoning"),
+    (r"creole seasoning", "Creole seasoning"),
+    (r"lemon pepper", "lemon pepper"),
+    (r"morton nature'?s seasons|nature'?s seasoning", "Morton Nature's Seasons"),
+    (r"cajun two-step", "Cajun Two-Step"),
+    (r"cajun seasoning", "Cajun seasoning"),
+    (r"mexican oregano", "Mexican oregano"),
+    (r"dried parsley|^parsley$", "parsley"),
+    (r"crushed red pepper( flakes)?", "crushed red pepper flakes"),
+    (r"baking powder", "baking powder"),
+    (r"all-purpose flour|seasoned flour|^flour$", "all-purpose flour"),
+    (r"seasoned breadcrumbs|^breadcrumbs$", "breadcrumbs"),
     (r"habanero sauce", "habanero sauce"),
     (r"hot sauce", "hot sauce"),
     (r"olive oil|^oil$", "oil"),
     (r"white american cheese", "white American cheese"),
+    (r"american cheese", "American cheese"),
     (r"pepper jack cheese", "pepper jack cheese"),
     (r"medium cheddar cheese", "medium cheddar cheese"),
     (r"sharp white cheddar cheese", "sharp white cheddar cheese"),
     (r"colby jack cheese", "Colby Jack cheese"),
+    (r"monterey jack cheese", "Monterey Jack cheese"),
+    (r"mozzarella cheese", "mozzarella cheese"),
+    (r"parmesan cheese", "Parmesan cheese"),
+    (r"smoked gouda", "smoked Gouda"),
+    (r"queso quesadilla", "queso quesadilla"),
+    (r"velveeta", "Velveeta"),
+    (r"cheddar cheese|^cheddar$", "cheddar cheese"),
     (r"cream cheese", "cream cheese"),
+    (r"melting cheese", "cheese"),
     (r"shredded cheese|^cheese$", "cheese"),
     (r"unsalted butter|^butter$", "unsalted butter"),
+    (r"heavy (whipping )?cream", "heavy cream"),
+    (r"half-and-half|half and half", "half-and-half"),
+    (r"sour cream", "sour cream"),
+    (r"buttermilk", "buttermilk"),
     (r"evaporated milk", "evaporated milk"),
+    (r"condensed milk", "condensed milk"),
+    (r"whole milk|^milk$", "milk"),
     (r"white kidney beans", "white kidney beans"),
     (r"black beans", "black beans"),
     (r"ranch-style beans", "ranch-style beans"),
@@ -97,39 +148,75 @@ ITEM_ALIASES = [
     (r"15-bean dried beans", "15-bean dried beans"),
     (r"^beans$", "beans"),
     (r"whole-kernel corn", "whole-kernel corn"),
+    (r"frozen corn", "frozen corn"),
+    (r"mini ears? of corn|mini corn", "fresh corn"),
     (r"fresh corn|^corn$", "fresh corn"),
     (r"jumbo elbow noodles", "jumbo elbow noodles"),
+    (r"egg noodles", "egg noodles"),
+    (r"rigatoni", "rigatoni"),
+    (r"orzo pasta|^orzo$", "orzo"),
     (r"^macaroni$", "macaroni"),
     (r"^pasta$", "pasta"),
+    (r"long-?grain (white )?instant rice|instant rice", "instant rice"),
+    (r"long-?grain (white )?rice|^rice$", "long-grain rice"),
+    (r"buttermilk biscuits|^biscuits$", "buttermilk biscuits"),
+    (r"pie crust", "pie crust"),
     (r"cornbread mix", "cornbread mix"),
+    (r"cornbread", "cornbread"),
     (r"tater tots", "tater tots"),
+    (r"mashed potatoes", "mashed potatoes"),
+    (r"tostadas|flat taco shells|taco shells", "taco shells"),
     (r"tortilla chips", "tortilla chips"),
+    (r"burger buns|^buns$", "burger buns"),
     (r"chili-cheese pork rinds|pork rinds", "chili-cheese pork rinds"),
     (r"^crackers$", "crackers"),
     (r"^oatmeal$", "oatmeal"),
     (r"^ketchup$", "ketchup"),
     (r"^beer$", "beer"),
     (r"^water$", "water"),
-    (r"bay leaf", "bay leaf"),
+    (r"bay leaves?", "bay leaf"),
+    (r"peppercorns", "peppercorns"),
+    (r"cinnamon stick", "cinnamon stick"),
     (r"garlic powder", "garlic powder"),
     (r"onion powder", "onion powder"),
     (r"garlic salt", "garlic salt"),
     (r"smoked paprika|^paprika$", "smoked paprika"),
     (r"dried oregano|^oregano$", "dried oregano"),
+    (r"fresh thyme|^thyme$", "thyme"),
     (r"ground coriander|^coriander$", "ground coriander"),
     (r"cayenne pepper|^cayenne$", "cayenne pepper"),
     (r"ground red pepper", "ground red pepper"),
     (r"ground black pepper|^black pepper$", "black pepper"),
     (r"ground cumin|^cumin$", "cumin"),
     (r"^salt$", "salt"),
-    (r"(large |medium |small |white |yellow )*(onions?)", "onion"),
+    (r"(large |medium |small |white |yellow |grilled )*(onions?)", "onion"),
+    (r"pickled jalape[nñ]os?", "pickled jalapeños"),
     (r"jalape[nñ]os?", "jalapeños"),
-    (r"(fresh minced |minced |fresh )?garlic", "garlic"),
+    (r"serranos?", "serranos"),
+    (r"(fresh minced |minced |freshly spooned |fresh |granulated )?garlic", "garlic"),
     (r"bell pepper", "bell pepper"),
     (r"^peppers$", "peppers"),
+    (r"green onions?", "green onions"),
     (r"potatoes", "potatoes"),
+    (r"celery", "celery"),
+    (r"carrots?", "carrots"),
+    (r"broccoli", "broccoli"),
+    (r"cauliflower", "cauliflower"),
+    (r"(baby )?spinach", "spinach"),
+    (r"(baby bella |baby bellas |fresh )?mushrooms?", "mushrooms"),
+    (r"^okra$", "okra"),
+    (r"cherry tomatoes", "cherry tomatoes"),
+    (r"fresh tomatoes|^tomato(?:es)?$", "tomatoes"),
+    (r"ancho chiles?", "ancho chiles"),
+    (r"guajillo chiles?", "guajillo chiles"),
+    (r"(árbol|arbol) chiles?", "árbol chiles"),
     (r"cilantro", "cilantro"),
-    (r"^lime$", "lime"),
+    (r"lime juice|^lime$", "lime"),
+    (r"pico de gallo", "pico de gallo"),
+    (r"^queso$", "queso"),
+    (r"^eggs?$", "eggs"),
+    (r"dill pickles|crinkle dill pickles", "dill pickles"),
+    (r"vegetable shortening", "vegetable shortening"),
 ]
 
 
@@ -159,23 +246,43 @@ SHOP_BY_ITEM = {
     "ground beef": "meat", "ground sirloin": "meat", "chili-grind beef": "meat",
     "breakfast sausage": "meat", "rotisserie chicken": "meat",
     "pork shoulder": "meat", "chuck roast": "meat",
+    "chicken thighs": "meat", "chicken breasts": "meat",
+    "chicken leg quarters": "meat", "chicken wings": "meat",
+    "chicken": "meat", "cooked chicken": "meat", "whole chicken": "meat",
+    "chicken fritters": "meat",
+    "ground turkey": "meat", "smoked sausage": "meat", "bacon": "meat",
     "onion": "produce", "jalapeños": "produce", "garlic": "produce",
     "bell pepper": "produce", "peppers": "produce", "potatoes": "produce",
     "cilantro": "produce", "lime": "produce", "fresh corn": "produce",
     "garden-fresh tomatoes": "produce",
+    "celery": "produce", "carrots": "produce", "broccoli": "produce",
+    "cauliflower": "produce", "spinach": "produce", "mushrooms": "produce",
+    "okra": "produce", "cherry tomatoes": "produce", "tomatoes": "produce",
+    "green onions": "produce", "serranos": "produce",
+    "ancho chiles": "produce", "guajillo chiles": "produce", "árbol chiles": "produce",
+    "pickled jalapeños": "produce", "thyme": "produce", "dill pickles": "produce", "pico de gallo": "produce", "queso": "dairy",
     "green chiles": "canned", "Rotel": "canned", "diced tomatoes": "canned",
     "fire-roasted tomatoes": "canned", "crushed tomatoes": "canned",
     "chili-style tomatoes": "canned", "tomato sauce": "canned",
     "tomato paste": "canned", "chili paste": "canned",
     "beef broth": "canned", "chicken broth": "canned",
+    "cream of chicken soup": "canned", "cream of mushroom soup": "canned",
+    "cream of celery soup": "canned", "golden mushroom soup": "canned",
+    "Alfredo sauce": "canned", "pasta sauce": "canned",
     "white kidney beans": "canned", "black beans": "canned",
     "ranch-style beans": "canned", "chili beans": "canned",
     "refried beans": "canned", "15-bean dried beans": "canned", "beans": "canned",
-    "whole-kernel corn": "canned", "Bush's Chili Magic": "canned",
-    "white American cheese": "dairy", "pepper jack cheese": "dairy",
+    "whole-kernel corn": "canned", "frozen corn": "canned", "Bush's Chili Magic": "canned",
+    "white American cheese": "dairy", "American cheese": "dairy",
+    "pepper jack cheese": "dairy",
     "medium cheddar cheese": "dairy", "sharp white cheddar cheese": "dairy",
-    "Colby Jack cheese": "dairy", "cream cheese": "dairy", "cheese": "dairy",
-    "unsalted butter": "dairy", "evaporated milk": "dairy",
+    "Colby Jack cheese": "dairy", "Monterey Jack cheese": "dairy", "mozzarella cheese": "dairy",
+    "Parmesan cheese": "dairy", "smoked Gouda": "dairy",
+    "queso quesadilla": "dairy", "Velveeta": "dairy",
+    "cheddar cheese": "dairy", "cream cheese": "dairy", "cheese": "dairy",
+    "unsalted butter": "dairy", "evaporated milk": "dairy", "condensed milk": "dairy",
+    "heavy cream": "dairy", "half-and-half": "dairy", "sour cream": "dairy",
+    "buttermilk": "dairy", "milk": "dairy", "eggs": "dairy",
     "chili powder": "spices", "ancho chili powder": "spices", "cumin": "spices",
     "black pepper": "spices", "garlic powder": "spices", "onion powder": "spices",
     "salt": "spices", "smoked paprika": "spices", "dried oregano": "spices",
@@ -184,7 +291,21 @@ SHOP_BY_ITEM = {
     "Flavor-Time Southern Seasoning": "spices", "ranch seasoning": "spices",
     "taco seasoning": "spices", "chicken fajita seasoning": "spices",
     "chili-lime adobo seasoning": "spices", "tomato-chicken bouillon": "spices",
-    "bay leaf": "spices", "garlic salt": "spices", "ground red pepper": "spices",
+    "bay leaf": "spices", "peppercorns": "spices", "cinnamon stick": "spices", "garlic salt": "spices", "ground red pepper": "spices",
+    "poultry seasoning": "spices", "Italian seasoning": "spices",
+    "Creole seasoning": "spices", "lemon pepper": "spices",
+    "Morton Nature's Seasons": "spices", "Cajun seasoning": "spices",
+    "Cajun Two-Step": "spices", "Mexican oregano": "spices",
+    "parsley": "spices", "crushed red pepper flakes": "spices",
+    "baking powder": "spices", "Lipton onion soup mix": "spices",
+    "Better Than Bouillon": "spices",
+    "all-purpose flour": "other", "breadcrumbs": "other",
+    "egg noodles": "other", "rigatoni": "other", "orzo": "other",
+    "instant rice": "other", "long-grain rice": "other",
+    "buttermilk biscuits": "other", "pie crust": "other",
+    "cornbread": "other", "mashed potatoes": "other",
+    "taco shells": "other", "burger buns": "other",
+    "vegetable shortening": "other",
     "chili-cheese pork rinds": "other",
 }
 def shop_cat(item: str) -> str:
@@ -231,6 +352,10 @@ def _clean_rest(rest: str) -> str:
     s = re.sub(r"enough to line the top,?\s*", " ", s, flags=re.I)
     # Only strip trailing prep and serving notes. Do not remove words that
     # are part of a product name (diced tomatoes, fire-roasted, white cheddar).
+    s = re.sub(r",?\s*cooked and diced, plus more bacon for wrapping", " ", s, flags=re.I)
+    s = re.sub(r",?\s*enough for a topping layer", " ", s, flags=re.I)
+    s = re.sub(r",?\s*added with the (?:pasta|noodles)", " ", s, flags=re.I)
+    s = re.sub(r",?\s*for (?:the )?(?:toasting(?: the bread)?|sandwiches|wrapping|dumplings|chicken|potatoes|roux|dusting the chicken|coating the chicken|browning|frying|cooking|layering|brushing|patties|outside of the wings)\b", " ", s, flags=re.I)
     s = re.sub(r",?\s*to taste", " ", s, flags=re.I)
     s = re.sub(r",?\s*to finish", " ", s, flags=re.I)
     s = re.sub(r",?\s*optional", " ", s, flags=re.I)
@@ -238,13 +363,24 @@ def _clean_rest(rest: str) -> str:
     s = re.sub(r",?\s*for topping", " ", s, flags=re.I)
     s = re.sub(r",?\s*for searing", " ", s, flags=re.I)
     s = re.sub(r",?\s*for roasting the garlic and peppers", " ", s, flags=re.I)
+    s = re.sub(r"^(?:a\s+)?bunch of\s+", " ", s, flags=re.I)
+    s = re.sub(r"^bunch\s+", " ", s, flags=re.I)
+    s = re.sub(r"^(?:ribs?|stalks?|stems?)\s+(?:of\s+)?", " ", s, flags=re.I)
+    s = re.sub(r"^slices?\s+(?:of\s+)?", " ", s, flags=re.I)
+    s = re.sub(r"^pieces?\s+(?:of\s+)?", " ", s, flags=re.I)
     s = re.sub(r",?\s*trimmed and cubed", " ", s, flags=re.I)
     s = re.sub(r",?\s*seeds and all", " ", s, flags=re.I)
     s = re.sub(r",?\s*kernels cut off", " ", s, flags=re.I)
     s = re.sub(r",?\s*deboned and chopped", " ", s, flags=re.I)
     s = re.sub(r",?\s*boiled 8 minutes(?: \(al dente\))?", " ", s, flags=re.I)
     s = re.sub(r",?\s*rinsed", " ", s, flags=re.I)
-    s = re.sub(r",?\s*(chopped|diced|minced|pureed|seeded)$", " ", s, flags=re.I)
+    s = re.sub(r"\s+", " ", s).strip(" ,.")
+    s = re.sub(r",?\s*cooked and diced", " ", s, flags=re.I)
+    s = re.sub(r",?\s*boiled and chopped", " ", s, flags=re.I)
+    s = re.sub(r",?\s*seared in a (?:pan|skillet)", " ", s, flags=re.I)
+    s = re.sub(r",?\s*cooked al dente", " ", s, flags=re.I)
+    s = re.sub(r",?\s*cooked and drained", " ", s, flags=re.I)
+    s = re.sub(r",?\s*(chopped|diced|minced|pureed|seeded|cubed|sliced)$", " ", s, flags=re.I)
     s = re.sub(r"\s+", " ", s).strip(" ,.")
     return s
 
@@ -267,6 +403,14 @@ def parse_ingredient(text: str) -> dict:
         rest = m.group(1)
         unit = "splash"
         return _finish(original, None, unit, rest, None, approx, optional)
+
+    m = re.match(r"^a pinch of\s+(.+)$", s0, re.I)
+    if m:
+        return _finish(original, None, "pinch", m.group(1), None, True, optional)
+
+    m = re.match(r"^a couple sprigs? of\s+(.+)$", s0, re.I)
+    if m:
+        return _finish(original, 2.0, "count", m.group(1), None, True, optional)
 
     m = re.match(r"^a couple of tablespoons?\s+(.+)$", s0, re.I)
     if m:
