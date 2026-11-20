@@ -1,0 +1,1446 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pepperbellypete Chili Recipes</title>
+<style>
+:root {
+  --bg: #f7f1e8;
+  --paper: #fffdf8;
+  --ink: #2a2118;
+  --muted: #6d5e50;
+  --accent: #9c3b24;
+  --accent-soft: #f3e0d4;
+  --line: #e4d5c4;
+  --shadow: 0 1px 3px rgba(60,30,10,.08);
+}
+* { box-sizing: border-box; }
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 2rem 1.1rem 7rem;
+  background: var(--bg);
+  color: var(--ink);
+}
+header h1 {
+  color: var(--accent);
+  margin: 0 0 .3rem;
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+}
+header .lede { color: var(--muted); margin: 0 0 1.2rem; }
+#q {
+  width: 100%;
+  padding: .7rem .9rem;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  margin: .9rem 0 1.2rem;
+}
+.filters button, .shop-actions button, .shop-bar button, .weekly-actions button {
+  font: inherit;
+  font-size: .88rem;
+  padding: .35rem .7rem;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.filters button.on, .shop-bar button.primary, .shop-actions button.primary, .weekly-actions button.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+button:disabled { opacity: .45; cursor: not-allowed; }
+nav.toc {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: .8rem 1rem 1rem;
+  margin: 0 0 1.5rem;
+  box-shadow: var(--shadow);
+}
+nav.toc > h2 { margin: 0 0 .4rem; font-size: 1.05rem; }
+.idx-cat {
+  margin: .8rem 0 .25rem;
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--accent);
+}
+ul.index {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  columns: 2;
+  column-gap: 1.2rem;
+}
+ul.index li { break-inside: avoid; margin: .15rem 0; }
+ul.index a { color: var(--ink); text-decoration: none; }
+ul.index a:hover { color: var(--accent); text-decoration: underline; }
+.recipe-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: .6rem;
+  margin: 0 0 1rem;
+}
+.recipe-wrap.is-picked .recipe {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+.recipe-wrap.is-week-pick .recipe {
+  border-color: var(--accent);
+  background: #fff6ef;
+  box-shadow: 0 0 0 2px var(--accent-soft);
+}
+.week-badge {
+  display: none;
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  background: var(--accent);
+  color: #fff;
+  padding: .12rem .45rem;
+  border-radius: 999px;
+  margin-left: .35rem;
+}
+.recipe-wrap.is-week-pick .week-badge { display: inline-block; }
+.pick {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  min-height: 2.4rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.pick-box {
+  width: 1.2rem;
+  height: 1.2rem;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+.recipe {
+  flex: 1 1 auto;
+  background: var(--paper);
+  border-radius: 10px;
+  padding: 0;
+  margin: 0;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+  min-width: 0;
+}
+.recipe > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 1rem 1.3rem;
+}
+.recipe > summary::-webkit-details-marker { display: none; }
+.recipe > summary::after {
+  content: "▸";
+  float: right;
+  color: var(--muted);
+  font-size: 1.1rem;
+  margin-top: .4rem;
+}
+.recipe[open] > summary::after { content: "▾"; }
+.recipe h2 { margin: .15rem 0 .15rem; font-size: 1.35rem; }
+.tag {
+  display: inline-block;
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  background: var(--accent-soft);
+  color: var(--accent);
+  padding: .12rem .45rem;
+  border-radius: 999px;
+}
+.meta { color: var(--muted); font-size: .9rem; margin: 0; }
+.recipe > p, .recipe > .desc, .recipe > .cols, .recipe > .notes {
+  padding: 0 1.3rem;
+}
+.recipe > .notes, .recipe > .cols { padding-bottom: 1.1rem; }
+.desc { margin: .3rem 0 1rem; }
+.cols { display: grid; grid-template-columns: 1fr 1.4fr; gap: 1.4rem; }
+h3 { margin: .2rem 0 .5rem; font-size: 1.05rem; color: var(--accent); }
+li { margin: .28rem 0; }
+a { color: var(--accent); }
+#empty { display: none; color: var(--muted); font-style: italic; }
+.weekly {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  margin: 0 0 1.2rem;
+  box-shadow: var(--shadow);
+}
+.weekly h2 { margin: 0 0 .35rem; font-size: 1.15rem; color: var(--accent); }
+.weekly .week-hint, .recommend-hint { color: var(--muted); font-size: .95rem; margin: 0; }
+.weekly .pick-title { font-size: 1.2rem; margin: 0 0 .25rem; }
+.weekly .pick-sum { margin: 0 0 .7rem; }
+.weekly-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; margin: 0 0 .8rem; }
+.similar { list-style: none; margin: 0; padding: 0; }
+.similar li {
+  margin: 0 0 .75rem;
+  padding-bottom: .75rem;
+  border-bottom: 1px solid var(--line);
+}
+.similar li:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.similar .sim-title { font-weight: bold; }
+.similar .why, .similar .needs { color: var(--muted); font-size: .9rem; display: block; margin: .15rem 0 0; }
+.similar .sim-actions { margin-top: .35rem; }
+#week-similar-wrap[hidden], #week-chosen[hidden], #week-empty[hidden] { display: none !important; }
+.shop-bar {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 30;
+  background: var(--paper);
+  border-top: 1px solid var(--line);
+  box-shadow: 0 -2px 10px rgba(60,30,10,.08);
+}
+.shop-bar-inner {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: .7rem 1.1rem calc(.7rem + env(safe-area-inset-bottom, 0));
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem .8rem;
+}
+.shop-bar #shop-count { flex: 1 1 auto; }
+.shop-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background: rgba(42, 33, 24, .45);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 1rem 1rem 0;
+}
+.shop-modal[hidden] { display: none !important; }
+.shop-panel {
+  background: var(--paper);
+  color: var(--ink);
+  width: min(640px, 100%);
+  max-height: min(92vh, 860px);
+  overflow: auto;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 -4px 24px rgba(0,0,0,.18);
+  padding: 1rem 1.2rem 1.3rem;
+}
+.shop-panel-head {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  margin-bottom: .3rem;
+}
+.shop-panel-head h2 { margin: 0; flex: 1; color: var(--accent); font-size: 1.3rem; }
+#shop-close {
+  font: inherit;
+  font-size: 1.4rem;
+  line-height: 1;
+  border: none;
+  background: none;
+  color: var(--muted);
+  cursor: pointer;
+  padding: .2rem .4rem;
+}
+.shop-for { color: var(--muted); font-size: .9rem; margin: 0 0 .8rem; }
+.shop-group { margin: 0 0 1rem; }
+.shop-group h3 { margin: 0 0 .4rem; }
+.shop-item {
+  list-style: none;
+  display: flex;
+  gap: .55rem;
+  align-items: flex-start;
+  margin: .35rem 0;
+}
+.shop-item input { margin-top: .25rem; accent-color: var(--accent); width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
+.shop-item.done .shop-line { text-decoration: line-through; color: var(--muted); }
+.shop-sources { display: block; color: var(--muted); font-size: .8rem; margin-top: .1rem; }
+.shop-list { margin: 0; padding: 0; }
+.shop-actions { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .6rem; }
+@media (max-width: 700px) {
+  .cols { grid-template-columns: 1fr; }
+  ul.index { columns: 1; }
+  .shop-bar-inner { padding-left: 1rem; padding-right: 1rem; }
+}
+@media (min-width: 701px) {
+  .shop-modal { align-items: center; padding: 1.5rem; }
+  .shop-panel { border-radius: 12px; }
+}
+@media print {
+  body { background: #fff; padding: 0; max-width: none; }
+  #q, .filters, nav.toc, .recipe-wrap, .shop-bar, .weekly, header .lede, #empty {
+    display: none !important;
+  }
+  .shop-modal {
+    position: static;
+    background: none;
+    display: block !important;
+    padding: 0;
+  }
+  .shop-panel {
+    box-shadow: none;
+    border: none;
+    max-height: none;
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+  }
+  #shop-close, .shop-actions { display: none !important; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Pepperbellypete Chili Recipes</h1>
+  <p class="lede">18 chili recipes from Pete's YouTube shorts. Duplicate posts of the same pot are merged; variations are kept separate. Check a few recipes to build a combined shopping list.</p>
+</header>
+<aside class="weekly" id="weekly-pick">
+  <h2>This week's pick</h2>
+  <div id="week-empty">
+    <p class="week-hint">Check one recipe to make it this week's pick</p>
+  </div>
+  <div id="week-chosen" hidden>
+    <p class="pick-title" id="week-title"></p>
+    <p class="pick-sum" id="week-sum"></p>
+    <div class="weekly-actions">
+      <a id="week-jump" href="#">Open recipe</a>
+      <button type="button" class="primary" id="week-recommend" disabled title="Select just one recipe">Recommend Similar Recipes</button>
+      <span class="recommend-hint" id="week-recommend-hint">Select just one recipe</span>
+    </div>
+    <div id="week-similar-wrap" hidden>
+      <h3>Similar recipes</h3>
+      <ul class="similar" id="week-similar"></ul>
+    </div>
+  </div>
+</aside>
+<input id="q" type="search" placeholder="Search recipes or ingredients..." autocomplete="off">
+<div class="filters" id="filters"><button type="button" class="on" data-cat="all">All (18)</button><button type="button" data-cat="Beef Chili">Beef Chili (9)</button><button type="button" data-cat="Chicken Chili">Chicken Chili (2)</button><button type="button" data-cat="Green Chili">Green Chili (2)</button><button type="button" data-cat="Chili Mac &amp; Casserole">Chili Mac &amp; Casserole (4)</button><button type="button" data-cat="Dip">Dip (1)</button></div>
+<nav class="toc">
+  <h2>Recipe index</h2>
+  <h3 class="idx-cat">Beef Chili</h3><ul class="index"><li data-for="r0"><a href="#r0">Award-Winning Texas Cook-Off Chili</a></li><li data-for="r1"><a href="#r1">Chili-Grind Chili with Beer</a></li><li data-for="r2"><a href="#r2">Chuck Wagon Chili</a></li><li data-for="r3"><a href="#r3">Competition-Style Hot Dog Chili</a></li><li data-for="r4"><a href="#r4">Cook-Off Chili with Pete&#x27;s Tweaks</a></li><li data-for="r5"><a href="#r5">Crockpot Cook-Off Chili</a></li><li data-for="r6"><a href="#r6">Hamburger Chili Dog Chili</a></li><li data-for="r7"><a href="#r7">Homestyle Cook-Off Chili</a></li><li data-for="r8"><a href="#r8">Pete&#x27;s Favorite Chili</a></li></ul><h3 class="idx-cat">Chicken Chili</h3><ul class="index"><li data-for="r9"><a href="#r9">Ranch Chicken Chili</a></li><li data-for="r10"><a href="#r10">White Chicken Chili</a></li></ul><h3 class="idx-cat">Green Chili</h3><ul class="index"><li data-for="r11"><a href="#r11">Green Chile Stew</a></li><li data-for="r12"><a href="#r12">Ranch Green Chili</a></li></ul><h3 class="idx-cat">Chili Mac &amp; Casserole</h3><ul class="index"><li data-for="r13"><a href="#r13">Chili Cheese Tots Casserole</a></li><li data-for="r14"><a href="#r14">Chili Mac &amp; Cheese</a></li><li data-for="r15"><a href="#r15">Poor Man&#x27;s Chili Mac</a></li><li data-for="r16"><a href="#r16">White Chicken Chili Mac &amp; Cheese</a></li></ul><h3 class="idx-cat">Dip</h3><ul class="index"><li data-for="r17"><a href="#r17">Chili Cheese Dip</a></li></ul>
+</nav>
+<p id="empty">No recipes match that search.</p>
+<article class="recipe-wrap" id="r0" data-id="5vpGRgVMDN8" data-category="Beef Chili" data-search="award-winning texas cook-off chili pepperbellypete beef chili pete&#x27;s chili that took first place at a texas state cook-off in 2006. he has posted this same pot more than once; viewers have also used it to win their own cook-offs. 3 lb ground beef (80/20) 1 lb hot breakfast sausage (jimmy dean hot) 6 oz tomato paste 1 large onion, chopped 3 fresh jalapeños, chopped (some videos of this same recipe use 2 large jalapeños) 9 cloves garlic, chopped (about 2 tbsp minced) 4 oz hatch green chiles 2 tbsp pepperbellypete&#x27;s flavor-time southern seasoning (his own blend) 3 oz williams original chili seasoning 44 oz diced tomatoes 44 oz tomato sauce 3 cans (15.5 oz each) bush&#x27;s chili magic, campfire style splash of pepperbellypete&#x27;s zippy zap (optional, to finish) in a 12-quart pot, brown the ground beef and drain it. add the hot breakfast sausage (don&#x27;t drain) and the tomato paste. break everything up and cook until the sausage is fully done and the paste has cooked in. add the onion, jalapeños, garlic, hatch green chiles, flavor-time southern seasoning, and williams chili seasoning. stir and cook about 5 minutes, until the vegetables start to soften. stir in the diced tomatoes and tomato sauce. cover and simmer on low for at least 1 hour (pete went 1.5 hours). stir in the bush&#x27;s chili magic, cover again, and simmer another 30 minutes. finish with a splash of zippy zap and serve. flavor-time southern seasoning and zippy zap are pete&#x27;s own products; swap in your favorite seasoning blend or hot sauce if you don&#x27;t have them. the written version is on page 177 of pete&#x27;s cookbook. also shown in: https://www.youtube.com/shorts/mukmgyitkpy and https://www.youtube.com/shorts/m68vdw-z0bg">
+<label class="pick" title="Add to shopping list">
+  <input type="checkbox" class="pick-box" data-id="5vpGRgVMDN8" aria-label="Add Award-Winning Texas Cook-Off Chili to the shopping list">
+</label>
+<details class="recipe">
+<summary>
+  <span class="tag">Beef Chili</span>
+  <span class="week-badge">This week's pick</span>
+  <h2>Award-Winning Texas Cook-Off Chili</h2>
+  <p class="meta">Beef Chili · Makes a 12-quart pot · About 2 to 2.5 hours</p>
+</summary>
+<p><a href="https://www.youtube.com/shorts/5vpGRgVMDN8" target="_blank" rel="noopener">Watch the video</a></p>
+<p class="desc">Pete&#x27;s chili that took first place at a Texas state cook-off in 2006. He has posted this same pot more than once; viewers have also used it to win their own cook-offs.</p>
+<div class="cols">
+  <section><h3>Ingredients</h3><ul><li>3 lb ground beef (80/20)</li><li>1 lb hot breakfast sausage (Jimmy Dean Hot)</li><li>6 oz tomato paste</li><li>1 large onion, chopped</li><li>3 fresh jalapeños, chopped (some videos of this same recipe use 2 large jalapeños)</li><li>9 cloves garlic, chopped (about 2 tbsp minced)</li><li>4 oz Hatch green chiles</li><li>2 tbsp Pepperbellypete&#x27;s Flavor-Time Southern Seasoning (his own blend)</li><li>3 oz Williams Original Chili Seasoning</li><li>44 oz diced tomatoes</li><li>44 oz tomato sauce</li><li>3 cans (15.5 oz each) Bush&#x27;s Chili Magic, Campfire Style</li><li>Splash of Pepperbellypete&#x27;s Zippy Zap (optional, to finish)</li></ul></section>
+  <section><h3>Instructions</h3><ol><li>In a 12-quart pot, brown the ground beef and drain it.</li><li>Add the hot breakfast sausage (don&#x27;t drain) and the tomato paste. Break everything up and cook until the sausage is fully done and the paste has cooked in.</li><li>Add the onion, jalapeños, garlic, Hatch green chiles, Flavor-Time Southern Seasoning, and Williams chili seasoning. Stir and cook about 5 minutes, until the vegetables start to soften.</li><li>Stir in the diced tomatoes and tomato sauce. Cover and simmer on low for at least 1 hour (Pete went 1.5 hours).</li><li>Stir in the Bush&#x27;s Chili Magic, cover again, and simmer another 30 minutes.</li><li>Finish with a splash of Zippy Zap and serve.</li></ol></section>
+</div>
+<section class="notes"><h3>Notes</h3><ul><li>Flavor-Time Southern Seasoning and Zippy Zap are Pete&#x27;s own products; swap in your favorite seasoning blend or hot sauce if you don&#x27;t have them.</li><li>The written version is on page 177 of Pete&#x27;s cookbook.</li><li>Also shown in: https://www.youtube.com/shorts/mUkmgYiTkPY and https://www.youtube.com/shorts/m68vDW-z0Bg</li></ul></section>
+</details>
+</article><article class="recipe-wrap" id="r1" data-id="a7bkpQJNlKE" data-category="Beef Chili" data-search="chili-grind chili with beer pepperbellypete beef chili a bigger, beer-and-broth pot made with chili-grind beef instead of the usual ground beef and sausage mix. 4 lb chili-grind beef 6 oz chili paste (the audio may be &#x27;tomato paste&#x27;; 6 oz is the amount) 1 large onion, chopped 2 large fresh jalapeños, chopped 3 oz williams chili seasoning 2 tbsp minced garlic 12 oz beer 28 oz diced tomatoes 4 oz hatch green chiles 28 oz tomato sauce about 1 tbsp stone-ground mustard 8 oz beef broth 31 oz bush&#x27;s chili magic (about two 15.5 oz cans) 2 tbsp pepperbellypete&#x27;s zippy zap brown the chili-grind beef. add the chili paste (or tomato paste), onion, jalapeños, williams chili seasoning, and garlic. pour in the beer and scrape up the browned bits on the bottom of the pot. stir in the diced tomatoes, hatch green chiles, tomato sauce, stone-ground mustard, and beef broth. bring to a simmer, cover, and cook 2 hours. stir in the chili magic and zippy zap. cover and simmer 1 hour more. the transcript sounds like &#x27;chili paste&#x27; right after the meat browns; in pete&#x27;s other chilis this step is 6 oz tomato paste, so use that if chili paste is unclear. zippy zap is pete&#x27;s own hot sauce; use another hot sauce if you don&#x27;t have it.">
+<label class="pick" title="Add to shopping list">
+  <input type="checkbox" class="pick-box" data-id="a7bkpQJNlKE" aria-label="Add Chili-Grind Chili with Beer to the shopping list">
+</label>
+<details class="recipe">
+<summary>
+  <span class="tag">Beef Chili</span>
+  <span class="week-badge">This week's pick</span>
+  <h2>Chili-Grind Chili with Beer</h2>
+  <p class="meta">Beef Chili · About 3 hours, plus browning</p>
+</summary>
+<p><a href="https://www.youtube.com/shorts/a7bkpQJNlKE" target="_blank" rel="noopener">Watch the video</a></p>
+<p class="desc">A bigger, beer-and-broth pot made with chili-grind beef instead of the usual ground beef and sausage mix.</p>
+<div class="cols">
+  <section><h3>Ingredients</h3><ul><li>4 lb chili-grind beef</li><li>6 oz chili paste (the audio may be &#x27;tomato paste&#x27;; 6 oz is the amount)</li><li>1 large onion, chopped</li><li>2 large fresh jalapeños, chopped</li><li>3 oz Williams chili seasoning</li><li>2 tbsp minced garlic</li><li>12 oz beer</li><li>28 oz diced tomatoes</li><li>4 oz Hatch green chiles</li><li>28 oz tomato sauce</li><li>About 1 tbsp stone-ground mustard</li><li>8 oz beef broth</li><li>31 oz Bush&#x27;s Chili Magic (about two 15.5 oz cans)</li><li>2 tbsp Pepperbellypete&#x27;s Zippy Zap</li></ul></section>
+  <section><h3>Instructions</h3><ol><li>Brown the chili-grind beef.</li><li>Add the chili paste (or tomato paste), onion, jalapeños, Williams chili seasoning, and garlic.</li><li>Pour in the beer and scrape up the browned bits on the bottom of the pot.</li><li>Stir in the diced tomatoes, Hatch green chiles, tomato sauce, stone-ground mustard, and beef broth.</li><li>Bring to a simmer, cover, and cook 2 hours.</li><li>Stir in the Chili Magic and Zippy Zap. Cover and simmer 1 hour more.</li></ol></section>
+</div>
+<section class="notes"><h3>Notes</h3><ul><li>The transcript sounds like &#x27;chili paste&#x27; right after the meat browns; in Pete&#x27;s other chilis this step is 6 oz tomato paste, so use that if chili paste is unclear.</li><li>Zippy Zap is Pete&#x27;s own hot sauce; use another hot sauce if you don&#x27;t have it.</li></ul></section>
+</details>
+</article><article class="recipe-wrap" id="r2" data-id="c2nRvpDw2M8" data-category="Beef Chili" data-search="chuck wagon chili pepperbellypete beef chili a from-scratch chuck wagon chili with seared cubes of chuck roast and a puree of oven-roasted garlic and peppers. 2 1/2 lb chuck roast, trimmed and cubed a couple of tablespoons oil, for searing 1 large yellow onion 1 tbsp pepperbellypete&#x27;s zippy zap peppers, seeded (type and amount not specified) 10 cloves garlic a little oil, for roasting the garlic and peppers 1 cup beef stock 1/2 tbsp cumin 4 cups garden-fresh tomatoes 32 oz tomato sauce heat a couple of tablespoons of oil and sear the cubed chuck in small batches, just to brown the outside. set the meat aside. add the onion and zippy zap to the pot and cook a few minutes, then return the meat. seed the peppers. toss the peppers and 10 cloves of garlic with a little oil and roast at 350°f for 15 minutes. blend the roasted garlic and peppers with 1 cup beef stock until you have a chili-pepper puree, then add it to the pot. when the meat is cooked through, add the cumin, garden-fresh tomatoes, and tomato sauce. cover and simmer on low 3 hours. pete never names the peppers or says how many go into the roast, only that the seeds come out and they get pureed with the garlic. zippy zap is pete&#x27;s own hot sauce; he says the link is in his bio. use another hot sauce if you don&#x27;t have it.">
+<label class="pick" title="Add to shopping list">
+  <input type="checkbox" class="pick-box" data-id="c2nRvpDw2M8" aria-label="Add Chuck Wagon Chili to the shopping list">
+</label>
+<details class="recipe">
+<summary>
+  <span class="tag">Beef Chili</span>
+  <span class="week-badge">This week's pick</span>
+  <h2>Chuck Wagon Chili</h2>
+  <p class="meta">Beef Chili · About 3 hours simmering, plus searing and a 15-minute roast</p>
+</summary>
+<p><a href="https://www.youtube.com/shorts/c2nRvpDw2M8" target="_blank" rel="noopener">Watch the video</a></p>
+<p class="desc">A from-scratch chuck wagon chili with seared cubes of chuck roast and a puree of oven-roasted garlic and peppers.</p>
+<div class="cols">
+  <section><h3>Ingredients</h3><ul><li>2 1/2 lb chuck roast, trimmed and cubed</li><li>A couple of tablespoons oil, for searing</li><li>1 large yellow onion</li><li>1 tbsp Pepperbellypete&#x27;s Zippy Zap</li><li>Peppers, seeded (type and amount not specified)</li><li>10 cloves garlic</li><li>A little oil, for roasting the garlic and peppers</li><li>1 cup beef stock</li><li>1/2 tbsp cumin</li><li>4 cups garden-fresh tomatoes</li><li>32 oz tomato sauce</li></ul></section>
+  <section><h3>Instructions</h3><ol><li>Heat a couple of tablespoons of oil and sear the cubed chuck in small batches, just to brown the outside. Set the meat aside.</li><li>Add the onion and Zippy Zap to the pot and cook a few minutes, then return the meat.</li><li>Seed the peppers. Toss the peppers and 10 cloves of garlic with a little oil and roast at 350°F for 15 minutes.</li><li>Blend the roasted garlic and peppers with 1 cup beef stock until you have a chili-pepper puree, then add it to the pot.</li><li>When the meat is cooked through, add the cumin, garden-fresh tomatoes, and tomato sauce.</li><li>Cover and simmer on low 3 hours.</li></ol></section>
+</div>
+<section class="notes"><h3>Notes</h3><ul><li>Pete never names the peppers or says how many go into the roast, only that the seeds come out and they get pureed with the garlic.</li><li>Zippy Zap is Pete&#x27;s own hot sauce; he says the link is in his bio. Use another hot sauce if you don&#x27;t have it.</li></ul></section>
+</details>
+</article><article class="recipe-wrap" id="r3" data-id="yZ9yladKpK0" data-category="Beef Chili" data-search="competition-style hot dog chili pepperbellypete beef chili a smooth, competition-style chili with everything but the sirloin pureed, thickened with oatmeal and refried beans, and meant to be ladled over a hot dog. splash of olive oil 3 lb ground sirloin (93/7) about 1 1/2 tbsp worcestershire sauce 4 oz hatch green chiles, pureed 1 medium yellow onion, pureed 2 fresh jalapeños, pureed 20 oz fire-roasted rotel, pureed 2 tbsp fresh minced garlic 6 oz tomato paste 3 packets (1 oz each) williams original chili seasoning 16 oz beef stock 1 oz packet oatmeal 15 oz refried beans (pete prefers the packet over the can) about 2 tbsp yellow mustard about 2 tbsp pepperbellypete&#x27;s zippy zap in an 8-quart pot, add a splash of olive oil and the ground sirloin. add the worcestershire, pureed hatch green chiles, onion, jalapeños, and rotel, plus the garlic, tomato paste, williams chili seasoning, beef stock, and oatmeal. stir well and break the meat up. cover and cook on low for 1 hour. stir in the refried beans, yellow mustard, and zippy zap. cover and cook on low 1.5 hours more, stirring about every 30 minutes. after 2.5 to 3 hours total, it should be thick enough to spoon over a hot dog. zippy zap is pete&#x27;s own hot sauce; use another hot sauce if you don&#x27;t have it. the oatmeal is a competition-chili thickener; use a 1 oz packet as stated, not a breakfast bowl of oats.">
+<label class="pick" title="Add to shopping list">
+  <input type="checkbox" class="pick-box" data-id="yZ9yladKpK0" aria-label="Add Competition-Style Hot Dog Chili to the shopping list">
+</label>
+<details class="recipe">
+<summary>
+  <span class="tag">Beef Chili</span>
+  <span class="week-badge">This week's pick</span>
+  <h2>Competition-Style Hot Dog Chili</h2>
+  <p class="meta">Beef Chili · Makes an 8-quart pot · About 2.5 to 3 hours</p>
+</summary>
+<p><a href="https://www.youtube.com/shorts/yZ9yladKpK0" target="_blank" rel="noopener">Watch the video</a></p>
+<p class="desc">A smooth, competition-style chili with everything but the sirloin pureed, thickened with oatmeal and refried beans, and meant to be ladled over a hot dog.</p>
+<div class="cols">
+  <section><h3>Ingredients</h3><ul><li>Splash of olive oil</li><li>3 lb ground sirloin (93/7)</li><li>About 1 1/2 tbsp Worcestershire sauce</li><li>4 oz Hatch green chiles, pureed</li><li>1 medium yellow onion, pureed</li><li>2 fresh jalapeños, pureed</li><li>20 oz fire-roasted Rotel, pureed</li><li>2 tbsp fresh minced garlic</li><li>6 oz tomato paste</li><li>3 packets (1 oz each) Williams Original Chili Seasoning</li><li>16 oz beef stock</li><li>1 oz packet oatmeal</li><li>15 oz refried beans (Pete prefers the packet over the can)</li><li>About 2 tbsp yellow mustard</li><li>About 2 tbsp Pepperbellypete&#x27;s Zippy Zap</li></ul></section>
+  <section><h3>Instructions</h3><ol><li>In an 8-quart pot, add a splash of olive oil and the ground sirloin.</li><li>Add the Worcestershire, pureed Hatch green chiles, onion, jalapeños, and Rotel, plus the garlic, tomato paste, Williams chili seasoning, beef stock, and oatmeal.</li><li>Stir well and break the meat up. Cover and cook on low for 1 hour.</li><li>Stir in the refried beans, yellow mustard, and Zippy Zap.</li><li>Cover and cook on low 1.5 hours more, stirring about every 30 minutes.</li><li>After 2.5 to 3 hours total, it should be thick enough to spoon over a hot dog.</li></ol></section>
+</div>
+<section class="notes"><h3>Notes</h3><ul><li>Zippy Zap is Pete&#x27;s own hot sauce; use another hot sauce if you don&#x27;t have it.</li><li>The oatmeal is a competition-chili thickener; use a 1 oz packet as stated, not a breakfast bowl of oats.</li></ul></section>
+</details>
+</article><article class="recipe-wrap" id="r4" data-id="oszc3tS3BUE" data-category="Beef Chili" data-search="cook-off chili with pete&#x27;s tweaks pepperbellypete beef chili the same cook-off chili with a few changes pete says might help you take first and second place: fire-roasted rotel, beef broth, worcestershire, and a little yellow mustard. 3 lb ground beef 1 lb hot breakfast sausage (jimmy dean hot) about 1 tbsp worcestershire sauce 6 oz tomato paste 1 large white onion, chopped 2 fresh jalapeños, chopped, seeds and all 3 packets (1 oz each) williams original chili seasoning 3 cans (10 oz each) fire-roasted rotel 1 can (15 oz) petite diced tomatoes 1 can (29 oz) tomato sauce 1 can (15 oz) beef broth 1 1/2 tbsp fresh minced garlic 3 cans (15.5 oz each) bush&#x27;s chili magic, campfire style 1 1/2 tbsp yellow mustard splash of pepperbellypete&#x27;s zippy zap (optional, to finish) in a 10-quart pot, start browning the ground beef. while it cooks, add the worcestershire sauce and tomato paste. add the hot breakfast sausage, onion, jalapeños, and williams chili seasoning. cook until the meat is fully done. stir in the fire-roasted rotel, petite diced tomatoes, tomato sauce, beef broth, and minced garlic. cover and simmer on medium-low heat for 1 hour. stir in the bush&#x27;s chili magic and yellow mustard. cover and simmer on low at least 30 minutes more. finish with a splash of zippy zap if you like. pete presents this as a couple of small changes to his winning cook-off chili. zippy zap is pete&#x27;s own hot sauce; use another hot sauce if you don&#x27;t have it.">
+<label class="pick" title="Add to shopping list">
+  <input type="checkbox" class="pick-box" data-id="oszc3tS3BUE" aria-label="Add Cook-Off Chili with Pete&#x27;s Tweaks to the shopping list">
+</label>
+<details class="recipe">
+<summary>
+  <span class="tag">Beef Chili</span>
+  <span class="week-badge">This week's pick</span>
+  <h2>Cook-Off Chili with Pete&#x27;s Tweaks</h2>
+  <p class="meta">Beef Chili · Makes a 10-quart pot · About 1.5 hours, plus browning</p>
+</summary>
+<p><a href="https://www.youtube.com/shorts/oszc3tS3BUE" target="_blank" rel="noopener">Watch the video</a></p>
+<p class="desc">The same cook-off chili with a few changes Pete says might help you take first and second place: fire-roasted Rotel, beef broth, Worcestershire, and a little yellow mustard.</p>
+<div class="cols">
+  <section><h3>Ingredients</h3><ul><li>3 lb ground beef</li><li>1 lb hot breakfast sausage (Jimmy Dean Hot)</li><li>About 1 tbsp Worcestershire sauce</li><li>6 oz tomato paste</li><li>1 large white onion, chopped</li><li>2 fresh jalapeños, chopped, seeds and all</li><li>3 packets (1 oz each) Williams Original Chili Seasoning</li><li>3 cans (10 oz each) fire-roasted Rotel</li><li>1 can (15 oz) petite diced tomatoes</li><li>1 can (29 oz) tomato sauce</li><li>1 can (15 oz) beef broth</li><li>1 1/2 tbsp fresh minced garlic</li><li>3 cans (15.5 oz each) Bush&#x27;s Chili Magic, Campfire Style</li><li>1 1/2 tbsp yellow mustard</li><li>Splash of Pepperbellypete&#x27;s Zippy Zap (optional, to finish)</li></ul></section>
+  <section><h3>Instructions</h3><ol><li>In a 10-quart pot, start browning the ground beef. While it cooks, add the Worcestershire sauce and tomato paste.</li><li>Add the hot breakfast sausage, onion, jalapeños, and Williams chili seasoning. Cook until the meat is fully done.</li><li>Stir in the fire-roasted Rotel, petite diced tomatoes, tomato sauce, beef broth, and minced garlic.</li><li>Cover and simmer on medium-low heat for 1 hour.</li><li>Stir in the Bush&#x27;s Chili Magic and yellow mustard. Cover and simmer on low at least 30 minutes more.</li><li>Finish with a splash of Zippy Zap if you like.</li></ol></section>
+</div>
+<section class="notes"><h3>Notes</h3><ul><li>Pete presents this as a couple of small changes to his winning cook-off chili.</li><li>Zippy Zap is Pete&#x27;s own hot sauce; use another hot sauce if you don&#x27;t have it.</li></ul></section>
+</details>
+</article><article class="recipe-wrap" id="r5" data-id="MrSr7k_60Mo" data-category="Beef Chili" data-search="crockpot cook-off chili pepperbellypete beef chili the award-winning cook-off chili adapted for the crockpot. brown the meats first, then load everything into a 10-quart slow cooker. 3 lb ground beef (80/20) 1 lb breakfast sausage 6 oz tomato paste 1 large onion, chopped 2 large fresh jalapeños, chopped 4 oz hatch green chiles 2 tbsp fresh minced garlic 44 oz diced tomatoes 44 oz tomato sauce 3 oz williams original chili seasoning 3 cans (15.5 oz each) bush&#x27;s chili magic, campfire style splash of pepperbellypete&#x27;s zippy zap (optional, to finish) in a skillet, brown and drain the ground beef. add the breakfast sausage and tomato paste. cook until the sausage is fully done; do not drain. transfer the meat to a 10-quart crockpot. add the onion, jalapeños, hatch green chiles, garlic, diced tomatoes, tomato sauce, williams chili seasoning, and bush&#x27;s chili magic. stir well. cover and cook on high for 3 hours or on low for 6 hours. finish with a splash of zippy zap before serving. this is the cook-off chili packed into a crockpot, with the chili magic added at the start instead of at the end. zippy zap is pete&#x27;s own hot sauce; use another hot sauce if you don&#x27;t have it.">
+<label class="pick" title="Add to shopping list">
+  <input type="checkbox" class="pick-box" data-id="MrSr7k_60Mo" aria-label="Add Crockpot Cook-Off Chili to the shopping list">
+</label>
+<details class="recipe">
+<summary>
+  <span class="tag">Beef Chili</span>
+  <span class="week-badge">This week's pick</span>
+  <h2>Crockpot Cook-Off Chili</h2>
+  <p class="meta">Beef Chili · Makes a 10-quart crockpot · 3 hours on high or 6 hours on low, plus browning</p>
+</summary>
+<p><a href="https://www.youtube.com/shorts/MrSr7k_60Mo" target="_blank" rel="noopener">Watch the video</a></p>
+<p class="desc">The award-winning cook-off chili adapted for the crockpot. Brown the meats first, then load everything into a 10-quart slow cooker.</p>
+<div class="cols">
+  <section><h3>Ingredients</h3><ul><li>3 lb ground beef (80/20)</li><li>1 lb breakfast sausage</li><li>6 oz tomato paste</li><li>1 large onion, chopped</li><li>2 large fresh jalapeños, chopped</li><li>4 oz Hatch green chiles</li><li>2 tbsp fresh minced garlic</li><li>44 oz diced tomatoes</li><li>44 oz tomato sauce</li><li>3 oz Williams Original Chili Seasoning</li><li>3 cans (15.5 oz each) Bush&#x27;s Chili Magic, Campfire Style</li><li>Splash of Pepperbellypete&#x27;s Zippy Zap (optional, to finish)</li></ul></section>
+  <section><h3>Instructions</h3><ol><li>In a skillet, brown and drain the ground beef.</li><li>Add the breakfast sausage and tomato paste. Cook until the sausage is fully done; do not drain.</li><li>Transfer the meat to a 10-quart crockpot.</li><li>Add the onion, jalapeños, Hatch green chiles, garlic, diced tomatoes, tomato sauce, Williams chili seasoning, and Bush&#x27;s Chili Magic. Stir well.</li><li>Cover and cook on high for 3 hours or on low for 6 hours.</li><li>Finish with a splash of Zippy Zap before serving.</li></ol></section>
+</div>
+<section class="notes"><h3>Notes</h3><ul><li>This is the cook-off chili packed into a crockpot, with the Chili Magic added at the start instead of at the end.</li><li>Zippy Zap is Pete&#x27;s own hot sauce; use another hot sauce if you don&#x27;t have it.</li></ul></section>
+</details>
+</article><article class="recipe-wrap" id="r6" data-id="02Ka_eSlIRk" data-category="Beef Chili" data-search="hamburger chili dog chili pepperbellypete beef chili a five-pound pot of hamburger chili with ketchup, mustard, and broth, simmered until it&#x27;s ready for a chili dog. pete also posted this same recipe as hamburger chili. 5 lb ground beef 1 large yellow onion (part of the &#x27;texas trinity&#x27;) 3 jalapeños about 6 cloves minced garlic about 2 tbsp worcestershire sauce 1/3 cup chili powder 1 tbsp onion powder 1 tbsp garlic powder 1 tbsp salt black pepper (amount not specified) cumin (amount not specified) 1 bay leaf about 2 tbsp pepperbellypete&#x27;s zippy zap 6 oz tomato paste 15 oz fire-roasted tomatoes 10 oz rotel 32 oz beef broth 2 tbsp mustard about 1/4 cup ketchup brown the ground beef, breaking it up well, then drain it. pete wraps foil around the strainer so the grease doesn&#x27;t go down the drain. add the onion, jalapeños, garlic, worcestershire, chili powder, onion powder, garlic powder, salt, black pepper, cumin, bay leaf, zippy zap, and tomato paste. mix well and cook about 10 minutes on medium heat. stir in the fire-roasted tomatoes, rotel, beef broth, mustard, and ketchup. bring to a low simmer, cover, and cook 2.5 hours, stirring occasionally. zippy zap is pete&#x27;s own hot sauce; use another hot sauce if you don&#x27;t have it. also shown in: https://www.youtube.com/shorts/sxo77xgvt3m">
+<label class="pick" title="Add to shopping list">
+  <input type="checkbox" class="pick-box" data-id="02Ka_eSlIRk" aria-label="Add Hamburger Chili Dog Chili to the shopping list">
+</label>
+<details class="recipe">
+<summary>
+  <span class="tag">Beef Chili</span>
+  <span class="week-badge">This week's pick</span>
+  <h2>Hamburger Chili Dog Chili</h2>
+  <p class="meta">Beef Chili · About 2.5 hours, plus browning</p>
+</summary>
+<p><a href="https://www.youtube.com/shorts/02Ka_eSlIRk" target="_blank" rel="noopener">Watch the video</a></p>
+<p class="desc">A five-pound pot of hamburger chili with ketchup, mustard, and broth, simmered until it&#x27;s ready for a chili dog. Pete also posted this same recipe as hamburger chili.</p>
+<div class="cols">
+  <section><h3>Ingredients</h3><ul><li>5 lb ground beef</li><li>1 large yellow onion (part of the &#x27;Texas Trinity&#x27;)</li><li>3 jalapeños</li><li>About 6 cloves minced garlic</li><li>About 2 tbsp Worcestershire sauce</li><li>1/3 cup chili powder</li><li>1 tbsp onion powder</li><li>1 tbsp garlic powder</li><li>1 tbsp salt</li><li>Black pepper (amount not specified)</li><li>Cumin (amount not specified)</li><li>1 bay leaf</li><li>About 2 tbsp Pepperbellypete&#x27;s Zippy Zap</li><li>6 oz tomato paste</li><li>15 oz fire-roasted tomatoes</li><li>10 oz Rotel</li><li>32 oz beef broth</li><li>2 tbsp mustard</li><li>About 1/4 cup ketchup</li></ul></section>
+  <section><h3>Instructions</h3><ol><li>Brown the ground beef, breaking it up well, then drain it. Pete wraps foil around the strainer so the grease doesn&#x27;t go down the drain.</li><li>Add the onion, jalapeños, garlic, Worcestershire, chili powder, onion powder, garlic powder, salt, black pepper, cumin, bay leaf, Zippy Zap, and tomato paste. Mix well and cook about 10 minutes on medium heat.</li><li>Stir in the fire-roasted tomatoes, Rotel, beef broth, mustard, and ketchup.</li><li>Bring to a low simmer, cover, and cook 2.5 hours, stirring occasionally.</li></ol></section>
+</div>
+<section class="notes"><h3>Notes</h3><ul><li>Zippy Zap is Pete&#x27;s own hot sauce; use another hot sauce if you don&#x27;t have it.</li><li>Also shown in: https://www.youtube.com/shorts/SXO77xGvt3M</li></ul></section>
+</details>
+</article><article class="recipe-wrap" id="r7" data-id="ZlOQ3QLOXy0" data-category="Beef Chili" data-search="homestyle cook-off chili pepperbellypete beef chili another cook-off version of pete&#x27;s chili, this time with rotel and beef broth in place of the big cans of tomato sauce, and a longer simmer. 3 lb ground beef (80/20) 1 lb breakfast sausage 6 oz tomato paste 1 large onion, chopped 3 small fresh jalapeños 2 tbsp fresh minced garlic 4 oz (1/2 cup) hatch green chiles 3 packets (1 oz each) williams original chili seasoning about 1 tbsp pepperbellypete&#x27;s flavor-time southern seasoning (his own blend) 28 oz diced tomatoes 2 cans (10 oz each) rotel 28 oz beef broth 3 cans (15.5 oz each) bush&#x27;s chili magic brown and drain the ground beef. add the breakfast sausage and tomato paste, and cook together. add the onion, jalapeños, garlic, hatch green chiles, williams chili seasoning, and flavor-time southern seasoning. stir in the diced tomatoes, rotel, and beef broth. bring to a simmer on medium-low and cook 2 hours. stir in the bush&#x27;s chili magic, cover, and cook at least 30 minutes more. pete says the written recipe is on page 177 of his cookbook. the liquids here differ from the 44-oz tomato sauce version of that same cook-off chili. flavor-time southern seasoning is pete&#x27;s own blend; use your favorite seasoning blend if you don&#x27;t have it.">
+<label class="pick" title="Add to shopping list">
+  <input type="checkbox" class="pick-box" data-id="ZlOQ3QLOXy0" aria-label="Add Homestyle Cook-Off Chili to the shopping list">
+</label>
+<details class="recipe">
+<summary>
+  <span class="tag">Beef Chili</span>
+  <span class="week-badge">This week's pick</span>
+  <h2>Homestyle Cook-Off Chili</h2>
+  <p class="meta">Beef Chili · About 2.5 hours</p>
+</summary>
+<p><a href="https://www.youtube.com/shorts/ZlOQ3QLOXy0" target="_blank" rel="noopener">Watch the video</a></p>
+<p class="desc">Another cook-off version of Pete&#x27;s chili, this time with Rotel and beef broth in place of the big cans of tomato sauce, and a longer simmer.</p>
+<div class="cols">
+  <section><h3>Ingredients</h3><ul><li>3 lb ground beef (80/20)</li><li>1 lb breakfast sausage</li><li>6 oz tomato paste</li><li>1 large onion, chopped</li><li>3 small fresh jalapeños</li><li>2 tbsp fresh minced garlic</li><li>4 oz (1/2 cup) Hatch green chiles</li><li>3 packets (1 oz each) Williams Original Chili Seasoning</li><li>About 1 tbsp Pepperbellypete&#x27;s Flavor-Time Southern Seasoning (his own blend)</li><li>28 oz diced tomatoes</li><li>2 cans (10 oz each) Rotel</li><li>28 oz beef broth</li><li>3 cans (15.5 oz each) Bush&#x27;s Chili Magic</li></ul></section>
+  <section><h3>Instructions</h3><ol><li>Brown and drain the ground beef.</li><li>Add the breakfast sausage and tomato paste, and cook together.</li><li>Add the onion, jalapeños, garlic, Hatch green chiles, Williams chili seasoning, and Flavor-Time Southern Seasoning.</li><li>Stir in the diced tomatoes, Rotel, and beef broth. Bring to a simmer on medium-low and cook 2 hours.</li><li>Stir in the Bush&#x27;s Chili Magic, cover, and cook at least 30 minutes more.</li></ol></section>
+</div>
+<section class="notes"><h3>Notes</h3><ul><li>Pete says the written recipe is on page 177 of his cookbook. The liquids here differ from the 44-oz tomato sauce version of that same cook-off chili.</li><li>Flavor-Time Southern Seasoning is Pete&#x27;s own blend; use your favorite seasoning blend if you don&#x27;t have it.</li></ul></section>
+</details>
+</article><article class="recipe-wrap" id="r8" data-id="Tuni1vFZcsU" data-category="Beef Chili" data-search="pete&#x27;s favorite chili pepperbellypete beef chili the chili pete calls his favorite: beef and pan sausage with rotel, ranch-style beans, and a can of chili magic. 2 lb ground beef 1 lb breakfast or pan sausage 1 onion, chopped 2 jalapeños, chopped about 2 tbsp worcestershire sauce 6 oz tomato paste 30 oz rotel 1 tbsp fresh minced garlic 2 packets (1 oz each) chili seasoning (your favorite) 1 can (8 oz) tomato sauce 1 can bush&#x27;s chili magic 1 can (26 oz) ranch-style beans about 2 tbsp pepperbellypete&#x27;s zippy zap 24 oz beef broth cook the ground beef and sausage until the meat is done all the way through, then strain the meat and set it aside. in the pot, cook the onion and jalapeños with the worcestershire and tomato paste. return the meat to the pot. add the rotel, garlic, chili seasoning, tomato sauce, bush&#x27;s chili magic, ranch-style beans, zippy zap, and beef broth. leave it on and simmer 1 hour. zippy zap is pete&#x27;s own hot sauce; use another hot sauce if you don&#x27;t have it. he doesn&#x27;t name a brand of chili seasoning in this video, just two 1-oz packets of your favorite.">
+<label class="pick" title="Add to shopping list">
+  <input type="checkbox" class="pick-box" data-id="Tuni1vFZcsU" aria-label="Add Pete&#x27;s Favorite Chili to the shopping list">
+</label>
+<details class="recipe">
+<summary>
+  <span class="tag">Beef Chili</span>
+  <span class="week-badge">This week's pick</span>
+  <h2>Pete&#x27;s Favorite Chili</h2>
+  <p class="meta">Beef Chili · About 1 hour simmering, plus browning</p>
+</summary>
+<p><a href="https://www.youtube.com/shorts/Tuni1vFZcsU" target="_blank" rel="noopener">Watch the video</a></p>
+<p class="desc">The chili Pete calls his favorite: beef and pan sausage with Rotel, ranch-style beans, and a can of Chili Magic.</p>
+<div class="cols">
+  <section><h3>Ingredients</h3><ul><li>2 lb ground beef</li><li>1 lb breakfast or pan sausage</li><li>1 onion, chopped</li><li>2 jalapeños, chopped</li><li>About 2 tbsp Worcestershire sauce</li><li>6 oz tomato paste</li><li>30 oz Rotel</li><li>1 tbsp fresh minced garlic</li><li>2 packets (1 oz each) chili seasoning (your favorite)</li><li>1 can (8 oz) tomato sauce</li><li>1 can Bush&#x27;s Chili Magic</li><li>1 can (26 oz) ranch-style beans</li><li>About 2 tbsp Pepperbellypete&#x27;s Zippy Zap</li><li>24 oz beef broth</li></ul></section>
+  <section><h3>Instructions</h3><ol><li>Cook the ground beef and sausage until the meat is done all the way through, then strain the meat and set it aside.</li><li>In the pot, cook the onion and jalapeños with the Worcestershire and tomato paste.</li><li>Return the meat to the pot. Add the Rotel, garlic, chili seasoning, tomato sauce, Bush&#x27;s Chili Magic, ranch-style beans, Zippy Zap, and beef broth.</li><li>Leave it on and simmer 1 hour.</li></ol></section>
+</div>
+<section class="notes"><h3>Notes</h3><ul><li>Zippy Zap is Pete&#x27;s own hot sauce; use another hot sauce if you don&#x27;t have it.</li><li>He doesn&#x27;t name a brand of chili seasoning in this video, just two 1-oz packets of your favorite.</li></ul></section>
+</details>
+</article><article class="recipe-wrap" id="r9" data-id="2zUAKSz7lO8" data-category="Chicken Chili" data-search="ranch chicken chili pepperbellypete chicken chili a quick chicken chili with ranch and taco seasoning, black beans, ranch-style beans, corn, and cream cheese, served over tortilla chips. 32 oz chicken broth 1 large onion 3 jalapeños 5 cloves garlic, minced 28 oz crushed tomatoes 10 oz rotel 15 oz whole-kernel corn 15 oz black beans 15 oz ranch-style beans 1 packet (1 oz) taco seasoning 1 packet (1 oz) ranch seasoning 1 block (8 oz) cream cheese 1 whole rotisserie chicken, chopped about 2 tbsp pepperbellypete&#x27;s zippy zap tortilla chips, for serving shredded cheese, for topping (amount not specified) habanero sauce, to taste (optional) add the chicken broth, onion, jalapeños, and garlic to a pot (the texas trinity in the broth). simmer about 20 minutes. add the crushed tomatoes, rotel, corn, black beans, ranch-style beans, taco seasoning, ranch seasoning, cream cheese, chopped rotisserie chicken, and zippy zap. once everything is incorporated, simmer about 30 minutes. serve over tortilla chips, top with shredded cheese, and add habanero sauce if you like. zippy zap is pete&#x27;s own hot sauce; he mentions it&#x27;s on amazon or ebay. use another hot sauce if you don&#x27;t have it.">
+<label class="pick" title="Add to shopping list">
+  <input type="checkbox" class="pick-box" data-id="2zUAKSz7lO8" aria-label="Add Ranch Chicken Chili to the shopping list">
+</label>
+<details class="recipe">
+<summary>
+  <span class="tag">Chicken Chili</span>
+  <span class="week-badge">This week's pick</span>
+  <h2>Ranch Chicken Chili</h2>
+  <p class="meta">Chicken Chili · About 50 minutes</p>
+</summary>
+<p><a href="https://www.youtube.com/shorts/2zUAKSz7lO8" target="_blank" rel="noopener">Watch the video</a></p>
+<p class="desc">A quick chicken chili with ranch and taco seasoning, black beans, ranch-style beans, corn, and cream cheese, served over tortilla chips.</p>
+<div class="cols">
+  <section><h3>Ingredients</h3><ul><li>32 oz chicken broth</li><li>1 large onion</li><li>3 jalapeños</li><li>5 cloves garlic, minced</li><li>28 oz crushed tomatoes</li><li>10 oz Rotel</li><li>15 oz whole-kernel corn</li><li>15 oz black beans</li><li>15 oz ranch-style beans</li><li>1 packet (1 oz) taco seasoning</li><li>1 packet (1 oz) ranch seasoning</li><li>1 block (8 oz) cream cheese</li><li>1 whole rotisserie chicken, chopped</li><li>About 2 tbsp Pepperbellypete&#x27;s Zippy Zap</li><li>Tortilla chips, for serving</li><li>Shredded cheese, for topping (amount not specified)</li><li>Habanero sauce, to taste (optional)</li></ul></section>
+  <section><h3>Instructions</h3><ol><li>Add the chicken broth, onion, jalapeños, and garlic to a pot (the Texas Trinity in the broth). Simmer about 20 minutes.</li><li>Add the crushed tomatoes, Rotel, corn, black beans, ranch-style beans, taco seasoning, ranch seasoning, cream cheese, chopped rotisserie chicken, and Zippy Zap.</li><li>Once everything is incorporated, simmer about 30 minutes.</li><li>Serve over tortilla chips, top with shredded cheese, and add habanero sauce if you like.</li></ol></section>
+</div>
+<section class="notes"><h3>Notes</h3><ul><li>Zippy Zap is Pete&#x27;s own hot sauce; he mentions it&#x27;s on Amazon or eBay. Use another hot sauce if you don&#x27;t have it.</li></ul></section>
+</details>
+</article><article class="recipe-wrap" id="r10" data-id="cabp5XCZeT4" data-category="Chicken Chili" data-search="white chicken chili pepperbellypete chicken chili a crockpot white chicken chili with a rotisserie garlic-herb chicken, white kidney beans, roasted hatch chiles, and cream cheese. 1 fully cooked, deboned garlic-herb rotisserie chicken (pete uses a grocery-store roasted chicken) 1 large onion, chopped 1 can (28 oz) fire-roasted tomatoes 12 oz roasted hatch green chiles 3 cans (15.5 oz each) white kidney beans, rinsed 1 tsp dried oregano 1 tsp ground coriander 1 tsp ground cumin 1 tsp ground black pepper 1 tbsp chili-lime adobo seasoning 1 tbsp garlic powder 1 tbsp smoked paprika 1 block (8 oz) cream cheese 4 ears fresh corn, kernels cut off (or 1 can of corn) about 1/2 cup fresh chopped cilantro juice of 1 whole lime 1 packet (1.27 oz) chicken fajita seasoning 48 oz chicken broth splash of hot sauce, to taste (pete adds &#x27;heat blast&#x27;) add the onion, fire-roasted tomatoes, hatch green chiles, rinsed beans, oregano, coriander, cumin, black pepper, chili-lime adobo, garlic powder, smoked paprika, cream cheese, corn, cilantro, lime juice, fajita seasoning, chicken broth, and the deboned chicken to the crockpot. stir well, cover, and cook on high about 1.5 hours, stirring every 30 minutes, or about 3 hours on low. finish with a splash of hot sauce if you want it spicier. pete jokes that cilantro is &#x27;soap on a rope&#x27; to some people; leave it out if you&#x27;re one of them. he finishes his bowl with a splash of something he calls heat blast; the exact product isn&#x27;t clearly identified, so use your favorite hot sauce.">
+<label class="pick" title="Add to shopping list">
+  <input type="checkbox" class="pick-box" data-id="cabp5XCZeT4" aria-label="Add White Chicken Chili to the shopping list">
+</label>
+<details class="recipe">
+<summary>
+  <span class="tag">Chicken Chili</span>
+  <span class="week-badge">This week's pick</span>
+  <h2>White Chicken Chili</h2>
+  <p class="meta">Chicken Chili · About 1.5 hours on high or 3 hours on low</p>
+</summary>
+<p><a href="https://www.youtube.com/shorts/cabp5XCZeT4" target="_blank" rel="noopener">Watch the video</a></p>
+<p class="desc">A crockpot white chicken chili with a rotisserie garlic-herb chicken, white kidney beans, roasted Hatch chiles, and cream cheese.</p>
+<div class="cols">
+  <section><h3>Ingredients</h3><ul><li>1 fully cooked, deboned garlic-herb rotisserie chicken (Pete uses a grocery-store roasted chicken)</li><li>1 large onion, chopped</li><li>1 can (28 oz) fire-roasted tomatoes</li><li>12 oz roasted Hatch green chiles</li><li>3 cans (15.5 oz each) white kidney beans, rinsed</li><li>1 tsp dried oregano</li><li>1 tsp ground coriander</li><li>1 tsp ground cumin</li><li>1 tsp ground black pepper</li><li>1 tbsp chili-lime adobo seasoning</li><li>1 tbsp garlic powder</li><li>1 tbsp smoked paprika</li><li>1 block (8 oz) cream cheese</li><li>4 ears fresh corn, kernels cut off (or 1 can of corn)</li><li>About 1/2 cup fresh chopped cilantro</li><li>Juice of 1 whole lime</li><li>1 packet (1.27 oz) chicken fajita seasoning</li><li>48 oz chicken broth</li><li>Splash of hot sauce, to taste (Pete adds &#x27;Heat Blast&#x27;)</li></ul></section>
+  <section><h3>Instructions</h3><ol><li>Add the onion, fire-roasted tomatoes, Hatch green chiles, rinsed beans, oregano, coriander, cumin, black pepper, chili-lime adobo, garlic powder, smoked paprika, cream cheese, corn, cilantro, lime juice, fajita seasoning, chicken broth, and the deboned chicken to the crockpot.</li><li>Stir well, cover, and cook on high about 1.5 hours, stirring every 30 minutes, or about 3 hours on low.</li><li>Finish with a splash of hot sauce if you want it spicier.</li></ol></section>
+</div>
+<section class="notes"><h3>Notes</h3><ul><li>Pete jokes that cilantro is &#x27;soap on a rope&#x27; to some people; leave it out if you&#x27;re one of them.</li><li>He finishes his bowl with a splash of something he calls Heat Blast; the exact product isn&#x27;t clearly identified, so use your favorite hot sauce.</li></ul></section>
+</details>
+</article><article class="recipe-wrap" id="r11" data-id="u2t5hFc9pnA" data-category="Green Chili" data-search="green chile stew pepperbellypete green chili a hatch green chile stew with pork shoulder, hot sausage, potatoes, and ranch seasoning, simmered until it&#x27;s thick enough to scoop with pork rinds. 2 lb pork shoulder, chopped 1 lb hot breakfast sausage about 1 tbsp pepperbellypete&#x27;s flavor-time southern seasoning (his own blend) about 1/2 tbsp black pepper 1 tbsp garlic powder about 1 tsp ground cumin 1 small onion, chopped 2 tbsp fresh minced garlic 32 oz roasted, peeled, and pureed hatch green chiles 4 medium potatoes, chopped 1 packet (1 oz) ranch seasoning 64 oz chicken broth (two 32 oz containers) chili-cheese pork rinds, for serving (optional) cook the pork shoulder and hot breakfast sausage with the flavor-time southern seasoning, black pepper, garlic powder, and cumin, about 10 minutes. add the onion, minced garlic, pureed hatch green chiles, potatoes, ranch seasoning, and chicken broth. stir well. bring back to a simmer and cook on low about 2.5 hours. serve with chili-cheese pork rinds on top, if you like. flavor-time southern seasoning is pete&#x27;s own blend; use your favorite seasoning blend if you don&#x27;t have it. pete tops his with southern recipe small batch chili-cheese pork rinds. also shown in: https://www.youtube.com/shorts/jsa6e_gkzfy">
+<label class="pick" title="Add to shopping list">
+  <input type="checkbox" class="pick-box" data-id="u2t5hFc9pnA" aria-label="Add Green Chile Stew to the shopping list">
+</label>
+<details class="recipe">
+<summary>
+  <span class="tag">Green Chili</span>
+  <span class="week-badge">This week's pick</span>
+  <h2>Green Chile Stew</h2>
+  <p class="meta">Green Chili · About 2.5 hours</p>
+</summary>
+<p><a href="https://www.youtube.com/shorts/u2t5hFc9pnA" target="_blank" rel="noopener">Watch the video</a></p>
+<p class="desc">A Hatch green chile stew with pork shoulder, hot sausage, potatoes, and ranch seasoning, simmered until it&#x27;s thick enough to scoop with pork rinds.</p>
+<div class="cols">
+  <section><h3>Ingredients</h3><ul><li>2 lb pork shoulder, chopped</li><li>1 lb hot breakfast sausage</li><li>About 1 tbsp Pepperbellypete&#x27;s Flavor-Time Southern Seasoning (his own blend)</li><li>About 1/2 tbsp black pepper</li><li>1 tbsp garlic powder</li><li>About 1 tsp ground cumin</li><li>1 small onion, chopped</li><li>2 tbsp fresh minced garlic</li><li>32 oz roasted, peeled, and pureed Hatch green chiles</li><li>4 medium potatoes, chopped</li><li>1 packet (1 oz) ranch seasoning</li><li>64 oz chicken broth (two 32 oz containers)</li><li>Chili-cheese pork rinds, for serving (optional)</li></ul></section>
+  <section><h3>Instructions</h3><ol><li>Cook the pork shoulder and hot breakfast sausage with the Flavor-Time Southern Seasoning, black pepper, garlic powder, and cumin, about 10 minutes.</li><li>Add the onion, minced garlic, pureed Hatch green chiles, potatoes, ranch seasoning, and chicken broth. Stir well.</li><li>Bring back to a simmer and cook on low about 2.5 hours.</li><li>Serve with chili-cheese pork rinds on top, if you like.</li></ol></section>
+</div>
+<section class="notes"><h3>Notes</h3><ul><li>Flavor-Time Southern Seasoning is Pete&#x27;s own blend; use your favorite seasoning blend if you don&#x27;t have it.</li><li>Pete tops his with Southern Recipe Small Batch chili-cheese pork rinds.</li><li>Also shown in: https://www.youtube.com/shorts/JsA6e_gKzfY</li></ul></section>
+</details>
+</article><article class="recipe-wrap" id="r12" data-id="hwaPgFfUF5U" data-category="Green Chili" data-search="ranch green chili pepperbellypete green chili a ranch-seasoned green chili with beef, sausage, a pound of 15-bean mix, potatoes, and a splash of beer. 1 large onion, chopped 2 tbsp worcestershire sauce 2 lb ground beef 1 lb breakfast sausage 1 tbsp ancho chili powder garlic powder (amount not clearly specified; possibly 1 tbsp) black pepper (amount not clearly specified; possibly 1 tbsp) 1 tsp cumin 1 can (15 oz) fire-roasted tomatoes 16 oz green chiles 1 packet (1 oz) ranch seasoning 1 lb bag 15-bean dried beans 32 oz chicken broth 3 medium potatoes, chopped 2 tbsp garlic 1 tbsp tomato-chicken bouillon 2 tbsp pepperbellypete&#x27;s zippy zap 12 oz beer crackers, for serving cook the onion with the worcestershire, ground beef, breakfast sausage, ancho chili powder, garlic powder, black pepper, and cumin. add the fire-roasted tomatoes, green chiles, ranch seasoning, dried 15-bean mix, and chicken broth. bring to a boil and cook about 1 hour. add the potatoes, garlic, tomato-chicken bouillon, zippy zap, and beer. cover and simmer about 2.5 hours more. pete likes his over crackers. the transcript lists &#x27;a tablespoon of ancho chili powder, garlic powder, black pepper, and a teaspoon of cumin.&#x27; only the ancho and cumin amounts are clearly broken out. zippy zap is pete&#x27;s own hot sauce; use another hot sauce if you don&#x27;t have it.">
+<label class="pick" title="Add to shopping list">
+  <input type="checkbox" class="pick-box" data-id="hwaPgFfUF5U" aria-label="Add Ranch Green Chili to the shopping list">
+</label>
+<details class="recipe">
+<summary>
+  <span class="tag">Green Chili</span>
+  <span class="week-badge">This week's pick</span>
+  <h2>Ranch Green Chili</h2>
+  <p class="meta">Green Chili · About 1 hour at a boil, then 2.5 hours more</p>
+</summary>
+<p><a href="https://www.youtube.com/shorts/hwaPgFfUF5U" target="_blank" rel="noopener">Watch the video</a></p>
+<p class="desc">A ranch-seasoned green chili with beef, sausage, a pound of 15-bean mix, potatoes, and a splash of beer.</p>
+<div class="cols">
+  <section><h3>Ingredients</h3><ul><li>1 large onion, chopped</li><li>2 tbsp Worcestershire sauce</li><li>2 lb ground beef</li><li>1 lb breakfast sausage</li><li>1 tbsp ancho chili powder</li><li>Garlic powder (amount not clearly specified; possibly 1 tbsp)</li><li>Black pepper (amount not clearly specified; possibly 1 tbsp)</li><li>1 tsp cumin</li><li>1 can (15 oz) fire-roasted tomatoes</li><li>16 oz green chiles</li><li>1 packet (1 oz) ranch seasoning</li><li>1 lb bag 15-bean dried beans</li><li>32 oz chicken broth</li><li>3 medium potatoes, chopped</li><li>2 tbsp garlic</li><li>1 tbsp tomato-chicken bouillon</li><li>2 tbsp Pepperbellypete&#x27;s Zippy Zap</li><li>12 oz beer</li><li>Crackers, for serving</li></ul></section>
+  <section><h3>Instructions</h3><ol><li>Cook the onion with the Worcestershire, ground beef, breakfast sausage, ancho chili powder, garlic powder, black pepper, and cumin.</li><li>Add the fire-roasted tomatoes, green chiles, ranch seasoning, dried 15-bean mix, and chicken broth. Bring to a boil and cook about 1 hour.</li><li>Add the potatoes, garlic, tomato-chicken bouillon, Zippy Zap, and beer.</li><li>Cover and simmer about 2.5 hours more. Pete likes his over crackers.</li></ol></section>
+</div>
+<section class="notes"><h3>Notes</h3><ul><li>The transcript lists &#x27;a tablespoon of ancho chili powder, garlic powder, black pepper, and a teaspoon of cumin.&#x27; Only the ancho and cumin amounts are clearly broken out.</li><li>Zippy Zap is Pete&#x27;s own hot sauce; use another hot sauce if you don&#x27;t have it.</li></ul></section>
+</details>
+</article><article class="recipe-wrap" id="r13" data-id="6OvXKLDQe_Q" data-category="Chili Mac &amp; Casserole" data-search="chili cheese tots casserole pepperbellypete chili mac &amp; casserole a layered chili casserole with seasoned ground meat, beans, and cornbread mix poked down into the pot, then lined with tater tots and finished with cheese. 2 lb ground meat 1 tsp cayenne pepper 1 tsp cumin 1 tbsp black pepper 1 tbsp chili powder 1 medium onion 1 fresh jalapeño about 4 cloves minced garlic 1 can (10 oz) fire-roasted rotel 1 can (15 oz) beans (pete uses pinto; use whatever you like) 2 1/2 cups cornbread mix (pete uses a unsweetened mix; use whatever you like) tater tots, enough to line the top (amount not specified) cheese, for topping (amount not specified) cook the ground meat with the cayenne, cumin, black pepper, and chili powder. add the onion, jalapeño, and garlic (the texas trinity), plus the fire-roasted rotel. cook a few minutes to soften the vegetables. stir in the beans, then flatten everything out in the pan. add the cornbread mix and poke it down into the chili with a fork so it works in throughout. line tater tots over the top. bake 30 minutes (oven temperature was not stated). cover with cheese and return to the oven for 10 minutes. the oven temperature is not given in the video, only the 30-minute and 10-minute times. the amount of tater tots and cheese is not specified; cover the top.">
+<label class="pick" title="Add to shopping list">
+  <input type="checkbox" class="pick-box" data-id="6OvXKLDQe_Q" aria-label="Add Chili Cheese Tots Casserole to the shopping list">
+</label>
+<details class="recipe">
+<summary>
+  <span class="tag">Chili Mac &amp; Casserole</span>
+  <span class="week-badge">This week's pick</span>
+  <h2>Chili Cheese Tots Casserole</h2>
+  <p class="meta">Chili Mac &amp; Casserole · 30 minutes in the oven, then 10 minutes more with cheese (oven temperature not specified)</p>
+</summary>
+<p><a href="https://www.youtube.com/shorts/6OvXKLDQe_Q" target="_blank" rel="noopener">Watch the video</a></p>
+<p class="desc">A layered chili casserole with seasoned ground meat, beans, and cornbread mix poked down into the pot, then lined with tater tots and finished with cheese.</p>
+<div class="cols">
+  <section><h3>Ingredients</h3><ul><li>2 lb ground meat</li><li>1 tsp cayenne pepper</li><li>1 tsp cumin</li><li>1 tbsp black pepper</li><li>1 tbsp chili powder</li><li>1 medium onion</li><li>1 fresh jalapeño</li><li>About 4 cloves minced garlic</li><li>1 can (10 oz) fire-roasted Rotel</li><li>1 can (15 oz) beans (Pete uses pinto; use whatever you like)</li><li>2 1/2 cups cornbread mix (Pete uses a unsweetened mix; use whatever you like)</li><li>Tater tots, enough to line the top (amount not specified)</li><li>Cheese, for topping (amount not specified)</li></ul></section>
+  <section><h3>Instructions</h3><ol><li>Cook the ground meat with the cayenne, cumin, black pepper, and chili powder.</li><li>Add the onion, jalapeño, and garlic (the Texas Trinity), plus the fire-roasted Rotel. Cook a few minutes to soften the vegetables.</li><li>Stir in the beans, then flatten everything out in the pan.</li><li>Add the cornbread mix and poke it down into the chili with a fork so it works in throughout.</li><li>Line tater tots over the top. Bake 30 minutes (oven temperature was not stated).</li><li>Cover with cheese and return to the oven for 10 minutes.</li></ol></section>
+</div>
+<section class="notes"><h3>Notes</h3><ul><li>The oven temperature is not given in the video, only the 30-minute and 10-minute times.</li><li>The amount of tater tots and cheese is not specified; cover the top.</li></ul></section>
+</details>
+</article><article class="recipe-wrap" id="r14" data-id="UIs_wUVmFBQ" data-category="Chili Mac &amp; Casserole" data-search="chili mac &amp; cheese pepperbellypete chili mac &amp; casserole a one-pot chili mac: seasoned ground meat, crushed tomatoes, chili beans, and rotini that cook right in the sauce, finished with cheese. splash of olive oil 2 lb ground meat 1 onion 1 bell pepper 1 fresh jalapeño 1 tsp cumin 1 tsp cayenne pepper 2 tsp black pepper 1 tsp garlic salt 2 tsp smoked paprika 2 tsp chili powder 28 oz crushed tomatoes 3 cups pasta (pete uses rotini) 2 cans (15 oz each) chili beans 1 can (15 oz) beef broth 8 oz cheese heat a splash of olive oil and brown the ground meat. add the onion, bell pepper, and jalapeño, then the cumin, cayenne, black pepper, garlic salt, smoked paprika, and chili powder. stir in the crushed tomatoes, pasta, chili beans, and beef broth. cover and simmer until the pasta is cooked the way you like it. take it off the heat and stir in the cheese. pete uses rotini because, in his words, elbow noodles are ugly. use whatever pasta you like.">
+<label class="pick" title="Add to shopping list">
+  <input type="checkbox" class="pick-box" data-id="UIs_wUVmFBQ" aria-label="Add Chili Mac &amp; Cheese to the shopping list">
+</label>
+<details class="recipe">
+<summary>
+  <span class="tag">Chili Mac &amp; Casserole</span>
+  <span class="week-badge">This week's pick</span>
+  <h2>Chili Mac &amp; Cheese</h2>
+  <p class="meta">Chili Mac &amp; Casserole · Until the pasta is cooked the way you like it</p>
+</summary>
+<p><a href="https://www.youtube.com/shorts/UIs_wUVmFBQ" target="_blank" rel="noopener">Watch the video</a></p>
+<p class="desc">A one-pot chili mac: seasoned ground meat, crushed tomatoes, chili beans, and rotini that cook right in the sauce, finished with cheese.</p>
+<div class="cols">
+  <section><h3>Ingredients</h3><ul><li>Splash of olive oil</li><li>2 lb ground meat</li><li>1 onion</li><li>1 bell pepper</li><li>1 fresh jalapeño</li><li>1 tsp cumin</li><li>1 tsp cayenne pepper</li><li>2 tsp black pepper</li><li>1 tsp garlic salt</li><li>2 tsp smoked paprika</li><li>2 tsp chili powder</li><li>28 oz crushed tomatoes</li><li>3 cups pasta (Pete uses rotini)</li><li>2 cans (15 oz each) chili beans</li><li>1 can (15 oz) beef broth</li><li>8 oz cheese</li></ul></section>
+  <section><h3>Instructions</h3><ol><li>Heat a splash of olive oil and brown the ground meat.</li><li>Add the onion, bell pepper, and jalapeño, then the cumin, cayenne, black pepper, garlic salt, smoked paprika, and chili powder.</li><li>Stir in the crushed tomatoes, pasta, chili beans, and beef broth.</li><li>Cover and simmer until the pasta is cooked the way you like it.</li><li>Take it off the heat and stir in the cheese.</li></ol></section>
+</div>
+<section class="notes"><h3>Notes</h3><ul><li>Pete uses rotini because, in his words, elbow noodles are ugly. Use whatever pasta you like.</li></ul></section>
+</details>
+</article><article class="recipe-wrap" id="r15" data-id="zccWmMHBBjk" data-category="Chili Mac &amp; Casserole" data-search="poor man&#x27;s chili mac pepperbellypete chili mac &amp; casserole an old-school, tight-budget chili mac: a tomato-chili beef sauce simmered with sink water, then tossed with jumbo elbows and a little cheese. 2 lb ground beef 3 oz tomato paste 1 medium onion, chopped 1 tbsp garlic powder 1 tbsp chili powder 1/2 tbsp cumin ground red pepper (amount not specified) smoked paprika (amount not specified) 3 1/2 cups water (pete calls it &#x27;117-degree clear sink water&#x27;) 1 can (14.5 oz) chili-style tomatoes salt, to taste 12 oz jumbo elbow noodles splash of habanero sauce (optional) cheese, to taste (amount not specified) brown the ground beef, breaking it up well. stir in the tomato paste and let it cook with the beef. add the onion, garlic powder, chili powder, cumin, ground red pepper, and smoked paprika. stir in the water and chili-style tomatoes. bring to a simmer and cook 30 minutes. meanwhile, salt a pot of boiling water and cook the jumbo elbows 6 to 7 minutes. drain. taste the sauce and add salt as you like. turn the heat off, add the noodles, and stir them in. finish with a splash of habanero sauce and a little cheese if you want. pete also likes it in a fold-over sandwich. amounts for the ground red pepper and smoked paprika were not given separately from the 1/2 tbsp cumin.">
+<label class="pick" title="Add to shopping list">
+  <input type="checkbox" class="pick-box" data-id="zccWmMHBBjk" aria-label="Add Poor Man&#x27;s Chili Mac to the shopping list">
+</label>
+<details class="recipe">
+<summary>
+  <span class="tag">Chili Mac &amp; Casserole</span>
+  <span class="week-badge">This week's pick</span>
+  <h2>Poor Man&#x27;s Chili Mac</h2>
+  <p class="meta">Chili Mac &amp; Casserole · About 30 minutes simmering, plus boiling the pasta</p>
+</summary>
+<p><a href="https://www.youtube.com/shorts/zccWmMHBBjk" target="_blank" rel="noopener">Watch the video</a></p>
+<p class="desc">An old-school, tight-budget chili mac: a tomato-chili beef sauce simmered with sink water, then tossed with jumbo elbows and a little cheese.</p>
+<div class="cols">
+  <section><h3>Ingredients</h3><ul><li>2 lb ground beef</li><li>3 oz tomato paste</li><li>1 medium onion, chopped</li><li>1 tbsp garlic powder</li><li>1 tbsp chili powder</li><li>1/2 tbsp cumin</li><li>Ground red pepper (amount not specified)</li><li>Smoked paprika (amount not specified)</li><li>3 1/2 cups water (Pete calls it &#x27;117-degree clear sink water&#x27;)</li><li>1 can (14.5 oz) chili-style tomatoes</li><li>Salt, to taste</li><li>12 oz jumbo elbow noodles</li><li>Splash of habanero sauce (optional)</li><li>Cheese, to taste (amount not specified)</li></ul></section>
+  <section><h3>Instructions</h3><ol><li>Brown the ground beef, breaking it up well. Stir in the tomato paste and let it cook with the beef.</li><li>Add the onion, garlic powder, chili powder, cumin, ground red pepper, and smoked paprika.</li><li>Stir in the water and chili-style tomatoes. Bring to a simmer and cook 30 minutes.</li><li>Meanwhile, salt a pot of boiling water and cook the jumbo elbows 6 to 7 minutes. Drain.</li><li>Taste the sauce and add salt as you like. Turn the heat off, add the noodles, and stir them in.</li><li>Finish with a splash of habanero sauce and a little cheese if you want. Pete also likes it in a fold-over sandwich.</li></ol></section>
+</div>
+<section class="notes"><h3>Notes</h3><ul><li>Amounts for the ground red pepper and smoked paprika were not given separately from the 1/2 tbsp cumin.</li></ul></section>
+</details>
+</article><article class="recipe-wrap" id="r16" data-id="vfLzYqXfOb0" data-category="Chili Mac &amp; Casserole" data-search="white chicken chili mac &amp; cheese pepperbellypete chili mac &amp; casserole a baked white-chicken chili mac with a hatch chile and rotel cheese sauce, rotisserie chicken, and a colby jack topping. 1 stick unsalted butter 1 medium onion, chopped 1 fresh jalapeño, chopped 4 oz hatch green chiles 10.5 oz fire-roasted rotel 1 tbsp fresh minced garlic 1 tbsp chili powder black pepper (amount not specified) garlic powder (amount not specified) about 1 tbsp worcestershire sauce 32 oz white american cheese (from the grocery store deli) 12 oz evaporated milk 1 rotisserie chicken, deboned and chopped 1 lb macaroni, boiled 8 minutes (al dente) colby jack cheese, for topping (amount not specified) melt the butter and cook the onion and jalapeño until completely soft. add the hatch green chiles, fire-roasted rotel, garlic, chili powder, black pepper, garlic powder, and worcestershire. stir and cook a few minutes. add the white american cheese and evaporated milk. keep stirring until the cheese is fully melted. stir in the chopped rotisserie chicken and the drained macaroni until everything is well combined. top with colby jack. bake at 350°f for 30 minutes, then broil 2 minutes. the audio is a little muddy on worcestershire (&#x27;washi sister sauce&#x27;) and colby jack (&#x27;kobe jack&#x27;); those are the standard names for what he appears to say. he says you can get the white american cheese from the grocery store deli.">
+<label class="pick" title="Add to shopping list">
+  <input type="checkbox" class="pick-box" data-id="vfLzYqXfOb0" aria-label="Add White Chicken Chili Mac &amp; Cheese to the shopping list">
+</label>
+<details class="recipe">
+<summary>
+  <span class="tag">Chili Mac &amp; Casserole</span>
+  <span class="week-badge">This week's pick</span>
+  <h2>White Chicken Chili Mac &amp; Cheese</h2>
+  <p class="meta">Chili Mac &amp; Casserole · About 30 minutes in a 350°F oven, plus a 2-minute broil, and stovetop time</p>
+</summary>
+<p><a href="https://www.youtube.com/shorts/vfLzYqXfOb0" target="_blank" rel="noopener">Watch the video</a></p>
+<p class="desc">A baked white-chicken chili mac with a Hatch chile and Rotel cheese sauce, rotisserie chicken, and a Colby Jack topping.</p>
+<div class="cols">
+  <section><h3>Ingredients</h3><ul><li>1 stick unsalted butter</li><li>1 medium onion, chopped</li><li>1 fresh jalapeño, chopped</li><li>4 oz Hatch green chiles</li><li>10.5 oz fire-roasted Rotel</li><li>1 tbsp fresh minced garlic</li><li>1 tbsp chili powder</li><li>Black pepper (amount not specified)</li><li>Garlic powder (amount not specified)</li><li>About 1 tbsp Worcestershire sauce</li><li>32 oz white American cheese (from the grocery store deli)</li><li>12 oz evaporated milk</li><li>1 rotisserie chicken, deboned and chopped</li><li>1 lb macaroni, boiled 8 minutes (al dente)</li><li>Colby Jack cheese, for topping (amount not specified)</li></ul></section>
+  <section><h3>Instructions</h3><ol><li>Melt the butter and cook the onion and jalapeño until completely soft.</li><li>Add the Hatch green chiles, fire-roasted Rotel, garlic, chili powder, black pepper, garlic powder, and Worcestershire. Stir and cook a few minutes.</li><li>Add the white American cheese and evaporated milk. Keep stirring until the cheese is fully melted.</li><li>Stir in the chopped rotisserie chicken and the drained macaroni until everything is well combined.</li><li>Top with Colby Jack. Bake at 350°F for 30 minutes, then broil 2 minutes.</li></ol></section>
+</div>
+<section class="notes"><h3>Notes</h3><ul><li>The audio is a little muddy on Worcestershire (&#x27;washi sister sauce&#x27;) and Colby Jack (&#x27;Kobe Jack&#x27;); those are the standard names for what he appears to say.</li><li>He says you can get the white American cheese from the grocery store deli.</li></ul></section>
+</details>
+</article><article class="recipe-wrap" id="r17" data-id="fcikYSCO6OA" data-category="Dip" data-search="chili cheese dip pepperbellypete dip a party chili-cheese dip with seasoned beef, hatch chiles, and a trio of cheeses melted with evaporated milk and cream cheese. 1 1/2 lb ground beef 1 1/2 oz your favorite chili seasoning 1 small onion, chopped 2 fresh jalapeños, diced 4 oz hatch green chiles 1 can (15 oz) petite diced tomatoes about 1 tbsp ancho chili powder (or regular chili powder) about 1 tbsp pepperbellypete&#x27;s zippy zap 16 oz pepper jack cheese 16 oz medium cheddar cheese 16 oz sharp white cheddar cheese 12 oz evaporated milk 8 oz cream cheese brown the ground beef with the chili seasoning, onion, jalapeños, hatch green chiles, and petite diced tomatoes. bring to a simmer on medium heat and cook until the vegetables soften. stir in the ancho chili powder and zippy zap. add the pepper jack, medium cheddar, sharp white cheddar, and evaporated milk. reduce the heat to low, cover, and stir about every 5 minutes. after about 10 minutes, stir in the cream cheese and keep going until everything is incorporated. zippy zap is pete&#x27;s own hot sauce; use another hot sauce if you don&#x27;t have it. if you don&#x27;t have ancho chili powder, pete says regular chili powder is fine.">
+<label class="pick" title="Add to shopping list">
+  <input type="checkbox" class="pick-box" data-id="fcikYSCO6OA" aria-label="Add Chili Cheese Dip to the shopping list">
+</label>
+<details class="recipe">
+<summary>
+  <span class="tag">Dip</span>
+  <span class="week-badge">This week's pick</span>
+  <h2>Chili Cheese Dip</h2>
+  <p class="meta">Dip · Until the vegetables soften, plus about 10 minutes to melt the cheese</p>
+</summary>
+<p><a href="https://www.youtube.com/shorts/fcikYSCO6OA" target="_blank" rel="noopener">Watch the video</a></p>
+<p class="desc">A party chili-cheese dip with seasoned beef, Hatch chiles, and a trio of cheeses melted with evaporated milk and cream cheese.</p>
+<div class="cols">
+  <section><h3>Ingredients</h3><ul><li>1 1/2 lb ground beef</li><li>1 1/2 oz your favorite chili seasoning</li><li>1 small onion, chopped</li><li>2 fresh jalapeños, diced</li><li>4 oz Hatch green chiles</li><li>1 can (15 oz) petite diced tomatoes</li><li>About 1 tbsp ancho chili powder (or regular chili powder)</li><li>About 1 tbsp Pepperbellypete&#x27;s Zippy Zap</li><li>16 oz pepper jack cheese</li><li>16 oz medium cheddar cheese</li><li>16 oz sharp white cheddar cheese</li><li>12 oz evaporated milk</li><li>8 oz cream cheese</li></ul></section>
+  <section><h3>Instructions</h3><ol><li>Brown the ground beef with the chili seasoning, onion, jalapeños, Hatch green chiles, and petite diced tomatoes.</li><li>Bring to a simmer on medium heat and cook until the vegetables soften.</li><li>Stir in the ancho chili powder and Zippy Zap.</li><li>Add the pepper jack, medium cheddar, sharp white cheddar, and evaporated milk. Reduce the heat to low, cover, and stir about every 5 minutes.</li><li>After about 10 minutes, stir in the cream cheese and keep going until everything is incorporated.</li></ol></section>
+</div>
+<section class="notes"><h3>Notes</h3><ul><li>Zippy Zap is Pete&#x27;s own hot sauce; use another hot sauce if you don&#x27;t have it.</li><li>If you don&#x27;t have ancho chili powder, Pete says regular chili powder is fine.</li></ul></section>
+</details>
+</article>
+<div class="shop-bar" id="shop-bar">
+  <div class="shop-bar-inner">
+    <span id="shop-count">0 recipes selected</span>
+    <button type="button" class="primary" id="shop-gen" disabled>Generate shopping list</button>
+    <button type="button" id="bar-recommend" disabled title="Select just one recipe">Recommend Similar Recipes</button>
+    <button type="button" id="shop-clear" hidden>Clear selection</button>
+  </div>
+</div>
+<div id="shop-modal" class="shop-modal" hidden role="dialog" aria-modal="true" aria-labelledby="shop-modal-title">
+  <div class="shop-panel">
+    <div class="shop-panel-head">
+      <h2 id="shop-modal-title">Shopping list</h2>
+      <button type="button" id="shop-close" aria-label="Close">&times;</button>
+    </div>
+    <p class="shop-for" id="shop-for"></p>
+    <div id="shop-body"></div>
+    <div class="shop-actions">
+      <button type="button" class="primary" id="shop-copy">Copy to clipboard</button>
+      <button type="button" id="shop-print">Print</button>
+      <button type="button" id="shop-clear-2">Clear selection</button>
+    </div>
+  </div>
+</div>
+<script>
+window.RECIPES = [{"id":"5vpGRgVMDN8","title":"Award-Winning Texas Cook-Off Chili","category":"Beef Chili","summary":"Pete's chili that took first place at a Texas state cook-off in 2006. He has posted this same pot more than once; viewers have also used it to win their own cook-offs.","servings":"Makes a 12-quart pot","url":"https://www.youtube.com/shorts/5vpGRgVMDN8","ingredients":[{"text":"3 lb ground beef (80/20)","qty":3,"unit":"lb","item":"ground beef","shop":"meat","each_oz":null,"approx":false,"optional":false},{"text":"1 lb hot breakfast sausage (Jimmy Dean Hot)","qty":1,"unit":"lb","item":"breakfast sausage","shop":"meat","each_oz":null,"approx":false,"optional":false},{"text":"6 oz tomato paste","qty":6,"unit":"oz","item":"tomato paste","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"1 large onion, chopped","qty":1,"unit":"count","item":"onion","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"3 fresh jalapeños, chopped (some videos of this same recipe use 2 large jalapeños)","qty":3,"unit":"count","item":"jalapeños","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"9 cloves garlic, chopped (about 2 tbsp minced)","qty":9,"unit":"clove","item":"garlic","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"4 oz Hatch green chiles","qty":4,"unit":"oz","item":"green chiles","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"2 tbsp Pepperbellypete's Flavor-Time Southern Seasoning (his own blend)","qty":2,"unit":"tbsp","item":"Flavor-Time Southern Seasoning","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"3 oz Williams Original Chili Seasoning","qty":3,"unit":"oz","item":"Williams Original Chili Seasoning","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"44 oz diced tomatoes","qty":44,"unit":"oz","item":"diced tomatoes","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"44 oz tomato sauce","qty":44,"unit":"oz","item":"tomato sauce","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"3 cans (15.5 oz each) Bush's Chili Magic, Campfire Style","qty":3,"unit":"can","item":"Bush's Chili Magic","shop":"canned","each_oz":15.5,"approx":false,"optional":false},{"text":"Splash of Pepperbellypete's Zippy Zap (optional, to finish)","qty":null,"unit":"splash","item":"Zippy Zap","shop":"other","each_oz":null,"approx":false,"optional":true}]},{"id":"a7bkpQJNlKE","title":"Chili-Grind Chili with Beer","category":"Beef Chili","summary":"A bigger, beer-and-broth pot made with chili-grind beef instead of the usual ground beef and sausage mix.","servings":"","url":"https://www.youtube.com/shorts/a7bkpQJNlKE","ingredients":[{"text":"4 lb chili-grind beef","qty":4,"unit":"lb","item":"chili-grind beef","shop":"meat","each_oz":null,"approx":false,"optional":false},{"text":"6 oz chili paste (the audio may be 'tomato paste'; 6 oz is the amount)","qty":6,"unit":"oz","item":"chili paste","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"1 large onion, chopped","qty":1,"unit":"count","item":"onion","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"2 large fresh jalapeños, chopped","qty":2,"unit":"count","item":"jalapeños","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"3 oz Williams chili seasoning","qty":3,"unit":"oz","item":"Williams Original Chili Seasoning","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"2 tbsp minced garlic","qty":2,"unit":"tbsp","item":"garlic","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"12 oz beer","qty":12,"unit":"oz","item":"beer","shop":"other","each_oz":null,"approx":false,"optional":false},{"text":"28 oz diced tomatoes","qty":28,"unit":"oz","item":"diced tomatoes","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"4 oz Hatch green chiles","qty":4,"unit":"oz","item":"green chiles","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"28 oz tomato sauce","qty":28,"unit":"oz","item":"tomato sauce","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"About 1 tbsp stone-ground mustard","qty":1,"unit":"tbsp","item":"stone-ground mustard","shop":"other","each_oz":null,"approx":true,"optional":false},{"text":"8 oz beef broth","qty":8,"unit":"oz","item":"beef broth","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"31 oz Bush's Chili Magic (about two 15.5 oz cans)","qty":31,"unit":"oz","item":"Bush's Chili Magic","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"2 tbsp Pepperbellypete's Zippy Zap","qty":2,"unit":"tbsp","item":"Zippy Zap","shop":"other","each_oz":null,"approx":false,"optional":false}]},{"id":"c2nRvpDw2M8","title":"Chuck Wagon Chili","category":"Beef Chili","summary":"A from-scratch chuck wagon chili with seared cubes of chuck roast and a puree of oven-roasted garlic and peppers.","servings":"","url":"https://www.youtube.com/shorts/c2nRvpDw2M8","ingredients":[{"text":"2 1/2 lb chuck roast, trimmed and cubed","qty":2.5,"unit":"lb","item":"chuck roast","shop":"meat","each_oz":null,"approx":false,"optional":false},{"text":"A couple of tablespoons oil, for searing","qty":2,"unit":"tbsp","item":"oil","shop":"other","each_oz":null,"approx":true,"optional":false},{"text":"1 large yellow onion","qty":1,"unit":"count","item":"onion","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"1 tbsp Pepperbellypete's Zippy Zap","qty":1,"unit":"tbsp","item":"Zippy Zap","shop":"other","each_oz":null,"approx":false,"optional":false},{"text":"Peppers, seeded (type and amount not specified)","qty":null,"unit":null,"item":"peppers, seeded","shop":"other","each_oz":null,"approx":false,"optional":false},{"text":"10 cloves garlic","qty":10,"unit":"clove","item":"garlic","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"A little oil, for roasting the garlic and peppers","qty":null,"unit":null,"item":"oil","shop":"other","each_oz":null,"approx":true,"optional":false},{"text":"1 cup beef stock","qty":1,"unit":"cup","item":"beef broth","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"1/2 tbsp cumin","qty":0.5,"unit":"tbsp","item":"cumin","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"4 cups garden-fresh tomatoes","qty":4,"unit":"cup","item":"garden-fresh tomatoes","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"32 oz tomato sauce","qty":32,"unit":"oz","item":"tomato sauce","shop":"canned","each_oz":null,"approx":false,"optional":false}]},{"id":"yZ9yladKpK0","title":"Competition-Style Hot Dog Chili","category":"Beef Chili","summary":"A smooth, competition-style chili with everything but the sirloin pureed, thickened with oatmeal and refried beans, and meant to be ladled over a hot dog.","servings":"Makes an 8-quart pot","url":"https://www.youtube.com/shorts/yZ9yladKpK0","ingredients":[{"text":"Splash of olive oil","qty":null,"unit":"splash","item":"oil","shop":"other","each_oz":null,"approx":false,"optional":false},{"text":"3 lb ground sirloin (93/7)","qty":3,"unit":"lb","item":"ground sirloin","shop":"meat","each_oz":null,"approx":false,"optional":false},{"text":"About 1 1/2 tbsp Worcestershire sauce","qty":1.5,"unit":"tbsp","item":"Worcestershire sauce","shop":"other","each_oz":null,"approx":true,"optional":false},{"text":"4 oz Hatch green chiles, pureed","qty":4,"unit":"oz","item":"green chiles","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"1 medium yellow onion, pureed","qty":1,"unit":"count","item":"onion","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"2 fresh jalapeños, pureed","qty":2,"unit":"count","item":"jalapeños","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"20 oz fire-roasted Rotel, pureed","qty":20,"unit":"oz","item":"Rotel","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"2 tbsp fresh minced garlic","qty":2,"unit":"tbsp","item":"garlic","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"6 oz tomato paste","qty":6,"unit":"oz","item":"tomato paste","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"3 packets (1 oz each) Williams Original Chili Seasoning","qty":3,"unit":"packet","item":"Williams Original Chili Seasoning","shop":"spices","each_oz":1,"approx":false,"optional":false},{"text":"16 oz beef stock","qty":16,"unit":"oz","item":"beef broth","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"1 oz packet oatmeal","qty":1,"unit":"packet","item":"oatmeal","shop":"other","each_oz":1,"approx":false,"optional":false},{"text":"15 oz refried beans (Pete prefers the packet over the can)","qty":15,"unit":"oz","item":"refried beans","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"About 2 tbsp yellow mustard","qty":2,"unit":"tbsp","item":"mustard","shop":"other","each_oz":null,"approx":true,"optional":false},{"text":"About 2 tbsp Pepperbellypete's Zippy Zap","qty":2,"unit":"tbsp","item":"Zippy Zap","shop":"other","each_oz":null,"approx":true,"optional":false}]},{"id":"oszc3tS3BUE","title":"Cook-Off Chili with Pete's Tweaks","category":"Beef Chili","summary":"The same cook-off chili with a few changes Pete says might help you take first and second place: fire-roasted Rotel, beef broth, Worcestershire, and a little yellow mustard.","servings":"Makes a 10-quart pot","url":"https://www.youtube.com/shorts/oszc3tS3BUE","ingredients":[{"text":"3 lb ground beef","qty":3,"unit":"lb","item":"ground beef","shop":"meat","each_oz":null,"approx":false,"optional":false},{"text":"1 lb hot breakfast sausage (Jimmy Dean Hot)","qty":1,"unit":"lb","item":"breakfast sausage","shop":"meat","each_oz":null,"approx":false,"optional":false},{"text":"About 1 tbsp Worcestershire sauce","qty":1,"unit":"tbsp","item":"Worcestershire sauce","shop":"other","each_oz":null,"approx":true,"optional":false},{"text":"6 oz tomato paste","qty":6,"unit":"oz","item":"tomato paste","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"1 large white onion, chopped","qty":1,"unit":"count","item":"onion","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"2 fresh jalapeños, chopped, seeds and all","qty":2,"unit":"count","item":"jalapeños","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"3 packets (1 oz each) Williams Original Chili Seasoning","qty":3,"unit":"packet","item":"Williams Original Chili Seasoning","shop":"spices","each_oz":1,"approx":false,"optional":false},{"text":"3 cans (10 oz each) fire-roasted Rotel","qty":3,"unit":"can","item":"Rotel","shop":"canned","each_oz":10,"approx":false,"optional":false},{"text":"1 can (15 oz) petite diced tomatoes","qty":1,"unit":"can","item":"diced tomatoes","shop":"canned","each_oz":15,"approx":false,"optional":false},{"text":"1 can (29 oz) tomato sauce","qty":1,"unit":"can","item":"tomato sauce","shop":"canned","each_oz":29,"approx":false,"optional":false},{"text":"1 can (15 oz) beef broth","qty":1,"unit":"can","item":"beef broth","shop":"canned","each_oz":15,"approx":false,"optional":false},{"text":"1 1/2 tbsp fresh minced garlic","qty":1.5,"unit":"tbsp","item":"garlic","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"3 cans (15.5 oz each) Bush's Chili Magic, Campfire Style","qty":3,"unit":"can","item":"Bush's Chili Magic","shop":"canned","each_oz":15.5,"approx":false,"optional":false},{"text":"1 1/2 tbsp yellow mustard","qty":1.5,"unit":"tbsp","item":"mustard","shop":"other","each_oz":null,"approx":false,"optional":false},{"text":"Splash of Pepperbellypete's Zippy Zap (optional, to finish)","qty":null,"unit":"splash","item":"Zippy Zap","shop":"other","each_oz":null,"approx":false,"optional":true}]},{"id":"MrSr7k_60Mo","title":"Crockpot Cook-Off Chili","category":"Beef Chili","summary":"The award-winning cook-off chili adapted for the crockpot. Brown the meats first, then load everything into a 10-quart slow cooker.","servings":"Makes a 10-quart crockpot","url":"https://www.youtube.com/shorts/MrSr7k_60Mo","ingredients":[{"text":"3 lb ground beef (80/20)","qty":3,"unit":"lb","item":"ground beef","shop":"meat","each_oz":null,"approx":false,"optional":false},{"text":"1 lb breakfast sausage","qty":1,"unit":"lb","item":"breakfast sausage","shop":"meat","each_oz":null,"approx":false,"optional":false},{"text":"6 oz tomato paste","qty":6,"unit":"oz","item":"tomato paste","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"1 large onion, chopped","qty":1,"unit":"count","item":"onion","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"2 large fresh jalapeños, chopped","qty":2,"unit":"count","item":"jalapeños","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"4 oz Hatch green chiles","qty":4,"unit":"oz","item":"green chiles","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"2 tbsp fresh minced garlic","qty":2,"unit":"tbsp","item":"garlic","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"44 oz diced tomatoes","qty":44,"unit":"oz","item":"diced tomatoes","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"44 oz tomato sauce","qty":44,"unit":"oz","item":"tomato sauce","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"3 oz Williams Original Chili Seasoning","qty":3,"unit":"oz","item":"Williams Original Chili Seasoning","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"3 cans (15.5 oz each) Bush's Chili Magic, Campfire Style","qty":3,"unit":"can","item":"Bush's Chili Magic","shop":"canned","each_oz":15.5,"approx":false,"optional":false},{"text":"Splash of Pepperbellypete's Zippy Zap (optional, to finish)","qty":null,"unit":"splash","item":"Zippy Zap","shop":"other","each_oz":null,"approx":false,"optional":true}]},{"id":"02Ka_eSlIRk","title":"Hamburger Chili Dog Chili","category":"Beef Chili","summary":"A five-pound pot of hamburger chili with ketchup, mustard, and broth, simmered until it's ready for a chili dog. Pete also posted this same recipe as hamburger chili.","servings":"","url":"https://www.youtube.com/shorts/02Ka_eSlIRk","ingredients":[{"text":"5 lb ground beef","qty":5,"unit":"lb","item":"ground beef","shop":"meat","each_oz":null,"approx":false,"optional":false},{"text":"1 large yellow onion (part of the 'Texas Trinity')","qty":1,"unit":"count","item":"onion","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"3 jalapeños","qty":3,"unit":"count","item":"jalapeños","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"About 6 cloves minced garlic","qty":6,"unit":"clove","item":"garlic","shop":"produce","each_oz":null,"approx":true,"optional":false},{"text":"About 2 tbsp Worcestershire sauce","qty":2,"unit":"tbsp","item":"Worcestershire sauce","shop":"other","each_oz":null,"approx":true,"optional":false},{"text":"1/3 cup chili powder","qty":0.3333,"unit":"cup","item":"chili powder","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"1 tbsp onion powder","qty":1,"unit":"tbsp","item":"onion powder","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"1 tbsp garlic powder","qty":1,"unit":"tbsp","item":"garlic powder","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"1 tbsp salt","qty":1,"unit":"tbsp","item":"salt","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"Black pepper (amount not specified)","qty":null,"unit":null,"item":"black pepper","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"Cumin (amount not specified)","qty":null,"unit":null,"item":"cumin","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"1 bay leaf","qty":1,"unit":"count","item":"bay leaf","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"About 2 tbsp Pepperbellypete's Zippy Zap","qty":2,"unit":"tbsp","item":"Zippy Zap","shop":"other","each_oz":null,"approx":true,"optional":false},{"text":"6 oz tomato paste","qty":6,"unit":"oz","item":"tomato paste","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"15 oz fire-roasted tomatoes","qty":15,"unit":"oz","item":"fire-roasted tomatoes","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"10 oz Rotel","qty":10,"unit":"oz","item":"Rotel","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"32 oz beef broth","qty":32,"unit":"oz","item":"beef broth","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"2 tbsp mustard","qty":2,"unit":"tbsp","item":"mustard","shop":"other","each_oz":null,"approx":false,"optional":false},{"text":"About 1/4 cup ketchup","qty":0.25,"unit":"cup","item":"ketchup","shop":"other","each_oz":null,"approx":true,"optional":false}]},{"id":"ZlOQ3QLOXy0","title":"Homestyle Cook-Off Chili","category":"Beef Chili","summary":"Another cook-off version of Pete's chili, this time with Rotel and beef broth in place of the big cans of tomato sauce, and a longer simmer.","servings":"","url":"https://www.youtube.com/shorts/ZlOQ3QLOXy0","ingredients":[{"text":"3 lb ground beef (80/20)","qty":3,"unit":"lb","item":"ground beef","shop":"meat","each_oz":null,"approx":false,"optional":false},{"text":"1 lb breakfast sausage","qty":1,"unit":"lb","item":"breakfast sausage","shop":"meat","each_oz":null,"approx":false,"optional":false},{"text":"6 oz tomato paste","qty":6,"unit":"oz","item":"tomato paste","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"1 large onion, chopped","qty":1,"unit":"count","item":"onion","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"3 small fresh jalapeños","qty":3,"unit":"count","item":"jalapeños","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"2 tbsp fresh minced garlic","qty":2,"unit":"tbsp","item":"garlic","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"4 oz (1/2 cup) Hatch green chiles","qty":4,"unit":"oz","item":"green chiles","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"3 packets (1 oz each) Williams Original Chili Seasoning","qty":3,"unit":"packet","item":"Williams Original Chili Seasoning","shop":"spices","each_oz":1,"approx":false,"optional":false},{"text":"About 1 tbsp Pepperbellypete's Flavor-Time Southern Seasoning (his own blend)","qty":1,"unit":"tbsp","item":"Flavor-Time Southern Seasoning","shop":"spices","each_oz":null,"approx":true,"optional":false},{"text":"28 oz diced tomatoes","qty":28,"unit":"oz","item":"diced tomatoes","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"2 cans (10 oz each) Rotel","qty":2,"unit":"can","item":"Rotel","shop":"canned","each_oz":10,"approx":false,"optional":false},{"text":"28 oz beef broth","qty":28,"unit":"oz","item":"beef broth","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"3 cans (15.5 oz each) Bush's Chili Magic","qty":3,"unit":"can","item":"Bush's Chili Magic","shop":"canned","each_oz":15.5,"approx":false,"optional":false}]},{"id":"Tuni1vFZcsU","title":"Pete's Favorite Chili","category":"Beef Chili","summary":"The chili Pete calls his favorite: beef and pan sausage with Rotel, ranch-style beans, and a can of Chili Magic.","servings":"","url":"https://www.youtube.com/shorts/Tuni1vFZcsU","ingredients":[{"text":"2 lb ground beef","qty":2,"unit":"lb","item":"ground beef","shop":"meat","each_oz":null,"approx":false,"optional":false},{"text":"1 lb breakfast or pan sausage","qty":1,"unit":"lb","item":"breakfast sausage","shop":"meat","each_oz":null,"approx":false,"optional":false},{"text":"1 onion, chopped","qty":1,"unit":"count","item":"onion","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"2 jalapeños, chopped","qty":2,"unit":"count","item":"jalapeños","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"About 2 tbsp Worcestershire sauce","qty":2,"unit":"tbsp","item":"Worcestershire sauce","shop":"other","each_oz":null,"approx":true,"optional":false},{"text":"6 oz tomato paste","qty":6,"unit":"oz","item":"tomato paste","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"30 oz Rotel","qty":30,"unit":"oz","item":"Rotel","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"1 tbsp fresh minced garlic","qty":1,"unit":"tbsp","item":"garlic","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"2 packets (1 oz each) chili seasoning (your favorite)","qty":2,"unit":"packet","item":"chili seasoning","shop":"spices","each_oz":1,"approx":false,"optional":false},{"text":"1 can (8 oz) tomato sauce","qty":1,"unit":"can","item":"tomato sauce","shop":"canned","each_oz":8,"approx":false,"optional":false},{"text":"1 can Bush's Chili Magic","qty":1,"unit":"can","item":"Bush's Chili Magic","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"1 can (26 oz) ranch-style beans","qty":1,"unit":"can","item":"ranch-style beans","shop":"canned","each_oz":26,"approx":false,"optional":false},{"text":"About 2 tbsp Pepperbellypete's Zippy Zap","qty":2,"unit":"tbsp","item":"Zippy Zap","shop":"other","each_oz":null,"approx":true,"optional":false},{"text":"24 oz beef broth","qty":24,"unit":"oz","item":"beef broth","shop":"canned","each_oz":null,"approx":false,"optional":false}]},{"id":"2zUAKSz7lO8","title":"Ranch Chicken Chili","category":"Chicken Chili","summary":"A quick chicken chili with ranch and taco seasoning, black beans, ranch-style beans, corn, and cream cheese, served over tortilla chips.","servings":"","url":"https://www.youtube.com/shorts/2zUAKSz7lO8","ingredients":[{"text":"32 oz chicken broth","qty":32,"unit":"oz","item":"chicken broth","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"1 large onion","qty":1,"unit":"count","item":"onion","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"3 jalapeños","qty":3,"unit":"count","item":"jalapeños","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"5 cloves garlic, minced","qty":5,"unit":"clove","item":"garlic","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"28 oz crushed tomatoes","qty":28,"unit":"oz","item":"crushed tomatoes","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"10 oz Rotel","qty":10,"unit":"oz","item":"Rotel","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"15 oz whole-kernel corn","qty":15,"unit":"oz","item":"whole-kernel corn","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"15 oz black beans","qty":15,"unit":"oz","item":"black beans","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"15 oz ranch-style beans","qty":15,"unit":"oz","item":"ranch-style beans","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"1 packet (1 oz) taco seasoning","qty":1,"unit":"packet","item":"taco seasoning","shop":"spices","each_oz":1,"approx":false,"optional":false},{"text":"1 packet (1 oz) ranch seasoning","qty":1,"unit":"packet","item":"ranch seasoning","shop":"spices","each_oz":1,"approx":false,"optional":false},{"text":"1 block (8 oz) cream cheese","qty":1,"unit":"block","item":"cream cheese","shop":"dairy","each_oz":8,"approx":false,"optional":false},{"text":"1 whole rotisserie chicken, chopped","qty":1,"unit":"count","item":"rotisserie chicken","shop":"meat","each_oz":null,"approx":false,"optional":false},{"text":"About 2 tbsp Pepperbellypete's Zippy Zap","qty":2,"unit":"tbsp","item":"Zippy Zap","shop":"other","each_oz":null,"approx":true,"optional":false},{"text":"Tortilla chips, for serving","qty":null,"unit":null,"item":"tortilla chips","shop":"other","each_oz":null,"approx":false,"optional":false},{"text":"Shredded cheese, for topping (amount not specified)","qty":null,"unit":null,"item":"cheese","shop":"dairy","each_oz":null,"approx":false,"optional":false},{"text":"Habanero sauce, to taste (optional)","qty":null,"unit":null,"item":"habanero sauce","shop":"other","each_oz":null,"approx":false,"optional":true}]},{"id":"cabp5XCZeT4","title":"White Chicken Chili","category":"Chicken Chili","summary":"A crockpot white chicken chili with a rotisserie garlic-herb chicken, white kidney beans, roasted Hatch chiles, and cream cheese.","servings":"","url":"https://www.youtube.com/shorts/cabp5XCZeT4","ingredients":[{"text":"1 fully cooked, deboned garlic-herb rotisserie chicken (Pete uses a grocery-store roasted chicken)","qty":1,"unit":"count","item":"rotisserie chicken","shop":"meat","each_oz":null,"approx":false,"optional":false},{"text":"1 large onion, chopped","qty":1,"unit":"count","item":"onion","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"1 can (28 oz) fire-roasted tomatoes","qty":1,"unit":"can","item":"fire-roasted tomatoes","shop":"canned","each_oz":28,"approx":false,"optional":false},{"text":"12 oz roasted Hatch green chiles","qty":12,"unit":"oz","item":"green chiles","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"3 cans (15.5 oz each) white kidney beans, rinsed","qty":3,"unit":"can","item":"white kidney beans","shop":"canned","each_oz":15.5,"approx":false,"optional":false},{"text":"1 tsp dried oregano","qty":1,"unit":"tsp","item":"dried oregano","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"1 tsp ground coriander","qty":1,"unit":"tsp","item":"ground coriander","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"1 tsp ground cumin","qty":1,"unit":"tsp","item":"cumin","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"1 tsp ground black pepper","qty":1,"unit":"tsp","item":"black pepper","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"1 tbsp chili-lime adobo seasoning","qty":1,"unit":"tbsp","item":"chili-lime adobo seasoning","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"1 tbsp garlic powder","qty":1,"unit":"tbsp","item":"garlic powder","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"1 tbsp smoked paprika","qty":1,"unit":"tbsp","item":"smoked paprika","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"1 block (8 oz) cream cheese","qty":1,"unit":"block","item":"cream cheese","shop":"dairy","each_oz":8,"approx":false,"optional":false},{"text":"4 ears fresh corn, kernels cut off (or 1 can of corn)","qty":4,"unit":"ear","item":"fresh corn","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"About 1/2 cup fresh chopped cilantro","qty":0.5,"unit":"cup","item":"cilantro","shop":"produce","each_oz":null,"approx":true,"optional":false},{"text":"Juice of 1 whole lime","qty":1,"unit":"count","item":"lime","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"1 packet (1.27 oz) chicken fajita seasoning","qty":1,"unit":"packet","item":"chicken fajita seasoning","shop":"spices","each_oz":1.27,"approx":false,"optional":false},{"text":"48 oz chicken broth","qty":48,"unit":"oz","item":"chicken broth","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"Splash of hot sauce, to taste (Pete adds 'Heat Blast')","qty":null,"unit":"splash","item":"hot sauce","shop":"other","each_oz":null,"approx":false,"optional":false}]},{"id":"u2t5hFc9pnA","title":"Green Chile Stew","category":"Green Chili","summary":"A Hatch green chile stew with pork shoulder, hot sausage, potatoes, and ranch seasoning, simmered until it's thick enough to scoop with pork rinds.","servings":"","url":"https://www.youtube.com/shorts/u2t5hFc9pnA","ingredients":[{"text":"2 lb pork shoulder, chopped","qty":2,"unit":"lb","item":"pork shoulder","shop":"meat","each_oz":null,"approx":false,"optional":false},{"text":"1 lb hot breakfast sausage","qty":1,"unit":"lb","item":"breakfast sausage","shop":"meat","each_oz":null,"approx":false,"optional":false},{"text":"About 1 tbsp Pepperbellypete's Flavor-Time Southern Seasoning (his own blend)","qty":1,"unit":"tbsp","item":"Flavor-Time Southern Seasoning","shop":"spices","each_oz":null,"approx":true,"optional":false},{"text":"About 1/2 tbsp black pepper","qty":0.5,"unit":"tbsp","item":"black pepper","shop":"spices","each_oz":null,"approx":true,"optional":false},{"text":"1 tbsp garlic powder","qty":1,"unit":"tbsp","item":"garlic powder","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"About 1 tsp ground cumin","qty":1,"unit":"tsp","item":"cumin","shop":"spices","each_oz":null,"approx":true,"optional":false},{"text":"1 small onion, chopped","qty":1,"unit":"count","item":"onion","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"2 tbsp fresh minced garlic","qty":2,"unit":"tbsp","item":"garlic","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"32 oz roasted, peeled, and pureed Hatch green chiles","qty":32,"unit":"oz","item":"green chiles","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"4 medium potatoes, chopped","qty":4,"unit":"count","item":"potatoes","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"1 packet (1 oz) ranch seasoning","qty":1,"unit":"packet","item":"ranch seasoning","shop":"spices","each_oz":1,"approx":false,"optional":false},{"text":"64 oz chicken broth (two 32 oz containers)","qty":64,"unit":"oz","item":"chicken broth","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"Chili-cheese pork rinds, for serving (optional)","qty":null,"unit":null,"item":"chili-cheese pork rinds","shop":"other","each_oz":null,"approx":false,"optional":true}]},{"id":"hwaPgFfUF5U","title":"Ranch Green Chili","category":"Green Chili","summary":"A ranch-seasoned green chili with beef, sausage, a pound of 15-bean mix, potatoes, and a splash of beer.","servings":"","url":"https://www.youtube.com/shorts/hwaPgFfUF5U","ingredients":[{"text":"1 large onion, chopped","qty":1,"unit":"count","item":"onion","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"2 tbsp Worcestershire sauce","qty":2,"unit":"tbsp","item":"Worcestershire sauce","shop":"other","each_oz":null,"approx":false,"optional":false},{"text":"2 lb ground beef","qty":2,"unit":"lb","item":"ground beef","shop":"meat","each_oz":null,"approx":false,"optional":false},{"text":"1 lb breakfast sausage","qty":1,"unit":"lb","item":"breakfast sausage","shop":"meat","each_oz":null,"approx":false,"optional":false},{"text":"1 tbsp ancho chili powder","qty":1,"unit":"tbsp","item":"ancho chili powder","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"Garlic powder (amount not clearly specified; possibly 1 tbsp)","qty":null,"unit":null,"item":"garlic powder","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"Black pepper (amount not clearly specified; possibly 1 tbsp)","qty":null,"unit":null,"item":"black pepper","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"1 tsp cumin","qty":1,"unit":"tsp","item":"cumin","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"1 can (15 oz) fire-roasted tomatoes","qty":1,"unit":"can","item":"fire-roasted tomatoes","shop":"canned","each_oz":15,"approx":false,"optional":false},{"text":"16 oz green chiles","qty":16,"unit":"oz","item":"green chiles","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"1 packet (1 oz) ranch seasoning","qty":1,"unit":"packet","item":"ranch seasoning","shop":"spices","each_oz":1,"approx":false,"optional":false},{"text":"1 lb bag 15-bean dried beans","qty":1,"unit":"lb","item":"15-bean dried beans","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"32 oz chicken broth","qty":32,"unit":"oz","item":"chicken broth","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"3 medium potatoes, chopped","qty":3,"unit":"count","item":"potatoes","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"2 tbsp garlic","qty":2,"unit":"tbsp","item":"garlic","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"1 tbsp tomato-chicken bouillon","qty":1,"unit":"tbsp","item":"tomato-chicken bouillon","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"2 tbsp Pepperbellypete's Zippy Zap","qty":2,"unit":"tbsp","item":"Zippy Zap","shop":"other","each_oz":null,"approx":false,"optional":false},{"text":"12 oz beer","qty":12,"unit":"oz","item":"beer","shop":"other","each_oz":null,"approx":false,"optional":false},{"text":"Crackers, for serving","qty":null,"unit":null,"item":"crackers","shop":"other","each_oz":null,"approx":false,"optional":false}]},{"id":"6OvXKLDQe_Q","title":"Chili Cheese Tots Casserole","category":"Chili Mac & Casserole","summary":"A layered chili casserole with seasoned ground meat, beans, and cornbread mix poked down into the pot, then lined with tater tots and finished with cheese.","servings":"","url":"https://www.youtube.com/shorts/6OvXKLDQe_Q","ingredients":[{"text":"2 lb ground meat","qty":2,"unit":"lb","item":"ground beef","shop":"meat","each_oz":null,"approx":false,"optional":false},{"text":"1 tsp cayenne pepper","qty":1,"unit":"tsp","item":"cayenne pepper","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"1 tsp cumin","qty":1,"unit":"tsp","item":"cumin","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"1 tbsp black pepper","qty":1,"unit":"tbsp","item":"black pepper","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"1 tbsp chili powder","qty":1,"unit":"tbsp","item":"chili powder","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"1 medium onion","qty":1,"unit":"count","item":"onion","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"1 fresh jalapeño","qty":1,"unit":"count","item":"jalapeños","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"About 4 cloves minced garlic","qty":4,"unit":"clove","item":"garlic","shop":"produce","each_oz":null,"approx":true,"optional":false},{"text":"1 can (10 oz) fire-roasted Rotel","qty":1,"unit":"can","item":"Rotel","shop":"canned","each_oz":10,"approx":false,"optional":false},{"text":"1 can (15 oz) beans (Pete uses pinto; use whatever you like)","qty":1,"unit":"can","item":"beans","shop":"canned","each_oz":15,"approx":false,"optional":false},{"text":"2 1/2 cups cornbread mix (Pete uses a unsweetened mix; use whatever you like)","qty":2.5,"unit":"cup","item":"cornbread mix","shop":"other","each_oz":null,"approx":false,"optional":false},{"text":"Tater tots, enough to line the top (amount not specified)","qty":null,"unit":null,"item":"tater tots","shop":"other","each_oz":null,"approx":false,"optional":false},{"text":"Cheese, for topping (amount not specified)","qty":null,"unit":null,"item":"cheese","shop":"dairy","each_oz":null,"approx":false,"optional":false}]},{"id":"UIs_wUVmFBQ","title":"Chili Mac & Cheese","category":"Chili Mac & Casserole","summary":"A one-pot chili mac: seasoned ground meat, crushed tomatoes, chili beans, and rotini that cook right in the sauce, finished with cheese.","servings":"","url":"https://www.youtube.com/shorts/UIs_wUVmFBQ","ingredients":[{"text":"Splash of olive oil","qty":null,"unit":"splash","item":"oil","shop":"other","each_oz":null,"approx":false,"optional":false},{"text":"2 lb ground meat","qty":2,"unit":"lb","item":"ground beef","shop":"meat","each_oz":null,"approx":false,"optional":false},{"text":"1 onion","qty":1,"unit":"count","item":"onion","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"1 bell pepper","qty":1,"unit":"count","item":"bell pepper","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"1 fresh jalapeño","qty":1,"unit":"count","item":"jalapeños","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"1 tsp cumin","qty":1,"unit":"tsp","item":"cumin","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"1 tsp cayenne pepper","qty":1,"unit":"tsp","item":"cayenne pepper","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"2 tsp black pepper","qty":2,"unit":"tsp","item":"black pepper","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"1 tsp garlic salt","qty":1,"unit":"tsp","item":"garlic salt","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"2 tsp smoked paprika","qty":2,"unit":"tsp","item":"smoked paprika","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"2 tsp chili powder","qty":2,"unit":"tsp","item":"chili powder","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"28 oz crushed tomatoes","qty":28,"unit":"oz","item":"crushed tomatoes","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"3 cups pasta (Pete uses rotini)","qty":3,"unit":"cup","item":"pasta","shop":"other","each_oz":null,"approx":false,"optional":false},{"text":"2 cans (15 oz each) chili beans","qty":2,"unit":"can","item":"chili beans","shop":"canned","each_oz":15,"approx":false,"optional":false},{"text":"1 can (15 oz) beef broth","qty":1,"unit":"can","item":"beef broth","shop":"canned","each_oz":15,"approx":false,"optional":false},{"text":"8 oz cheese","qty":8,"unit":"oz","item":"cheese","shop":"dairy","each_oz":null,"approx":false,"optional":false}]},{"id":"zccWmMHBBjk","title":"Poor Man's Chili Mac","category":"Chili Mac & Casserole","summary":"An old-school, tight-budget chili mac: a tomato-chili beef sauce simmered with sink water, then tossed with jumbo elbows and a little cheese.","servings":"","url":"https://www.youtube.com/shorts/zccWmMHBBjk","ingredients":[{"text":"2 lb ground beef","qty":2,"unit":"lb","item":"ground beef","shop":"meat","each_oz":null,"approx":false,"optional":false},{"text":"3 oz tomato paste","qty":3,"unit":"oz","item":"tomato paste","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"1 medium onion, chopped","qty":1,"unit":"count","item":"onion","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"1 tbsp garlic powder","qty":1,"unit":"tbsp","item":"garlic powder","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"1 tbsp chili powder","qty":1,"unit":"tbsp","item":"chili powder","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"1/2 tbsp cumin","qty":0.5,"unit":"tbsp","item":"cumin","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"Ground red pepper (amount not specified)","qty":null,"unit":null,"item":"ground red pepper","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"Smoked paprika (amount not specified)","qty":null,"unit":null,"item":"smoked paprika","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"3 1/2 cups water (Pete calls it '117-degree clear sink water')","qty":3.5,"unit":"cup","item":"water","shop":"other","each_oz":null,"approx":false,"optional":false},{"text":"1 can (14.5 oz) chili-style tomatoes","qty":1,"unit":"can","item":"chili-style tomatoes","shop":"canned","each_oz":14.5,"approx":false,"optional":false},{"text":"Salt, to taste","qty":null,"unit":null,"item":"salt","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"12 oz jumbo elbow noodles","qty":12,"unit":"oz","item":"jumbo elbow noodles","shop":"other","each_oz":null,"approx":false,"optional":false},{"text":"Splash of habanero sauce (optional)","qty":null,"unit":"splash","item":"habanero sauce","shop":"other","each_oz":null,"approx":false,"optional":true},{"text":"Cheese, to taste (amount not specified)","qty":null,"unit":null,"item":"cheese","shop":"dairy","each_oz":null,"approx":false,"optional":false}]},{"id":"vfLzYqXfOb0","title":"White Chicken Chili Mac & Cheese","category":"Chili Mac & Casserole","summary":"A baked white-chicken chili mac with a Hatch chile and Rotel cheese sauce, rotisserie chicken, and a Colby Jack topping.","servings":"","url":"https://www.youtube.com/shorts/vfLzYqXfOb0","ingredients":[{"text":"1 stick unsalted butter","qty":1,"unit":"stick","item":"unsalted butter","shop":"dairy","each_oz":4,"approx":false,"optional":false},{"text":"1 medium onion, chopped","qty":1,"unit":"count","item":"onion","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"1 fresh jalapeño, chopped","qty":1,"unit":"count","item":"jalapeños","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"4 oz Hatch green chiles","qty":4,"unit":"oz","item":"green chiles","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"10.5 oz fire-roasted Rotel","qty":10.5,"unit":"oz","item":"Rotel","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"1 tbsp fresh minced garlic","qty":1,"unit":"tbsp","item":"garlic","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"1 tbsp chili powder","qty":1,"unit":"tbsp","item":"chili powder","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"Black pepper (amount not specified)","qty":null,"unit":null,"item":"black pepper","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"Garlic powder (amount not specified)","qty":null,"unit":null,"item":"garlic powder","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"About 1 tbsp Worcestershire sauce","qty":1,"unit":"tbsp","item":"Worcestershire sauce","shop":"other","each_oz":null,"approx":true,"optional":false},{"text":"32 oz white American cheese (from the grocery store deli)","qty":32,"unit":"oz","item":"white American cheese","shop":"dairy","each_oz":null,"approx":false,"optional":false},{"text":"12 oz evaporated milk","qty":12,"unit":"oz","item":"evaporated milk","shop":"dairy","each_oz":null,"approx":false,"optional":false},{"text":"1 rotisserie chicken, deboned and chopped","qty":1,"unit":"count","item":"rotisserie chicken","shop":"meat","each_oz":null,"approx":false,"optional":false},{"text":"1 lb macaroni, boiled 8 minutes (al dente)","qty":1,"unit":"lb","item":"macaroni","shop":"other","each_oz":null,"approx":false,"optional":false},{"text":"Colby Jack cheese, for topping (amount not specified)","qty":null,"unit":null,"item":"Colby Jack cheese","shop":"dairy","each_oz":null,"approx":false,"optional":false}]},{"id":"fcikYSCO6OA","title":"Chili Cheese Dip","category":"Dip","summary":"A party chili-cheese dip with seasoned beef, Hatch chiles, and a trio of cheeses melted with evaporated milk and cream cheese.","servings":"","url":"https://www.youtube.com/shorts/fcikYSCO6OA","ingredients":[{"text":"1 1/2 lb ground beef","qty":1.5,"unit":"lb","item":"ground beef","shop":"meat","each_oz":null,"approx":false,"optional":false},{"text":"1 1/2 oz your favorite chili seasoning","qty":1.5,"unit":"oz","item":"chili seasoning","shop":"spices","each_oz":null,"approx":false,"optional":false},{"text":"1 small onion, chopped","qty":1,"unit":"count","item":"onion","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"2 fresh jalapeños, diced","qty":2,"unit":"count","item":"jalapeños","shop":"produce","each_oz":null,"approx":false,"optional":false},{"text":"4 oz Hatch green chiles","qty":4,"unit":"oz","item":"green chiles","shop":"canned","each_oz":null,"approx":false,"optional":false},{"text":"1 can (15 oz) petite diced tomatoes","qty":1,"unit":"can","item":"diced tomatoes","shop":"canned","each_oz":15,"approx":false,"optional":false},{"text":"About 1 tbsp ancho chili powder (or regular chili powder)","qty":1,"unit":"tbsp","item":"ancho chili powder","shop":"spices","each_oz":null,"approx":true,"optional":false},{"text":"About 1 tbsp Pepperbellypete's Zippy Zap","qty":1,"unit":"tbsp","item":"Zippy Zap","shop":"other","each_oz":null,"approx":true,"optional":false},{"text":"16 oz pepper jack cheese","qty":16,"unit":"oz","item":"pepper jack cheese","shop":"dairy","each_oz":null,"approx":false,"optional":false},{"text":"16 oz medium cheddar cheese","qty":16,"unit":"oz","item":"medium cheddar cheese","shop":"dairy","each_oz":null,"approx":false,"optional":false},{"text":"16 oz sharp white cheddar cheese","qty":16,"unit":"oz","item":"sharp white cheddar cheese","shop":"dairy","each_oz":null,"approx":false,"optional":false},{"text":"12 oz evaporated milk","qty":12,"unit":"oz","item":"evaporated milk","shop":"dairy","each_oz":null,"approx":false,"optional":false},{"text":"8 oz cream cheese","qty":8,"unit":"oz","item":"cream cheese","shop":"dairy","each_oz":null,"approx":false,"optional":false}]}];
+/* Shopping-list merge + weekly pick. Works in the browser and in Node. */
+(function (root) {
+  "use strict";
+
+  var LIQUIDS = {
+    "beef broth": 1, "chicken broth": 1, "beer": 1, "evaporated milk": 1,
+    "water": 1, "oil": 1, "ketchup": 1, "Worcestershire sauce": 1,
+    "hot sauce": 1, "habanero sauce": 1, "Zippy Zap": 1
+  };
+
+  var SHOP_ORDER = ["meat", "produce", "canned", "dairy", "spices", "other"];
+  var SHOP_LABEL = {
+    meat: "Meat",
+    produce: "Produce",
+    canned: "Canned & jarred",
+    dairy: "Dairy",
+    spices: "Spices & seasonings",
+    other: "Other"
+  };
+
+  var PLURAL = {
+    "onion": "onions",
+    "jalapeños": "jalapeños",
+    "rotisserie chicken": "rotisserie chickens",
+    "lime": "limes",
+    "potatoes": "potatoes",
+    "bay leaf": "bay leaves",
+    "bell pepper": "bell peppers",
+    "fresh corn": "fresh corn"
+  };
+
+  function isLiquid(item) { return !!LIQUIDS[item]; }
+
+  function formatNum(n) {
+    if (n == null || !isFinite(n)) return "";
+    var sign = n < 0 ? "-" : "";
+    n = Math.abs(n);
+    var whole = Math.floor(n + 1e-9);
+    var frac = n - whole;
+    if (frac < 1e-6) return sign + String(whole);
+    var dens = [2, 3, 4, 8, 16];
+    var bestN = 0, bestD = 1, bestE = 1;
+    for (var i = 0; i < dens.length; i++) {
+      var d = dens[i];
+      var numer = Math.round(frac * d);
+      var e = Math.abs(frac - numer / d);
+      if (numer > 0 && numer < d && e < bestE - 1e-12) {
+        bestN = numer; bestD = d; bestE = e;
+      }
+      if (numer === d && e < 1e-6) return sign + String(whole + 1);
+    }
+    if (bestE < 1e-6) {
+      return sign + (whole ? whole + " " : "") + bestN + "/" + bestD;
+    }
+    var r = Math.round(n * 100) / 100;
+    if (Math.abs(r - Math.round(r)) < 1e-6) return sign + String(Math.round(r));
+    var r2 = Math.round(n * 10) / 10;
+    if (Math.abs(n - r2) < 1e-6) return sign + String(r2);
+    return sign + String(r);
+  }
+
+  function isTidy(value, dens) {
+    for (var i = 0; i < dens.length; i++) {
+      var d = dens[i];
+      var n = Math.round(value * d);
+      if (Math.abs(value - n / d) < 1e-6) return n / d;
+    }
+    return null;
+  }
+
+  function formatOz(oz) {
+    return formatNum(oz) + " oz";
+  }
+
+  function formatLb(oz) {
+    var lb = Math.floor((oz + 1e-9) / 16);
+    var rem = Math.round((oz - lb * 16) * 1000) / 1000;
+    if (rem < 1e-6) rem = 0;
+    if (lb && rem) return formatNum(lb) + " lb " + formatNum(rem) + " oz";
+    if (lb) return formatNum(lb) + " lb";
+    return formatNum(oz) + " oz";
+  }
+
+  function formatTsp(tsp) {
+    if (tsp <= 0) return "";
+    var cup = tsp / 48;
+    if (cup >= 0.25 - 1e-9) {
+      var niceCup = isTidy(cup, [2, 3, 4, 8]);
+      if (niceCup != null) return formatNum(niceCup) + (niceCup <= 1 ? " cup" : " cups");
+    }
+    var tbsp = tsp / 3;
+    // Halves and quarters of a tablespoon only — never "1/3 tbsp" for a teaspoon.
+    var niceTbsp = isTidy(tbsp, [2, 4]);
+    if (niceTbsp != null && niceTbsp >= 0.5) return formatNum(niceTbsp) + " tbsp";
+    var wholeTbsp = Math.floor(tsp / 3 + 1e-9);
+    var rem = Math.round((tsp - wholeTbsp * 3) * 1000) / 1000;
+    if (rem < 1e-6) rem = 0;
+    if (wholeTbsp && rem) return formatNum(wholeTbsp) + " tbsp + " + formatNum(rem) + " tsp";
+    if (wholeTbsp) return formatNum(wholeTbsp) + " tbsp";
+    return formatNum(tsp) + " tsp";
+  }
+
+  function family(ing) {
+    var u = ing.unit;
+    if (ing.each_oz && (u === "can" || u === "packet" || u === "block" || u === "stick")) {
+      return isLiquid(ing.item) ? "volume" : "weight";
+    }
+    if (u === "lb" || u === "oz") return isLiquid(ing.item) ? "volume" : "weight";
+    if (u === "tsp" || u === "tbsp" || u === "cup") return "volume";
+    if (u === "can" || u === "packet" || u === "clove" || u === "count" ||
+        u === "ear" || u === "splash" || u === "bag" || u === "stick" || u === "block") {
+      return u;
+    }
+    return "none";
+  }
+
+  function toBase(ing, fam) {
+    var q = Number(ing.qty);
+    if (!isFinite(q)) return 0;
+    var u = ing.unit;
+    if (fam === "weight") {
+      if (ing.each_oz && (u === "can" || u === "packet" || u === "block" || u === "stick")) {
+        return q * Number(ing.each_oz);
+      }
+      if (u === "lb") return q * 16;
+      if (u === "oz") return q;
+    }
+    if (fam === "volume") {
+      if (u === "tsp") return q;
+      if (u === "tbsp") return q * 3;
+      if (u === "cup") return q * 48;
+      if (u === "oz") return q * 6; // fl oz → tsp
+      if (ing.each_oz && (u === "can" || u === "packet" || u === "block")) {
+        return q * Number(ing.each_oz) * 6;
+      }
+    }
+    return q;
+  }
+
+  function unitWord(unit, qty) {
+    var map = {
+      ear: ["ear", "ears"], clove: ["clove", "cloves"], can: ["can", "cans"],
+      packet: ["packet", "packets"], bag: ["bag", "bags"], stick: ["stick", "sticks"],
+      block: ["block", "blocks"]
+    };
+    if (!map[unit]) return unit || "";
+    return qty === 1 ? map[unit][0] : map[unit][1];
+  }
+
+  function itemWord(item, fam, qty) {
+    if (fam === "count" && qty !== 1) return PLURAL[item] || (item + "s");
+    return item;
+  }
+
+  function qtyPhrase(fam, amount, item, shop, parts) {
+    if (fam === "weight") return formatWeight(amount, item, shop, parts);
+    if (fam === "volume") return formatTsp(amount);
+    if (fam === "count") return formatNum(amount);
+    if (fam === "splash") return "a splash";
+    if (fam === "none") return "some, to taste";
+    return formatNum(amount) + " " + unitWord(fam, amount);
+  }
+
+  function formatWeight(oz, item, shop, parts) {
+    parts = parts || [];
+    var weightParts = parts.filter(function (p) { return family(p) === "weight"; });
+    var sized = weightParts.filter(function (p) { return p.each_oz; });
+    var unsized = weightParts.filter(function (p) { return !p.each_oz; });
+    // Prefer a can/packet count when every sized part shares a size and ounces divide evenly.
+    if (sized.length) {
+      var each = Number(sized[0].each_oz);
+      var same = sized.every(function (p) { return Number(p.each_oz) === each; });
+      var u0 = sized[0].unit === "packet" ? "packet" : (sized[0].unit === "block" ? "block" : "can");
+      var sameU = sized.every(function (p) {
+        var u = p.unit === "packet" ? "packet" : (p.unit === "block" ? "block" : "can");
+        return u === u0;
+      });
+      if (same && sameU && each) {
+        var unsizedOz = 0;
+        unsized.forEach(function (p) { unsizedOz += toBase(p, "weight"); });
+        if (unsizedOz && Math.abs((unsizedOz / each) - Math.round(unsizedOz / each)) < 1e-6) {
+          unsizedOz = 0; // fold exact multiples of the can size into the can count
+        }
+        var nCans = (oz - unsizedOz) / each;
+        if (Math.abs(nCans - Math.round(nCans)) < 1e-6 && unsizedOz < 1e-9) {
+          return formatNum(Math.round(nCans)) + " " + unitWord(u0, Math.round(nCans));
+        }
+      }
+    }
+    if (shop === "meat") return formatLb(oz);
+    return formatOz(oz);
+  }
+
+  function mergeIngredients(selected) {
+    /* selected: [{id, title, ingredients:[{text,qty,unit,item,shop,each_oz,approx,optional}]}] */
+    var groups = {};
+    selected.forEach(function (recipe) {
+      (recipe.ingredients || []).forEach(function (ing) {
+        var key = ing.item;
+        if (!groups[key]) {
+          groups[key] = { item: ing.item, shop: ing.shop || "other", parts: [], sources: [], optional: true };
+        }
+        groups[key].parts.push(Object.assign({ _title: recipe.title, _id: recipe.id }, ing));
+        if (groups[key].sources.indexOf(recipe.title) === -1) {
+          groups[key].sources.push(recipe.title);
+        }
+        if (!ing.optional) groups[key].optional = false;
+      });
+    });
+
+    var rows = Object.keys(groups).map(function (key) {
+      var g = groups[key];
+      var buckets = {};
+      var approx = false;
+      g.parts.forEach(function (ing) {
+        var fam = family(ing);
+        if (ing.approx) approx = true;
+        if (fam === "none" || ing.qty == null && fam !== "splash") {
+          if (ing.unit === "splash") fam = "splash";
+          else fam = "none";
+        }
+        if (!buckets[fam]) buckets[fam] = { amount: 0, n: 0 };
+        if (fam === "none" || fam === "splash") {
+          buckets[fam].n += 1;
+        } else {
+          buckets[fam].amount += toBase(ing, fam);
+          buckets[fam].n += 1;
+        }
+      });
+
+      var bits = [];
+      var order = ["weight", "volume", "can", "packet", "clove", "count", "ear", "stick", "block", "bag", "splash", "none"];
+      var primaryFam = null;
+      order.forEach(function (fam) {
+        if (!buckets[fam]) return;
+        if (!primaryFam && fam !== "splash" && fam !== "none") primaryFam = fam;
+        bits.push(qtyPhrase(fam, buckets[fam].amount, g.item, g.shop, g.parts));
+      });
+
+      var line;
+      if (bits.length === 1 && buckets.splash && !buckets.none && Object.keys(buckets).length === 1) {
+        line = "a splash of " + g.item;
+      } else if (bits.length === 1 && buckets.none && Object.keys(buckets).length === 1) {
+        line = g.item + ", to taste";
+      } else if (bits.length === 1) {
+        var name = itemWord(g.item, primaryFam, buckets[primaryFam] ? buckets[primaryFam].amount : 1);
+        line = bits[0] + " " + name;
+      } else {
+        line = g.item + ": " + bits.join(" + ");
+      }
+      if (g.optional) line += " (optional)";
+      if (approx && !/^a splash/.test(line) && !/, to taste$/.test(line)) {
+        /* leave unmarked; individual "About" amounts already summed */
+      }
+      return {
+        item: g.item,
+        shop: g.shop,
+        line: line.replace(/\s+/g, " ").trim(),
+        sources: g.sources,
+        optional: g.optional
+      };
+    });
+
+    rows.sort(function (a, b) {
+      var ia = SHOP_ORDER.indexOf(a.shop);
+      var ib = SHOP_ORDER.indexOf(b.shop);
+      if (ia < 0) ia = 99;
+      if (ib < 0) ib = 99;
+      if (ia !== ib) return ia - ib;
+      return a.item.toLowerCase().localeCompare(b.item.toLowerCase());
+    });
+    return rows;
+  }
+
+  function groupedList(rows) {
+    var out = [];
+    var cur = null;
+    rows.forEach(function (row) {
+      if (!cur || cur.shop !== row.shop) {
+        cur = { shop: row.shop, label: SHOP_LABEL[row.shop] || row.shop, items: [] };
+        out.push(cur);
+      }
+      cur.items.push(row);
+    });
+    return out;
+  }
+
+  function listAsText(selected, rows) {
+    var titles = selected.map(function (r) { return r.title; });
+    var lines = ["Shopping list", titles.join(", "), ""];
+    groupedList(rows).forEach(function (g) {
+      lines.push(g.label);
+      g.items.forEach(function (row) {
+        lines.push("- " + row.line + "  (" + row.sources.join("; ") + ")");
+      });
+      lines.push("");
+    });
+    return lines.join("\n").trim() + "\n";
+  }
+
+  // Pantry staples get little or no weight in similar-recipe scoring.
+  var STAPLES = {
+    "salt": 1, "black pepper": 1, "oil": 1, "chili powder": 1, "cumin": 1,
+    "garlic powder": 1, "onion powder": 1, "smoked paprika": 1, "cayenne pepper": 1,
+    "dried oregano": 1, "ground coriander": 1, "bay leaf": 1, "garlic salt": 1,
+    "ground red pepper": 1, "ancho chili powder": 1, "water": 1
+  };
+
+  var DISPLAY_ITEM = {
+    "green chiles": "Hatch chiles"
+  };
+
+  function displayItem(name) {
+    return DISPLAY_ITEM[name] || name;
+  }
+
+  function isStaple(name) {
+    return !!STAPLES[name];
+  }
+
+  function itemWeight(ing) {
+    var name = typeof ing === "string" ? ing : (ing && ing.item);
+    var shop = typeof ing === "object" && ing ? ing.shop : null;
+    if (!name) return 0;
+    if (STAPLES[name]) return 0;
+    if (shop === "meat" || shop === "produce" || shop === "dairy") return 3;
+    if (/cilantro|parsley|herb/.test(name)) return 3;
+    if (shop === "canned") return 2;
+    return 0.4;
+  }
+
+  function ingredientIndex(recipe) {
+    var map = {};
+    (recipe.ingredients || []).forEach(function (ing) {
+      if (!ing || !ing.item) return;
+      if (!map[ing.item]) map[ing.item] = ing;
+    });
+    return map;
+  }
+
+  function meatPounds(recipe) {
+    var oz = 0;
+    (recipe.ingredients || []).forEach(function (ing) {
+      if (!ing || ing.shop !== "meat" || ing.qty == null) return;
+      if (ing.unit === "lb") oz += Number(ing.qty) * 16;
+      else if (ing.unit === "oz") oz += Number(ing.qty);
+      else if (ing.unit === "count" && /chicken/.test(ing.item)) oz += Number(ing.qty) * 32;
+    });
+    return oz / 16;
+  }
+
+  function batchPenalty(recipe) {
+    var text = ((recipe.servings || "") + " " + (recipe.summary || "")).toLowerCase();
+    var p = 0;
+    if (/12-?quart|\b12q\b/.test(text)) p += 0.16;
+    else if (/10-?quart/.test(text)) p += 0.12;
+    var lb = meatPounds(recipe);
+    if (lb >= 5) p += 0.14;
+    else if (lb >= 4) p += 0.08;
+    else if (lb >= 3) p += 0.04;
+    return Math.min(p, 0.22);
+  }
+
+  function scoreRecipeAgainstPick(pick, candidate) {
+    var pickMap = ingredientIndex(pick);
+    var candMap = ingredientIndex(candidate);
+    var shared = [];
+    var sharedPerishable = [];
+    var overlap = 0;
+    Object.keys(pickMap).forEach(function (name) {
+      if (!candMap[name]) return;
+      shared.push(name);
+      var w = Math.max(itemWeight(pickMap[name]), itemWeight(candMap[name]));
+      overlap += w;
+      if (w >= 2) sharedPerishable.push(name);
+    });
+    var newItems = [];
+    var newCost = 0;
+    Object.keys(candMap).forEach(function (name) {
+      if (pickMap[name]) return;
+      newItems.push(name);
+      newCost += itemWeight(candMap[name]);
+    });
+    var sharedUseful = shared.filter(function (n) { return !isStaple(n); });
+    var newUseful = newItems.filter(function (n) { return !isStaple(n); });
+    var denom = overlap + newCost + 0.5;
+    var score = (denom ? overlap / denom : 0)
+      + 0.18 * sharedPerishable.length
+      - 0.06 * newUseful.length
+      - batchPenalty(candidate);
+    if (sharedUseful.length === 0) score = -1;
+
+    sharedUseful.sort(function (a, b) {
+      var wa = itemWeight(pickMap[a] || candMap[a]);
+      var wb = itemWeight(pickMap[b] || candMap[b]);
+      if (wb !== wa) return wb - wa;
+      return a.toLowerCase().localeCompare(b.toLowerCase());
+    });
+    var shown = sharedUseful.map(displayItem);
+    var listed = shown.slice(0, 6);
+    var ellip = shown.length > 6 ? "…" : "";
+    var reason = "Shares " + sharedUseful.length + " ingredient" + (sharedUseful.length === 1 ? "" : "s")
+      + " with this week's pick"
+      + (listed.length ? ": " + listed.join(", ") + ellip : ".");
+    var needs = "needs " + newUseful.length + " new item" + (newUseful.length === 1 ? "" : "s");
+    return {
+      recipe: candidate,
+      id: candidate.id,
+      title: candidate.title,
+      score: Math.round(score * 1000) / 1000,
+      shared: sharedUseful,
+      sharedCount: sharedUseful.length,
+      newItems: newUseful,
+      newCount: newUseful.length,
+      perishableShared: sharedPerishable,
+      reason: reason,
+      needs: needs
+    };
+  }
+
+  function recommendSimilar(pick, recipes, n) {
+    n = n == null ? 5 : n;
+    if (!pick) return [];
+    var scored = (recipes || []).filter(function (r) { return r && r.id !== pick.id; })
+      .map(function (r) { return scoreRecipeAgainstPick(pick, r); })
+      .filter(function (x) { return x.sharedCount > 0 && x.score >= 0; });
+    scored.sort(function (a, b) {
+      if (b.score !== a.score) return b.score - a.score;
+      if (b.sharedCount !== a.sharedCount) return b.sharedCount - a.sharedCount;
+      return a.newCount - b.newCount;
+    });
+    return scored.slice(0, n);
+  }
+
+  var Shop = {
+    mergeIngredients: mergeIngredients,
+    groupedList: groupedList,
+    listAsText: listAsText,
+    recommendSimilar: recommendSimilar,
+    scoreRecipeAgainstPick: scoreRecipeAgainstPick,
+    itemWeight: itemWeight,
+    isStaple: isStaple,
+    formatNum: formatNum,
+    formatOz: formatOz,
+    formatTsp: formatTsp,
+    STAPLES: STAPLES,
+    SHOP_ORDER: SHOP_ORDER,
+    SHOP_LABEL: SHOP_LABEL
+  };
+
+  if (typeof module !== "undefined" && module.exports) module.exports = Shop;
+  root.Shop = Shop;
+})(typeof globalThis !== "undefined" ? globalThis : this);
+
+
+(function () {
+  const q = document.getElementById('q');
+  const empty = document.getElementById('empty');
+  const wraps = [...document.querySelectorAll('.recipe-wrap')];
+  const buttons = [...document.querySelectorAll('.filters button')];
+  const STORAGE_SEL = 'pbp-chili-selected';
+  const STORAGE_CHECKED = 'pbp-chili-checked';
+  const STORAGE_WEEK = 'pbp-chili-week-pick';
+  let cat = 'all';
+  const byId = {};
+  (window.RECIPES || []).forEach(r => { byId[r.id] = r; });
+
+  function show() {
+    const term = q.value.toLowerCase().trim();
+    let n = 0;
+    for (const a of wraps) {
+      const okCat = cat === 'all' || a.dataset.category === cat;
+      const okQ = !term || (a.dataset.search || '').includes(term);
+      const on = okCat && okQ;
+      a.style.display = on ? '' : 'none';
+      const idx = document.querySelector('li[data-for="' + a.id + '"]');
+      if (idx) idx.style.display = on ? '' : 'none';
+      if (on) n++;
+    }
+    for (const h of document.querySelectorAll('.idx-cat')) {
+      const ul = h.nextElementSibling;
+      const any = ul && [...ul.children].some(li => li.style.display !== 'none');
+      h.style.display = any ? '' : 'none';
+      if (ul) ul.style.display = any ? '' : 'none';
+    }
+    empty.style.display = n ? 'none' : 'block';
+  }
+  q.addEventListener('input', show);
+  buttons.forEach(b => b.addEventListener('click', () => {
+    buttons.forEach(x => x.classList.remove('on'));
+    b.classList.add('on');
+    cat = b.dataset.cat;
+    show();
+  }));
+
+  function loadSel() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_SEL) || '[]'); }
+    catch (err) { return []; }
+  }
+  function saveSel(ids) {
+    try { localStorage.setItem(STORAGE_SEL, JSON.stringify(ids)); } catch (err) {}
+  }
+  function selectedIds() {
+    return [...document.querySelectorAll('.pick-box:checked')].map(b => b.dataset.id);
+  }
+  function applySel(ids) {
+    const set = new Set(ids);
+    document.querySelectorAll('.pick-box').forEach(box => {
+      box.checked = set.has(box.dataset.id);
+      const wrap = box.closest('.recipe-wrap');
+      if (wrap) wrap.classList.toggle('is-picked', box.checked);
+    });
+    const n = ids.length;
+    document.getElementById('shop-count').textContent =
+      n === 0 ? '0 recipes selected' : (n === 1 ? '1 recipe selected' : n + ' recipes selected');
+    document.getElementById('shop-gen').disabled = n === 0;
+    document.getElementById('shop-clear').hidden = n === 0;
+    updateWeekFromSelection(ids);
+  }
+  function syncFromBoxes() {
+    const ids = selectedIds();
+    saveSel(ids);
+    applySel(ids);
+  }
+
+  function loadWeekId() {
+    try { return localStorage.getItem(STORAGE_WEEK) || ''; }
+    catch (err) { return ''; }
+  }
+  function saveWeekId(id) {
+    try {
+      if (id) localStorage.setItem(STORAGE_WEEK, id);
+      else localStorage.removeItem(STORAGE_WEEK);
+    } catch (err) {}
+  }
+  function jumpToRecipe(id, openCard) {
+    const wrap = document.querySelector('.recipe-wrap[data-id="' + id + '"]');
+    if (!wrap) return;
+    if (openCard) {
+      const det = wrap.querySelector('details.recipe');
+      if (det) det.open = true;
+    }
+    wrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (wrap.id) try { history.replaceState(null, '', '#' + wrap.id); } catch (err) {}
+  }
+  function setRecommendEnabled(on) {
+    ['week-recommend', 'bar-recommend'].forEach(id => {
+      const b = document.getElementById(id);
+      if (!b) return;
+      b.disabled = !on;
+      b.title = on ? 'Find recipes that use leftover ingredients' : 'Select just one recipe';
+    });
+    const hint = document.getElementById('week-recommend-hint');
+    if (hint) hint.hidden = !!on;
+  }
+  function renderWeekPanel() {
+    const weekId = loadWeekId();
+    const pick = weekId ? byId[weekId] : null;
+    const empty = document.getElementById('week-empty');
+    const chosen = document.getElementById('week-chosen');
+    document.querySelectorAll('.recipe-wrap').forEach(w => {
+      w.classList.toggle('is-week-pick', !!(pick && w.dataset.id === pick.id));
+    });
+    if (!pick) {
+      empty.hidden = false;
+      chosen.hidden = true;
+      return;
+    }
+    empty.hidden = true;
+    chosen.hidden = false;
+    document.getElementById('week-title').textContent = pick.title;
+    document.getElementById('week-sum').textContent = pick.summary || '';
+    const wrap = document.querySelector('.recipe-wrap[data-id="' + pick.id + '"]');
+    const jump = document.getElementById('week-jump');
+    jump.href = wrap ? ('#' + wrap.id) : '#';
+    jump.onclick = ev => { ev.preventDefault(); jumpToRecipe(pick.id, true); };
+  }
+  function updateWeekFromSelection(ids) {
+    if (ids.length === 1) saveWeekId(ids[0]);
+    renderWeekPanel();
+    setRecommendEnabled(ids.length === 1);
+  }
+  function showSimilarRecommendations() {
+    const ids = selectedIds();
+    if (ids.length !== 1) return;
+    const pick = byId[ids[0]];
+    if (!pick || !window.Shop) return;
+    saveWeekId(pick.id);
+    renderWeekPanel();
+    const results = Shop.recommendSimilar(pick, RECIPES, 5);
+    const wrap = document.getElementById('week-similar-wrap');
+    const ul = document.getElementById('week-similar');
+    wrap.hidden = false;
+    ul.innerHTML = '';
+    if (!results.length) {
+      ul.innerHTML = '<li class="why">No close matches that would use up leftovers.</li>';
+    } else {
+      results.forEach(s => {
+        const li = document.createElement('li');
+        const title = document.createElement('a');
+        title.className = 'sim-title';
+        title.href = '#';
+        title.textContent = s.title;
+        title.addEventListener('click', ev => {
+          ev.preventDefault();
+          jumpToRecipe(s.id, true);
+        });
+        const why = document.createElement('span');
+        why.className = 'why';
+        why.textContent = s.reason;
+        const needs = document.createElement('span');
+        needs.className = 'needs';
+        needs.textContent = s.needs.charAt(0).toUpperCase() + s.needs.slice(1) + '.';
+        const actions = document.createElement('div');
+        actions.className = 'sim-actions';
+        const add = document.createElement('button');
+        add.type = 'button';
+        add.textContent = 'Add to list';
+        add.addEventListener('click', ev => {
+          ev.preventDefault();
+          ev.stopPropagation();
+          const next = new Set(loadSel());
+          next.add(s.id);
+          saveSel([...next]);
+          applySel([...next]);
+        });
+        actions.appendChild(add);
+        li.appendChild(title);
+        li.appendChild(why);
+        li.appendChild(needs);
+        li.appendChild(actions);
+        ul.appendChild(li);
+      });
+    }
+    document.getElementById('weekly-pick').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  document.querySelectorAll('.pick-box').forEach(box => {
+    box.addEventListener('click', ev => ev.stopPropagation());
+    box.addEventListener('change', syncFromBoxes);
+  });
+  document.querySelectorAll('.pick').forEach(lab => {
+    lab.addEventListener('click', ev => ev.stopPropagation());
+  });
+
+  applySel(loadSel());
+
+  function clearSel() {
+    saveSel([]);
+    applySel([]);
+    closeModal();
+  }
+  document.getElementById('shop-clear').addEventListener('click', clearSel);
+  document.getElementById('shop-clear-2').addEventListener('click', clearSel);
+
+  const modal = document.getElementById('shop-modal');
+  function closeModal() { modal.hidden = true; }
+  function openModal() { modal.hidden = false; }
+  document.getElementById('shop-close').addEventListener('click', closeModal);
+  modal.addEventListener('click', ev => { if (ev.target === modal) closeModal(); });
+  document.addEventListener('keydown', ev => { if (ev.key === 'Escape' && !modal.hidden) closeModal(); });
+
+  let lastRows = [];
+  let lastSelected = [];
+
+  function renderList() {
+    const ids = selectedIds();
+    lastSelected = ids.map(id => byId[id]).filter(Boolean);
+    lastRows = Shop.mergeIngredients(lastSelected);
+    const groups = Shop.groupedList(lastRows);
+    document.getElementById('shop-for').textContent =
+      'Combined from ' + lastSelected.map(r => r.title).join(', ') + '.';
+    let checked = [];
+    try { checked = JSON.parse(localStorage.getItem(STORAGE_CHECKED) || '[]'); } catch (err) {}
+    const checkSet = new Set(checked);
+    const body = document.getElementById('shop-body');
+    body.innerHTML = groups.map(g => {
+      const items = g.items.map(row => {
+        const on = checkSet.has(row.item) ? ' checked' : '';
+        const done = checkSet.has(row.item) ? ' done' : '';
+        return '<li class="shop-item' + done + '">' +
+          '<input type="checkbox" data-item="' + row.item.replace(/"/g, '&quot;') + '"' + on + '>' +
+          '<span><span class="shop-line"></span><span class="shop-sources"></span></span></li>';
+      }).join('');
+      return '<section class="shop-group"><h3>' + g.label + '</h3><ul class="shop-list">' + items + '</ul></section>';
+    }).join('');
+    const lis = body.querySelectorAll('.shop-item');
+    let k = 0;
+    groups.forEach(g => g.items.forEach(row => {
+      const li = lis[k++];
+      li.querySelector('.shop-line').textContent = row.line;
+      li.querySelector('.shop-sources').textContent = 'from ' + row.sources.join(', ');
+    }));
+    body.querySelectorAll('.shop-item input').forEach(inp => {
+      inp.addEventListener('change', () => {
+        const item = inp.getAttribute('data-item');
+        let cur = [];
+        try { cur = JSON.parse(localStorage.getItem(STORAGE_CHECKED) || '[]'); } catch (err) {}
+        const set = new Set(cur);
+        if (inp.checked) set.add(item); else set.delete(item);
+        try { localStorage.setItem(STORAGE_CHECKED, JSON.stringify([...set])); } catch (err) {}
+        inp.closest('.shop-item').classList.toggle('done', inp.checked);
+      });
+    });
+  }
+
+  document.getElementById('shop-gen').addEventListener('click', () => {
+    if (!selectedIds().length) return;
+    renderList();
+    openModal();
+  });
+  document.getElementById('shop-print').addEventListener('click', () => window.print());
+  document.getElementById('shop-copy').addEventListener('click', async () => {
+    const text = Shop.listAsText(lastSelected, lastRows);
+    const btn = document.getElementById('shop-copy');
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(text);
+      } else {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        ta.remove();
+      }
+      btn.textContent = 'Copied';
+      setTimeout(() => { btn.textContent = 'Copy to clipboard'; }, 1500);
+    } catch (err) {
+      btn.textContent = 'Copy failed';
+      setTimeout(() => { btn.textContent = 'Copy to clipboard'; }, 1500);
+    }
+  });
+
+  document.getElementById('week-recommend').addEventListener('click', showSimilarRecommendations);
+  document.getElementById('bar-recommend').addEventListener('click', showSimilarRecommendations);
+})();
+
+</script>
+</body>
+</html>
