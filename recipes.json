@@ -2688,8 +2688,8 @@
         "text": "Peppers, seeded (type and amount not specified)",
         "qty": null,
         "unit": null,
-        "item": "peppers, seeded",
-        "shop": "other",
+        "item": "peppers",
+        "shop": "produce",
         "each_oz": null,
         "approx": false,
         "optional": false
@@ -3080,5 +3080,6608 @@
     "added": "2026-11-19",
     "url": "https://www.youtube.com/shorts/6OvXKLDQe_Q",
     "servings": ""
+  },
+  {
+    "id": "TcytsqFtxAE",
+    "title": "Grandma's Chicken Dinner",
+    "category": "Chicken Casserole",
+    "servings": "",
+    "time": "30 minutes in the oven, plus time to cook the filling",
+    "summary": "Pete's grandmother called this Two-Shoe Chicken Surprise: a creamy chicken-and-vegetable filling topped with mashed potatoes and baked.",
+    "ingredients": [
+      {
+        "text": "1 stick unsalted butter",
+        "qty": 1,
+        "unit": "stick",
+        "item": "unsalted butter",
+        "shop": "dairy",
+        "each_oz": 4,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 small onion, diced",
+        "qty": 1,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "3 ribs celery, diced",
+        "qty": 3,
+        "unit": "count",
+        "item": "celery",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 bell pepper, diced",
+        "qty": 1,
+        "unit": "count",
+        "item": "bell pepper",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "3 carrots, diced",
+        "qty": 3,
+        "unit": "count",
+        "item": "carrots",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp garlic powder",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "garlic powder",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp black pepper",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "black pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp Pepperbellypete's Flavor-Time Southern Seasoning",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Flavor-Time Southern Seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 1 1/2 tbsp Worcestershire sauce",
+        "qty": 1.5,
+        "unit": "tbsp",
+        "item": "Worcestershire sauce",
+        "shop": "other",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "1/3 cup all-purpose flour",
+        "qty": 0.3333,
+        "unit": "cup",
+        "item": "all-purpose flour",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 can (10.5 oz) cream of chicken soup",
+        "qty": 1,
+        "unit": "can",
+        "item": "cream of chicken soup",
+        "shop": "canned",
+        "each_oz": 10.5,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 cups chicken stock",
+        "qty": 2,
+        "unit": "cup",
+        "item": "chicken broth",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 cup heavy cream",
+        "qty": 1,
+        "unit": "cup",
+        "item": "heavy cream",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 fully cooked, deboned chicken (a rotisserie works)",
+        "qty": 1,
+        "unit": "count",
+        "item": "cooked chicken",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Mashed potatoes, enough for a topping layer (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "mashed potatoes",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Shredded cheese, for topping (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Splash of Zippy Zap, to taste",
+        "qty": null,
+        "unit": "splash",
+        "item": "Zippy Zap",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Melt the butter over medium heat. Add the onion, celery, bell pepper, carrots, garlic powder, black pepper, Flavor-Time Southern Seasoning, and Worcestershire sauce. Cook, stirring, until the vegetables start to soften.",
+      "Stir in the flour and cook a few minutes to take the raw flour taste out.",
+      "Add the cream of chicken soup, chicken stock, and heavy cream. Stir continuously until everything is well incorporated.",
+      "Stir in the deboned chicken.",
+      "Spread a layer of mashed potatoes over the top and sprinkle with a little shredded cheese.",
+      "Bake at 350°F for 30 minutes. Finish with a splash of Zippy Zap if you like."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "Pete says his grandmother, born August 13, 1914, made this her whole life and named it Two-Shoe Chicken Surprise because the kids had to have both shoes on before they got a bowl."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/TcytsqFtxAE"
+  },
+  {
+    "id": "W4St-dwAvNI",
+    "title": "Poor Man's Taco Bowls",
+    "category": "Chicken Pasta & Rice",
+    "servings": "",
+    "time": "About 40 minutes (30 minutes simmering, plus 10 minutes off heat)",
+    "summary": "A one-pot chicken, rice, and taco-seasoned skillet meal. Pete does not add any liquid beyond the canned tomatoes, sauce, corn, and beans.",
+    "ingredients": [
+      {
+        "text": "2 lb chicken thighs, trimmed and cubed",
+        "qty": 2,
+        "unit": "lb",
+        "item": "chicken thighs",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Ground cumin (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "cumin",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Smoked paprika (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "smoked paprika",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Chili powder (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "chili powder",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Garlic powder (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "garlic powder",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Pepperbellypete's Flavor-Time Southern Seasoning (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "Flavor-Time Southern Seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 small onion, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 bell pepper, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "bell pepper",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 fresh jalapeño, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "jalapeños",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1/2 stick unsalted butter",
+        "qty": 0.5,
+        "unit": "stick",
+        "item": "unsalted butter",
+        "shop": "dairy",
+        "each_oz": 4,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 can (10.5 oz) Rotel",
+        "qty": 1,
+        "unit": "can",
+        "item": "Rotel",
+        "shop": "canned",
+        "each_oz": 10.5,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 can (8 oz) tomato sauce",
+        "qty": 1,
+        "unit": "can",
+        "item": "tomato sauce",
+        "shop": "canned",
+        "each_oz": 8,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "14.5 oz whole-kernel corn",
+        "qty": 14.5,
+        "unit": "oz",
+        "item": "whole-kernel corn",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 can beans (Pete uses pinto; use whatever you like)",
+        "qty": 1,
+        "unit": "can",
+        "item": "beans",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 cups long-grain rice",
+        "qty": 2,
+        "unit": "cup",
+        "item": "long-grain rice",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Splash of Zippy Zap, to taste",
+        "qty": null,
+        "unit": "splash",
+        "item": "Zippy Zap",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Season the chicken all over with the cumin, smoked paprika, chili powder, garlic powder, and Flavor-Time Southern Seasoning.",
+      "Add the onion, bell pepper, jalapeño, butter, Rotel, tomato sauce, corn, and beans. Stir in the rice until everything is well incorporated. Do not add any additional liquid.",
+      "Bring to a low simmer, cover, and cook 30 minutes.",
+      "When the 30 minutes are up you shouldn't see any liquid. Leave the lid on for 10 more minutes.",
+      "Finish with a splash of Zippy Zap if you like."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "Pete says his grandmother would feed eight people for $10 with this pot."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/W4St-dwAvNI"
+  },
+  {
+    "id": "ZGigT8DZauE",
+    "title": "Pink Chicken and Pasta",
+    "category": "Chicken Pasta & Rice",
+    "servings": "",
+    "time": "About 1.5 hours on high, plus time to add the sauces and pasta",
+    "summary": "A crockpot chicken pasta with cream of chicken, Rotel, Alfredo, and roasted-garlic pasta sauce — the mix that turns it pink.",
+    "ingredients": [
+      {
+        "text": "2 lb chicken breasts, cubed",
+        "qty": 2,
+        "unit": "lb",
+        "item": "chicken breasts",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp garlic powder",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "garlic powder",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1/2 tbsp black pepper",
+        "qty": 0.5,
+        "unit": "tbsp",
+        "item": "black pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 1 tbsp Pepperbellypete's Zippy Zap",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Zippy Zap",
+        "shop": "other",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "1/2 tbsp smoked paprika",
+        "qty": 0.5,
+        "unit": "tbsp",
+        "item": "smoked paprika",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 1 tbsp Worcestershire sauce",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Worcestershire sauce",
+        "shop": "other",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "4 tbsp unsalted butter",
+        "qty": 4,
+        "unit": "tbsp",
+        "item": "unsalted butter",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 medium onion, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 small red bell pepper, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "bell pepper",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 small yellow bell pepper, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "bell pepper",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 fresh jalapeño, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "jalapeños",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 can (10.5 oz) cream of chicken soup",
+        "qty": 1,
+        "unit": "can",
+        "item": "cream of chicken soup",
+        "shop": "canned",
+        "each_oz": 10.5,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "4 oz Hatch green chiles",
+        "qty": 4,
+        "unit": "oz",
+        "item": "green chiles",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 can (10.5 oz) original Rotel",
+        "qty": 1,
+        "unit": "can",
+        "item": "Rotel",
+        "shop": "canned",
+        "each_oz": 10.5,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 1 tbsp fresh garlic",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "garlic",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "15 oz Alfredo sauce",
+        "qty": 15,
+        "unit": "oz",
+        "item": "Alfredo sauce",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "16 oz roasted garlic pasta sauce (or your favorite pasta sauce)",
+        "qty": 16,
+        "unit": "oz",
+        "item": "pasta sauce",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 block (8 oz) cream cheese",
+        "qty": 1,
+        "unit": "block",
+        "item": "cream cheese",
+        "shop": "dairy",
+        "each_oz": 8,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 lb pasta, cooked al dente",
+        "qty": 1,
+        "unit": "lb",
+        "item": "pasta",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Parmesan cheese, for topping (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "Parmesan cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Add the chicken, garlic powder, black pepper, Zippy Zap, smoked paprika, and Worcestershire sauce to the crockpot. Mix to coat the chicken.",
+      "Add the butter, onion, red and yellow bell peppers, jalapeño, cream of chicken soup, Hatch green chiles, Rotel, and fresh garlic. Mix well.",
+      "Cook on high for 1 1/2 hours.",
+      "Stir in the Alfredo sauce, roasted garlic pasta sauce, and cream cheese until incorporated.",
+      "Fold in the al dente pasta. Top with a little Parmesan if you like."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/ZGigT8DZauE"
+  },
+  {
+    "id": "aaDgoAYwzJs",
+    "title": "Buffalo Ranch Chicken Torpedoes",
+    "category": "Chicken",
+    "servings": "",
+    "time": "About 30 minutes in the freezer, plus air-frying to 165°F",
+    "summary": "Pounded chicken breasts rolled around frozen buffalo-ranch cheese sticks, breaded, and air-fried.",
+    "ingredients": [
+      {
+        "text": "8 oz mozzarella cheese",
+        "qty": 8,
+        "unit": "oz",
+        "item": "mozzarella cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "4 oz Parmesan cheese",
+        "qty": 4,
+        "unit": "oz",
+        "item": "Parmesan cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 block (8 oz) cream cheese",
+        "qty": 1,
+        "unit": "block",
+        "item": "cream cheese",
+        "shop": "dairy",
+        "each_oz": 8,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 1/2 cup buffalo ranch dressing (your favorite)",
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "buffalo ranch dressing",
+        "shop": "other",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "1 tsp garlic powder",
+        "qty": 1,
+        "unit": "tsp",
+        "item": "garlic powder",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tsp Italian seasoning",
+        "qty": 1,
+        "unit": "tsp",
+        "item": "Italian seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tsp Pepperbellypete's Flavor-Time Southern Seasoning",
+        "qty": 1,
+        "unit": "tsp",
+        "item": "Flavor-Time Southern Seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Chicken breasts, sliced in half and pounded thin (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "chicken breasts",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Pepperbellypete's Flavor-Time Southern Seasoning, for the chicken (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "Flavor-Time Southern Seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Seasoned flour (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "all-purpose flour",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Egg wash (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "egg wash",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Seasoned breadcrumbs (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "breadcrumbs",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Mix the mozzarella, Parmesan, cream cheese, buffalo ranch dressing, garlic powder, Italian seasoning, and Flavor-Time Southern Seasoning until well combined.",
+      "Form the mixture into cheese-stick shapes and freeze about 30 minutes.",
+      "Slice the chicken breasts in half and pound them thin. Season the chicken with Flavor-Time.",
+      "Roll each piece of chicken around a frozen cheese stick and tuck the ends in so the cheese doesn't leak out.",
+      "Coat in seasoned flour, then egg wash, then seasoned breadcrumbs.",
+      "Air-fry at 350°F, turning every couple of minutes so they cook evenly, until golden brown and 165°F inside."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "Pete doesn't say how many chicken breasts to use; use enough halved, pounded cutlets to wrap the cheese sticks you make."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/aaDgoAYwzJs"
+  },
+  {
+    "id": "ozZS0IFa-8c",
+    "title": "Poor Man's Chicken & Rice",
+    "category": "Chicken Pasta & Rice",
+    "servings": "",
+    "time": "About 1.5 hours in the oven, plus browning time",
+    "summary": "Browned chicken leg quarters baked over seasoned rice with golden mushroom soup, onion soup mix, and mushrooms.",
+    "ingredients": [
+      {
+        "text": "Chicken leg quarters (amount not specified; Pete bought them on sale)",
+        "qty": null,
+        "unit": null,
+        "item": "chicken leg quarters",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Garlic powder (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "garlic powder",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Black pepper (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "black pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Smoked paprika (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "smoked paprika",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Pepperbellypete's Flavor-Time Southern Seasoning, for the chicken (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "Flavor-Time Southern Seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Oil, for browning (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "oil",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 large onion, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "4 ribs celery, chopped",
+        "qty": 4,
+        "unit": "count",
+        "item": "celery",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 bell pepper, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "bell pepper",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 large jalapeño, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "jalapeños",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 1 tbsp Worcestershire sauce",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Worcestershire sauce",
+        "shop": "other",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "1/2 tbsp black pepper",
+        "qty": 0.5,
+        "unit": "tbsp",
+        "item": "black pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1/2 tbsp oregano",
+        "qty": 0.5,
+        "unit": "tbsp",
+        "item": "dried oregano",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1/2 tbsp Pepperbellypete's Flavor-Time Southern Seasoning",
+        "qty": 0.5,
+        "unit": "tbsp",
+        "item": "Flavor-Time Southern Seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "8 cloves garlic, minced",
+        "qty": 8,
+        "unit": "clove",
+        "item": "garlic",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp chicken Better Than Bouillon",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Better Than Bouillon",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 can (10.5 oz) golden mushroom soup",
+        "qty": 1,
+        "unit": "can",
+        "item": "golden mushroom soup",
+        "shop": "canned",
+        "each_oz": 10.5,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 packet Lipton onion soup mix",
+        "qty": 1,
+        "unit": "packet",
+        "item": "Lipton onion soup mix",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "8 oz fresh baby bella mushrooms, sliced",
+        "qty": 8,
+        "unit": "oz",
+        "item": "mushrooms",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 cups long-grain white rice",
+        "qty": 2,
+        "unit": "cup",
+        "item": "long-grain rice",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "32 oz chicken broth",
+        "qty": 32,
+        "unit": "oz",
+        "item": "chicken broth",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Season the leg quarters on both sides with garlic powder, black pepper, smoked paprika, and Flavor-Time Southern Seasoning.",
+      "Brown them in a hot skillet with a little oil about 4 minutes per side; you're not trying to cook them through. Remove the chicken. Pour off most of the oil, leaving the browned bits in the pan.",
+      "Add the onion, celery, bell pepper, jalapeño, Worcestershire sauce, 1/2 tablespoon black pepper, oregano, and Flavor-Time. Cook until the vegetables start to soften.",
+      "Stir in the garlic, Better Than Bouillon, golden mushroom soup, onion soup mix, and mushrooms. Cook a couple of minutes.",
+      "Add the rice and chicken broth and stir well.",
+      "Pour the mixture into an oven-safe dish and set the leg quarters on top. Cover tightly with foil and bake at 350°F for 1 1/2 hours."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/ozZS0IFa-8c"
+  },
+  {
+    "id": "8GcZ4RhBEKE",
+    "title": "Chicken and Dumplings",
+    "category": "Chicken Soup & Stew",
+    "servings": "",
+    "time": "About 45 minutes to cook the chicken, plus about 20 minutes for the dumplings",
+    "summary": "A stovetop pot of chicken and dumplings with homemade buttermilk drop dumplings and a pint of heavy cream, made in an 8-quart pot.",
+    "ingredients": [
+      {
+        "text": "1/2 stick unsalted butter",
+        "qty": 0.5,
+        "unit": "stick",
+        "item": "unsalted butter",
+        "shop": "dairy",
+        "each_oz": 4,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 large chicken breasts",
+        "qty": 2,
+        "unit": "count",
+        "item": "chicken breasts",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 chicken leg quarters, skin removed",
+        "qty": 2,
+        "unit": "count",
+        "item": "chicken leg quarters",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Pepperbellypete's Flavor-Time Southern Seasoning, for the chicken (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "Flavor-Time Southern Seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 large onion, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "3 ribs celery, chopped",
+        "qty": 3,
+        "unit": "count",
+        "item": "celery",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "3 large carrots, diced",
+        "qty": 3,
+        "unit": "count",
+        "item": "carrots",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1/2 tbsp poultry seasoning",
+        "qty": 0.5,
+        "unit": "tbsp",
+        "item": "poultry seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp black pepper",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "black pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp garlic powder",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "garlic powder",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp dried parsley",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "parsley",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tsp smoked paprika",
+        "qty": 1,
+        "unit": "tsp",
+        "item": "smoked paprika",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "64 oz chicken stock",
+        "qty": 64,
+        "unit": "oz",
+        "item": "chicken broth",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 cans (10.5 oz each) cream of chicken soup",
+        "qty": 2,
+        "unit": "can",
+        "item": "cream of chicken soup",
+        "shop": "canned",
+        "each_oz": 10.5,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "3 cups all-purpose flour, for the dumplings",
+        "qty": 3,
+        "unit": "cup",
+        "item": "all-purpose flour",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tsp baking powder",
+        "qty": 1,
+        "unit": "tsp",
+        "item": "baking powder",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 1 tsp Pepperbellypete's Flavor-Time Southern Seasoning, for the dumplings",
+        "qty": 1,
+        "unit": "tsp",
+        "item": "Flavor-Time Southern Seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "4 tbsp unsalted butter, melted, for the dumplings",
+        "qty": 4,
+        "unit": "tbsp",
+        "item": "unsalted butter",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 1 1/2 cups buttermilk",
+        "qty": 1.5,
+        "unit": "cup",
+        "item": "buttermilk",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "2 cups heavy cream (1 pint)",
+        "qty": 2,
+        "unit": "cup",
+        "item": "heavy cream",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "In an 8-quart pot, melt the 1/2 stick of butter. Season the chicken breasts and skin-off leg quarters all over with Flavor-Time and brown about 4 minutes per side.",
+      "Add the onion, celery, carrots, poultry seasoning, black pepper, garlic powder, parsley, smoked paprika, and chicken stock. Stir, cover, and simmer 45 minutes, until the chicken is cooked through.",
+      "Remove the chicken, debone it, and shred the breasts.",
+      "Whisk the cream of chicken soup into the pot and let it simmer a few more minutes.",
+      "For the dumplings, mix the flour, baking powder, about 1 teaspoon Flavor-Time, melted butter, and about 1 1/2 cups buttermilk to a thick drop-dumpling consistency.",
+      "Stir the heavy cream into the pot. Drop the dumpling dough in by the spoonful (Pete uses two spoons to push it off). Cook at a medium boil about 10 minutes.",
+      "Add the shredded chicken back in; don't stir hard — just push the chicken down into the pot. Simmer 7 or 8 more minutes."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "This is the from-scratch drop-dumpling version. Pete also posted a crockpot version and a buttermilk-biscuit version; those are kept as separate recipes."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/8GcZ4RhBEKE"
+  },
+  {
+    "id": "gVehp86zowI",
+    "title": "The Best Chicken Soup",
+    "category": "Chicken Soup & Stew",
+    "servings": "",
+    "time": "About 40 minutes of simmering, plus time to soften the vegetables",
+    "summary": "A cheesy taco-seasoned chicken soup with ranch mix, Hatch chiles, corn, black beans, and a whole deboned chicken.",
+    "ingredients": [
+      {
+        "text": "1 tbsp olive oil",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "oil",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 onion, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 bell pepper, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "bell pepper",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "3 ribs celery, chopped",
+        "qty": 3,
+        "unit": "count",
+        "item": "celery",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 large carrots, chopped",
+        "qty": 2,
+        "unit": "count",
+        "item": "carrots",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 jalapeños, chopped",
+        "qty": 2,
+        "unit": "count",
+        "item": "jalapeños",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 tbsp fresh garlic",
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "garlic",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1/2 tbsp garlic powder",
+        "qty": 0.5,
+        "unit": "tbsp",
+        "item": "garlic powder",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1/2 tbsp salt",
+        "qty": 0.5,
+        "unit": "tbsp",
+        "item": "salt",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp tomato-chicken bouillon",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "tomato-chicken bouillon",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 packets (1 oz each) taco seasoning",
+        "qty": 2,
+        "unit": "packet",
+        "item": "taco seasoning",
+        "shop": "spices",
+        "each_oz": 1,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 packet (1 oz) ranch seasoning",
+        "qty": 1,
+        "unit": "packet",
+        "item": "ranch seasoning",
+        "shop": "spices",
+        "each_oz": 1,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 2 tbsp Pepperbellypete's Zippy Zap",
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "Zippy Zap",
+        "shop": "other",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "1 can (4 oz) Hatch green chiles",
+        "qty": 1,
+        "unit": "can",
+        "item": "green chiles",
+        "shop": "canned",
+        "each_oz": 4,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "15 oz whole-kernel corn",
+        "qty": 15,
+        "unit": "oz",
+        "item": "whole-kernel corn",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "15.5 oz fire-roasted tomatoes",
+        "qty": 15.5,
+        "unit": "oz",
+        "item": "fire-roasted tomatoes",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "15.5 oz black beans, rinsed",
+        "qty": 15.5,
+        "unit": "oz",
+        "item": "black beans",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "8 cups chicken broth",
+        "qty": 8,
+        "unit": "cup",
+        "item": "chicken broth",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "16 oz American cheese (from the grocery store deli)",
+        "qty": 16,
+        "unit": "oz",
+        "item": "American cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 block (8 oz) cream cheese",
+        "qty": 1,
+        "unit": "block",
+        "item": "cream cheese",
+        "shop": "dairy",
+        "each_oz": 8,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 large fully cooked, deboned chicken",
+        "qty": 1,
+        "unit": "count",
+        "item": "cooked chicken",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "In a soup pot over medium-low heat, cook the olive oil, onion, bell pepper, celery, carrots, jalapeños, and garlic until the vegetables soften.",
+      "Add the garlic powder, salt, tomato-chicken bouillon, taco seasoning, ranch seasoning, Zippy Zap, Hatch green chiles, corn, fire-roasted tomatoes, black beans, chicken broth, American cheese, and cream cheese.",
+      "Simmer on medium-low about 30 minutes, stirring occasionally, until everything is incorporated.",
+      "Add the deboned chicken and simmer 10 more minutes."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/gVehp86zowI"
+  },
+  {
+    "id": "YStt6p9jJ5E",
+    "title": "Crockpot King Ranch Chicken Dip",
+    "category": "Dip",
+    "servings": "",
+    "time": "30 minutes on high, then on low, stirring every 30 minutes",
+    "summary": "A crockpot King Ranch-style dip with a whole deboned chicken, baby bella mushrooms, two kinds of cheese, and ranch mix.",
+    "ingredients": [
+      {
+        "text": "1 medium onion, diced",
+        "qty": 1,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "8 oz fresh baby bella mushrooms, diced",
+        "qty": 8,
+        "unit": "oz",
+        "item": "mushrooms",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 jalapeños, diced",
+        "qty": 2,
+        "unit": "count",
+        "item": "jalapeños",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "4 oz Hatch green chiles",
+        "qty": 4,
+        "unit": "oz",
+        "item": "green chiles",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 can (10.5 oz) cream of chicken soup with herbs",
+        "qty": 1,
+        "unit": "can",
+        "item": "cream of chicken soup",
+        "shop": "canned",
+        "each_oz": 10.5,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 can (10 oz) Rotel",
+        "qty": 1,
+        "unit": "can",
+        "item": "Rotel",
+        "shop": "canned",
+        "each_oz": 10,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 fully cooked, deboned chicken (boil it, bake it, buy it, or pick the crust off a bucket of chicken)",
+        "qty": 1,
+        "unit": "count",
+        "item": "cooked chicken",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "16 oz pepper jack cheese",
+        "qty": 16,
+        "unit": "oz",
+        "item": "pepper jack cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "16 oz American cheese (from the grocery store deli)",
+        "qty": 16,
+        "unit": "oz",
+        "item": "American cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 cup chicken broth",
+        "qty": 1,
+        "unit": "cup",
+        "item": "chicken broth",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 cup heavy cream",
+        "qty": 1,
+        "unit": "cup",
+        "item": "heavy cream",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 packet (1 oz) ranch seasoning",
+        "qty": 1,
+        "unit": "packet",
+        "item": "ranch seasoning",
+        "shop": "spices",
+        "each_oz": 1,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 2 tbsp Pepperbellypete's Zippy Zap",
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "Zippy Zap",
+        "shop": "other",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Add the onion, mushrooms, jalapeños, Hatch green chiles, cream of chicken soup, Rotel, chicken, pepper jack, American cheese, chicken broth, heavy cream, ranch mix, and Zippy Zap to the crockpot.",
+      "Cook on high, covered, for 30 minutes. Stir well, then reduce to low and stir every 30 minutes until everything is soft and incorporated."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "Leave the onion out if you don't like it. Pete posted another King Ranch dip with less cheese, cream, and mushrooms; that version is kept as a separate recipe."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/YStt6p9jJ5E"
+  },
+  {
+    "id": "5AhhA64uG5A",
+    "title": "The Best Chicken & Rice",
+    "category": "Chicken Pasta & Rice",
+    "servings": "",
+    "time": "About 5 minutes covered after it comes to a simmer, plus time to cook the chicken",
+    "summary": "A stovetop chicken-and-instant-rice skillet with fire-roasted tomatoes, black beans, taco seasoning, and a sour cream finish.",
+    "ingredients": [
+      {
+        "text": "2 lb boneless, skinless chicken thighs",
+        "qty": 2,
+        "unit": "lb",
+        "item": "chicken thighs",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Oil, for cooking (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "oil",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Ground cumin (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "cumin",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Pepperbellypete's Flavor-Time Southern Seasoning (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "Flavor-Time Southern Seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Chili powder (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "chili powder",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 medium onion, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 jalapeño, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "jalapeños",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 serrano, chopped (or a bell pepper if you prefer)",
+        "qty": 1,
+        "unit": "count",
+        "item": "serranos",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 can fire-roasted tomatoes",
+        "qty": 1,
+        "unit": "can",
+        "item": "fire-roasted tomatoes",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 can (4 oz) Hatch green chiles",
+        "qty": 1,
+        "unit": "can",
+        "item": "green chiles",
+        "shop": "canned",
+        "each_oz": 4,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 can (10 oz) cream of chicken soup",
+        "qty": 1,
+        "unit": "can",
+        "item": "cream of chicken soup",
+        "shop": "canned",
+        "each_oz": 10,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 cups whole-kernel corn",
+        "qty": 2,
+        "unit": "cup",
+        "item": "whole-kernel corn",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 cups black beans",
+        "qty": 2,
+        "unit": "cup",
+        "item": "black beans",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 packet (1 oz) taco seasoning",
+        "qty": 1,
+        "unit": "packet",
+        "item": "taco seasoning",
+        "shop": "spices",
+        "each_oz": 1,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "3 cups long-grain instant rice",
+        "qty": 3,
+        "unit": "cup",
+        "item": "instant rice",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp tomato-chicken bouillon",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "tomato-chicken bouillon",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "3 cups chicken stock",
+        "qty": 3,
+        "unit": "cup",
+        "item": "chicken broth",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 1/2 cups shredded cheese",
+        "qty": 1.5,
+        "unit": "cup",
+        "item": "cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 1/2 cup sour cream",
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "sour cream",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "Shredded cheese, for topping (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Season the chicken thighs with cumin, Flavor-Time, and chili powder. Cook in a hot skillet with a little oil until done, then remove and shred or chop.",
+      "In the same pan, cook the onion, jalapeño, and serrano a few minutes, scraping up the browned bits. (A bell pepper can stand in for the peppers.)",
+      "Add the fire-roasted tomatoes, Hatch green chiles, cream of chicken soup, corn, black beans, and taco seasoning. Return the chopped chicken to the pan.",
+      "Stir in the instant rice, tomato-chicken bouillon, chicken stock, 1 1/2 cups shredded cheese, and sour cream until everything is incorporated.",
+      "Bring to a simmer, cover, and cook 5 minutes. Top with more cheese and remove from the heat."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "Pete notes you can buy the taco-seasoning packet or add the same spices one by one. He doesn't list those individual amounts.",
+      "The can of fire-roasted tomatoes is not given a size in the short."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/5AhhA64uG5A"
+  },
+  {
+    "id": "DuMncDbxt2k",
+    "title": "Stuffed Boneless Chicken Wings",
+    "category": "Fried Chicken & Wings",
+    "servings": "",
+    "time": "About 25 minutes in the air fryer, plus time to bone and stuff the wings",
+    "summary": "Chicken wings with the bones pulled out, stuffed with a cream-cheese, cheddar, jalapeño, and bacon filling, then wrapped in bacon.",
+    "ingredients": [
+      {
+        "text": "Chicken wings (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "chicken wings",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "8 oz cream cheese",
+        "qty": 8,
+        "unit": "oz",
+        "item": "cream cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Freshly grated cheddar cheese (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "cheddar cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 large jalapeños, diced",
+        "qty": 2,
+        "unit": "count",
+        "item": "jalapeños",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "6 1/2 slices bacon, cooked and diced",
+        "qty": 6.5,
+        "unit": "count",
+        "item": "bacon",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Bacon, for wrapping (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "bacon",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 1 tbsp Creole seasoning",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Creole seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "Granulated garlic (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "garlic",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 1 tbsp Pepperbellypete's Zippy Zap",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Zippy Zap",
+        "shop": "other",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "Creole seasoning or Zippy Zap, for the outside of the wings (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "Zippy Zap",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Cut the tip off each wing. Cut through the joint between the drumette and the flat, cut around to loosen the cartilage, then press down and pull the bones out so you have a boneless pocket.",
+      "Mix the cream cheese, cheddar, jalapeños, cooked diced bacon, Creole seasoning, granulated garlic, and Zippy Zap until well combined.",
+      "Stuff each boneless wing with the filling and season the outside a little more if you like. Wrap each wing in bacon, going end to end first and then around with another strip.",
+      "Pete says you can smoke, grill, bake, or fry them. He cooks them in the air fryer about 25 minutes."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "Pete doesn't say how many wings or how much cheddar to use. The bacon count for the filling sounded like 'six and a half slices' in the transcript; use your judgment, and have extra strips for wrapping."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/DuMncDbxt2k"
+  },
+  {
+    "id": "H-Eu5BpU9yo",
+    "title": "The Best Chicken Sandwich",
+    "category": "Chicken",
+    "servings": "",
+    "time": "",
+    "summary": "A breakfast-style sandwich with a fried-egg cutlet, pepper jack, dill pickles, and a chicken fritter on toasted bread.",
+    "ingredients": [
+      {
+        "text": "Eggs (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "eggs",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Oil, for frying (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "oil",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Seasoned flour (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "all-purpose flour",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Egg wash (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "egg wash",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Butter, for toasting the bread (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "unsalted butter",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Bread, for the sandwiches (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "bread",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Pepper jack cheese (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "pepper jack cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Crinkle-cut dill pickles (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "dill pickles",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Chicken fritters (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "chicken fritters",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Pepperbellypete's Zippy Zap or candy pepper sauce, to taste",
+        "qty": null,
+        "unit": null,
+        "item": "Zippy Zap",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Fry the eggs in a little oil about 30 seconds, spooning oil over the tops, then lift them out into seasoned flour. Coat well, dip in egg wash, and return to the seasoned flour for a second coating.",
+      "Fry until golden brown and drain.",
+      "Butter and toast the bread. When the pepper jack starts to melt, add crinkle-cut dill pickles and a chicken fritter, then close the sandwich and press it.",
+      "Finish with Zippy Zap or Pete's candy pepper sauce if you like."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "The short never says how many eggs, fritters, or slices of bread to use, and it doesn't include a recipe for the chicken fritters themselves — Pete just adds one of his fritters to the sandwich.",
+      "Candy pepper sauce is another of Pete's sauces; use your favorite hot sauce if you don't have it."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/H-Eu5BpU9yo"
+  },
+  {
+    "id": "Fy-0kbNreVM",
+    "title": "Chicken and Sausage Gumbo",
+    "category": "Chicken Soup & Stew",
+    "servings": "",
+    "time": "About 1.5 hours of simmering, plus time to fry the chicken and make the roux",
+    "summary": "A fried-chicken-and-smoked-sausage gumbo with a dark roux, okra, and the trinity, served over rice.",
+    "ingredients": [
+      {
+        "text": "About 2 lb boneless, skinless chicken thighs, cubed",
+        "qty": 2,
+        "unit": "lb",
+        "item": "chicken thighs",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "Seasoned flour, for dusting the chicken (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "all-purpose flour",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Oil, for frying (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "oil",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "All-purpose flour, for the roux (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "all-purpose flour",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 1 tbsp Pepperbellypete's Flavor-Time Southern Seasoning, for the roux",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Flavor-Time Southern Seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "1 onion, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 cups bell pepper, chopped",
+        "qty": 2,
+        "unit": "cup",
+        "item": "bell pepper",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "4 ribs celery, chopped",
+        "qty": 4,
+        "unit": "count",
+        "item": "celery",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 tbsp garlic",
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "garlic",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 1/2 lb smoked sausage",
+        "qty": 1.5,
+        "unit": "lb",
+        "item": "smoked sausage",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 lb okra, seared in a pan",
+        "qty": 1,
+        "unit": "lb",
+        "item": "okra",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp black pepper",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "black pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp garlic powder",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "garlic powder",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp dried parsley",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "parsley",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 2 tbsp Pepperbellypete's Flavor-Time Southern Seasoning",
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "Flavor-Time Southern Seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "48 oz chicken broth",
+        "qty": 48,
+        "unit": "oz",
+        "item": "chicken broth",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Rice, for serving (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "long-grain rice",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Splash of Zippy Zap, to taste",
+        "qty": null,
+        "unit": "splash",
+        "item": "Zippy Zap",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Dust the cubed chicken thighs in seasoned flour and fry in oil just long enough to get a crust. Remove the chicken.",
+      "In the same oil, add all-purpose flour and about 1 tablespoon Flavor-Time. Stir continuously over medium heat until the roux is a deep color.",
+      "Add the onion, bell pepper, celery, garlic, smoked sausage, and seared okra. Return the chicken to the pot. Add the black pepper, garlic powder, parsley, and about 2 more tablespoons Flavor-Time.",
+      "Pour in the chicken broth, cover, and simmer about 1 1/2 hours.",
+      "Serve over rice, with a splash of Zippy Zap if you like."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "Pete doesn't give an amount for the frying oil or the roux flour. A closely related fried chicken stew uses 1 1/2 cups oil and 1 cup seasoned flour and simmers 2 hours; that stew is kept as a separate recipe."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/Fy-0kbNreVM"
+  },
+  {
+    "id": "rg3HTbjJM7g",
+    "title": "Crockpot Chicken Stroganoff",
+    "category": "Chicken Soup & Stew",
+    "servings": "",
+    "time": "6 to 8 hours on low, plus 30 minutes on high with the noodles",
+    "summary": "Chicken breasts slow-cooked with three cream soups, ranch and onion soup mixes, then finished with egg noodles.",
+    "ingredients": [
+      {
+        "text": "Chicken breasts (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "chicken breasts",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 1 tbsp black pepper",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "black pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "About 1 tbsp garlic powder",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "garlic powder",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "About 1 tbsp Pepperbellypete's Flavor-Time Southern Seasoning",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Flavor-Time Southern Seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "1 can (10.5 oz) cream of chicken soup with herbs",
+        "qty": 1,
+        "unit": "can",
+        "item": "cream of chicken soup",
+        "shop": "canned",
+        "each_oz": 10.5,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 can (10.5 oz) cream of celery soup",
+        "qty": 1,
+        "unit": "can",
+        "item": "cream of celery soup",
+        "shop": "canned",
+        "each_oz": 10.5,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 can (10.5 oz) golden mushroom soup",
+        "qty": 1,
+        "unit": "can",
+        "item": "golden mushroom soup",
+        "shop": "canned",
+        "each_oz": 10.5,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 packet Lipton onion soup mix",
+        "qty": 1,
+        "unit": "packet",
+        "item": "Lipton onion soup mix",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 packet ranch seasoning",
+        "qty": 1,
+        "unit": "packet",
+        "item": "ranch seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1/2 stick unsalted butter",
+        "qty": 0.5,
+        "unit": "stick",
+        "item": "unsalted butter",
+        "shop": "dairy",
+        "each_oz": 4,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp garlic",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "garlic",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 1/2 tbsp Better Than Bouillon",
+        "qty": 1.5,
+        "unit": "tbsp",
+        "item": "Better Than Bouillon",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 2 tbsp Pepperbellypete's Zippy Zap",
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "Zippy Zap",
+        "shop": "other",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "32 oz chicken broth",
+        "qty": 32,
+        "unit": "oz",
+        "item": "chicken broth",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "12 oz egg noodles",
+        "qty": 12,
+        "unit": "oz",
+        "item": "egg noodles",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "16 oz chicken broth, added with the noodles",
+        "qty": 16,
+        "unit": "oz",
+        "item": "chicken broth",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Season the chicken breasts all over with about 1 tablespoon each of black pepper, garlic powder, and Flavor-Time. Add them to the crockpot with the cream of chicken, cream of celery, and golden mushroom soups, onion soup mix, ranch mix, butter, garlic, Better Than Bouillon, Zippy Zap, and 32 ounces of chicken broth. Mix well.",
+      "Cook on low 6 to 8 hours. Shred the chicken with a fork.",
+      "Turn the crockpot to high, add the egg noodles and the remaining 16 ounces of chicken broth, and cook 30 minutes."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "Pete never says how many chicken breasts to use."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/rg3HTbjJM7g"
+  },
+  {
+    "id": "QqhAxmm5GhY",
+    "title": "King Ranch Chicken",
+    "category": "Chicken Casserole",
+    "servings": "",
+    "time": "35 minutes in the oven, plus time to make the filling",
+    "summary": "A layered King Ranch casserole with tostadas, Rotel, cream of chicken, American cheese, and a deboned chicken, finished with Monterey Jack.",
+    "ingredients": [
+      {
+        "text": "2 tbsp unsalted butter",
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "unsalted butter",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 onion, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 jalapeños, chopped",
+        "qty": 2,
+        "unit": "count",
+        "item": "jalapeños",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Garlic powder (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "garlic powder",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Black pepper (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "black pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "A pinch of cumin",
+        "qty": null,
+        "unit": "pinch",
+        "item": "cumin",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "2 cans Rotel",
+        "qty": 2,
+        "unit": "can",
+        "item": "Rotel",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 can cream of chicken soup",
+        "qty": 1,
+        "unit": "can",
+        "item": "cream of chicken soup",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "16 oz American cheese",
+        "qty": 16,
+        "unit": "oz",
+        "item": "American cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "12 oz condensed milk",
+        "qty": 12,
+        "unit": "oz",
+        "item": "condensed milk",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 fully cooked, deboned chicken",
+        "qty": 1,
+        "unit": "count",
+        "item": "cooked chicken",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Tostadas, for layering (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "taco shells",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Tortilla chips, crushed, for topping (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "tortilla chips",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Monterey Jack cheese, for topping (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "Monterey Jack cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Sour cream, for serving (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "sour cream",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Pico de gallo, for serving (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "pico de gallo",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Melt the butter and soften the onion and jalapeños with the garlic powder, black pepper, and a pinch of cumin.",
+      "Add the Rotel, cream of chicken soup, American cheese, and condensed milk. Stir over medium-low heat until the cheese melts, then stir in the deboned chicken.",
+      "In an oven-safe dish, layer tostadas and the chicken mixture, repeating the layers. Top with crushed chips and Monterey Jack.",
+      "Bake 35 minutes (oven temperature not specified in the short). Serve with sour cream and pico if you like."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "Pete says '12 ounces of condensed milk'; a 12-ounce can is the usual size for evaporated milk, so he may have meant evaporated. The short doesn't give can sizes for the Rotel or cream of chicken, or an oven temperature.",
+      "His Chicken Taco Casserole is a close variation (Velveeta, milk, taco shells, and a 350°F bake) and is kept as a separate recipe."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/QqhAxmm5GhY"
+  },
+  {
+    "id": "L777d1vbb7A",
+    "title": "The Most Flavorful Chicken Dish",
+    "category": "Chicken Soup & Stew",
+    "servings": "",
+    "time": "8 hours on low",
+    "summary": "A crockpot taco-and-ranch chicken with potatoes, carrots, Rotel, and a layer of frozen corn on top.",
+    "ingredients": [
+      {
+        "text": "2 1/2 lb chicken thighs, cubed",
+        "qty": 2.5,
+        "unit": "lb",
+        "item": "chicken thighs",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 packets (1 oz each) taco seasoning",
+        "qty": 2,
+        "unit": "packet",
+        "item": "taco seasoning",
+        "shop": "spices",
+        "each_oz": 1,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 packets (1 oz each) ranch seasoning",
+        "qty": 2,
+        "unit": "packet",
+        "item": "ranch seasoning",
+        "shop": "spices",
+        "each_oz": 1,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp Mexican oregano",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Mexican oregano",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tsp ground cumin",
+        "qty": 1,
+        "unit": "tsp",
+        "item": "cumin",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 onion, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 jalapeño, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "jalapeños",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 serrano, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "serranos",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "3 carrots, chopped",
+        "qty": 3,
+        "unit": "count",
+        "item": "carrots",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp tomato-chicken bouillon",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "tomato-chicken bouillon",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 cans Rotel",
+        "qty": 2,
+        "unit": "can",
+        "item": "Rotel",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "32 oz chicken broth",
+        "qty": 32,
+        "unit": "oz",
+        "item": "chicken broth",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Splash of lime juice",
+        "qty": null,
+        "unit": "splash",
+        "item": "lime",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Splash of Zippy Zap",
+        "qty": null,
+        "unit": "splash",
+        "item": "Zippy Zap",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 bunch cilantro",
+        "qty": 1,
+        "unit": "count",
+        "item": "cilantro",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "3 potatoes, chopped",
+        "qty": 3,
+        "unit": "count",
+        "item": "potatoes",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Frozen corn, enough to line the top (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "frozen corn",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Toss the chicken with the taco seasoning, ranch seasoning, Mexican oregano, and cumin.",
+      "Add the onion, jalapeño, serrano, carrots, tomato-chicken bouillon, Rotel, chicken broth, lime juice, Zippy Zap, cilantro, and potatoes. Line the top with frozen corn.",
+      "Cover and cook on low for 8 hours."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "The Rotel cans are not given a size, and Pete doesn't measure the frozen corn. Texican Ranch Chicken is a closely related crockpot pot with different amounts (including 12 mini ears of corn) and is kept as a separate recipe."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/L777d1vbb7A"
+  },
+  {
+    "id": "ed8j6ZN2bFM",
+    "title": "The Best Fried Chicken",
+    "category": "Fried Chicken & Wings",
+    "servings": "",
+    "time": "8 hours to marinate, plus 30 minutes of rest and frying to 165°F",
+    "summary": "A whole cut-up chicken soaked in a seasoned buttermilk-and-egg marinade, dredged in seasoned flour, and fried at 350°F.",
+    "ingredients": [
+      {
+        "text": "1 whole chicken, cut up",
+        "qty": 1,
+        "unit": "count",
+        "item": "whole chicken",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp Morton Nature's Seasons",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Morton Nature's Seasons",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp garlic powder",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "garlic powder",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp onion powder",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "onion powder",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp smoked paprika",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "smoked paprika",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp black pepper",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "black pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp cayenne pepper",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "cayenne pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp Creole seasoning",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Creole seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp lemon pepper",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "lemon pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "3 tbsp Pepperbellypete's Zippy Zap",
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "Zippy Zap",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "4 eggs",
+        "qty": 4,
+        "unit": "count",
+        "item": "eggs",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "4 cups buttermilk",
+        "qty": 4,
+        "unit": "cup",
+        "item": "buttermilk",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Seasoned flour (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "all-purpose flour",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Vegetable shortening, for frying (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "vegetable shortening",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Mix the Nature's Seasons, garlic powder, onion powder, smoked paprika, black pepper, cayenne, Creole seasoning, lemon pepper, Zippy Zap, eggs, and buttermilk. Add the cut-up chicken and marinate 8 hours.",
+      "Dredge the chicken in seasoned flour and rest it on a rack 30 minutes.",
+      "Heat vegetable shortening to 350°F and fry the chicken, turning so it doesn't burn, until the internal temperature is 165°F. Finish with a little more Zippy Zap if you like."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "In the short Pete says 'nature seasoning'; that matches Morton Nature's Seasons, which he also calls Morton seasoning in another fried-chicken video.",
+      "Southern Fried Chicken is a close variation (garlic salt instead of garlic powder, 2 tablespoons Creole seasoning, and 3 cups buttermilk) and is kept as a separate recipe."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/ed8j6ZN2bFM"
+  },
+  {
+    "id": "tYpWbqvD2Rw",
+    "title": "Chicken & Pasta",
+    "category": "Chicken Pasta & Rice",
+    "servings": "",
+    "time": "",
+    "summary": "A stovetop pot of deboned chicken and pasta in a Rotel, cream-soup, and melting-cheese sauce.",
+    "ingredients": [
+      {
+        "text": "3 tbsp unsalted butter",
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "unsalted butter",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 small onion, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 bell pepper, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "bell pepper",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 cup celery, chopped",
+        "qty": 1,
+        "unit": "cup",
+        "item": "celery",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Garlic powder (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "garlic powder",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Black pepper (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "black pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Pepperbellypete's Flavor-Time Southern Seasoning (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "Flavor-Time Southern Seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 tbsp garlic",
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "garlic",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 cans Rotel",
+        "qty": 2,
+        "unit": "can",
+        "item": "Rotel",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "32 oz chicken broth",
+        "qty": 32,
+        "unit": "oz",
+        "item": "chicken broth",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 can cream of chicken soup",
+        "qty": 1,
+        "unit": "can",
+        "item": "cream of chicken soup",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 can cream of mushroom soup",
+        "qty": 1,
+        "unit": "can",
+        "item": "cream of mushroom soup",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "16 oz melting cheese",
+        "qty": 16,
+        "unit": "oz",
+        "item": "cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 lb pasta, cooked and drained (your favorite)",
+        "qty": 1,
+        "unit": "lb",
+        "item": "pasta",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 fully cooked, deboned chicken",
+        "qty": 1,
+        "unit": "count",
+        "item": "cooked chicken",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Splash of Zippy Zap, to taste",
+        "qty": null,
+        "unit": "splash",
+        "item": "Zippy Zap",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Melt the butter and add the onion, bell pepper, celery, garlic powder, black pepper, and Flavor-Time. Add the garlic and Rotel and simmer until the vegetables soften.",
+      "Pour in the chicken broth and bring back to a simmer. Stir in the cream of chicken soup, cream of mushroom soup, and melting cheese.",
+      "Add the deboned chicken and the cooked, drained pasta. Stir until everything is incorporated. Finish with a splash of Zippy Zap if you like."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "Pete says '16 ounces of a cheese that will melt' and doesn't give can sizes for the Rotel or cream soups."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/tYpWbqvD2Rw"
+  },
+  {
+    "id": "uwVsO13NoFM",
+    "title": "Crockpot Chicken and Sausage Pasta",
+    "category": "Chicken Pasta & Rice",
+    "servings": "",
+    "time": "8 to 10 hours on low, plus 30 to 40 minutes on high with the pasta",
+    "summary": "Chopped chicken and smoked sausage cooked all day in the crockpot, then finished with pasta and Velveeta.",
+    "ingredients": [
+      {
+        "text": "2 1/2 lb chicken, chopped",
+        "qty": 2.5,
+        "unit": "lb",
+        "item": "chicken",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 1/2 lb smoked sausage (Pete shows jalapeño cheese sausage)",
+        "qty": 1.5,
+        "unit": "lb",
+        "item": "smoked sausage",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 onion, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "4 ribs celery, chopped",
+        "qty": 4,
+        "unit": "count",
+        "item": "celery",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 bell pepper, chopped (or 3 jalapeños, whichever you prefer)",
+        "qty": 1,
+        "unit": "count",
+        "item": "jalapeños",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Green onions (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 can Rotel, pureed",
+        "qty": 1,
+        "unit": "can",
+        "item": "Rotel",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 can (10.5 oz) cream of chicken soup",
+        "qty": 1,
+        "unit": "can",
+        "item": "cream of chicken soup",
+        "shop": "canned",
+        "each_oz": 10.5,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp black pepper",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "black pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp garlic powder",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "garlic powder",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp tomato-chicken bouillon",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "tomato-chicken bouillon",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 1 tbsp Pepperbellypete's Flavor-Time Southern Seasoning",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Flavor-Time Southern Seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "1 can (10.5 oz) cream of mushroom soup",
+        "qty": 1,
+        "unit": "can",
+        "item": "cream of mushroom soup",
+        "shop": "canned",
+        "each_oz": 10.5,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp dried parsley",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "parsley",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "32 oz chicken broth",
+        "qty": 32,
+        "unit": "oz",
+        "item": "chicken broth",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "16 oz pasta (your favorite)",
+        "qty": 16,
+        "unit": "oz",
+        "item": "pasta",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "8 oz Velveeta",
+        "qty": 8,
+        "unit": "oz",
+        "item": "Velveeta",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Add the chicken, sausage, onion, celery, bell pepper or jalapeños, green onions, Rotel, cream of chicken soup, black pepper, garlic powder, tomato-chicken bouillon, Flavor-Time, cream of mushroom soup, parsley, and chicken broth to the crockpot. Stir well.",
+      "Cover and cook on low 8 to 10 hours.",
+      "Turn the heat to high. Stir in the pasta and Velveeta, cover, and cook 30 to 40 minutes, until the pasta is done. (Pete notes that crockpots and pastas differ.)"
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "Pete holds up jalapeño cheese sausage with the smoked sausage; the short may be jalapeño-cheese smoked sausage rather than a separate block of cheese."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/uwVsO13NoFM"
+  },
+  {
+    "id": "HRBIoAYy76I",
+    "title": "Chicken Taco Casserole",
+    "category": "Chicken Casserole",
+    "servings": "",
+    "time": "35 minutes at 350°F, plus time to make the filling",
+    "summary": "A layered casserole of flat taco shells and a Rotel, cream of chicken, and Velveeta chicken filling, baked under Colby Jack.",
+    "ingredients": [
+      {
+        "text": "Flat taco shells, for layering (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "taco shells",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "3 tbsp unsalted butter",
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "unsalted butter",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 onion, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 jalapeños, chopped",
+        "qty": 2,
+        "unit": "count",
+        "item": "jalapeños",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1/2 tbsp garlic powder",
+        "qty": 0.5,
+        "unit": "tbsp",
+        "item": "garlic powder",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tsp black pepper",
+        "qty": 1,
+        "unit": "tsp",
+        "item": "black pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1/2 tsp ground cumin",
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "cumin",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 1 tbsp Pepperbellypete's Flavor-Time Southern Seasoning",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Flavor-Time Southern Seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "1 tsp ancho chili powder",
+        "qty": 1,
+        "unit": "tsp",
+        "item": "ancho chili powder",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 cans Rotel",
+        "qty": 2,
+        "unit": "can",
+        "item": "Rotel",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "10.5 oz cream of chicken soup",
+        "qty": 10.5,
+        "unit": "oz",
+        "item": "cream of chicken soup",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "16 oz Velveeta",
+        "qty": 16,
+        "unit": "oz",
+        "item": "Velveeta",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "12 oz milk",
+        "qty": 12,
+        "unit": "oz",
+        "item": "milk",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Fully cooked chicken (amount not specified; Pete also says it's always better with a deboned chicken)",
+        "qty": null,
+        "unit": null,
+        "item": "cooked chicken",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Colby Jack cheese, for topping (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "Colby Jack cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Sour cream, for serving (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "sour cream",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Pico de gallo, for serving (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "pico de gallo",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Grease an oven-safe dish and put down a layer of flat taco shells.",
+      "Melt the butter and cook the onion and jalapeños with the garlic powder, black pepper, cumin, Flavor-Time, and ancho chili powder. Stir in the Rotel, cream of chicken soup, Velveeta, and milk over medium-low heat until the cheese melts. Add the cooked chicken and mix well.",
+      "Layer the mixture with more taco shells, repeating as needed. On the top layer, add crumbled shells and Colby Jack.",
+      "Bake at 350°F for 35 minutes. Serve with sour cream and pico if you like."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "The Rotel cans are not given a size, and Pete doesn't measure the taco shells, Colby Jack, or the cooked chicken in this short.",
+      "Also shown in: https://www.youtube.com/shorts/RFx0cvPlMIo"
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/HRBIoAYy76I"
+  },
+  {
+    "id": "a6FJvIsZ6nw",
+    "title": "Chicken & Dressing",
+    "category": "Chicken Casserole",
+    "servings": "",
+    "time": "15 minutes of simmering, plus unstated baking time",
+    "summary": "A Thanksgiving-style cornbread dressing with a deboned hen, boiled eggs, cream of chicken, and evaporated milk.",
+    "ingredients": [
+      {
+        "text": "8 tbsp unsalted butter",
+        "qty": 8,
+        "unit": "tbsp",
+        "item": "unsalted butter",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 large onion, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "4 ribs celery, chopped",
+        "qty": 4,
+        "unit": "count",
+        "item": "celery",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 bunches green onions (1 cooked with the vegetables, 1 diced into the pan)",
+        "qty": 2,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp black pepper",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "black pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp poultry seasoning",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "poultry seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp garlic powder",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "garlic powder",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 1 tbsp Pepperbellypete's Flavor-Time Southern Seasoning",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Flavor-Time Southern Seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "1 can (10.5 oz) cream of chicken soup",
+        "qty": 1,
+        "unit": "can",
+        "item": "cream of chicken soup",
+        "shop": "canned",
+        "each_oz": 10.5,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2/3 cup evaporated milk",
+        "qty": 0.6667,
+        "unit": "cup",
+        "item": "evaporated milk",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "4 cups chicken broth (3 cups simmered with the vegetables, 1 cup more in the pan)",
+        "qty": 4,
+        "unit": "cup",
+        "item": "chicken broth",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "24 oz cooked and crumbled cornbread (four 6 oz packages)",
+        "qty": 24,
+        "unit": "oz",
+        "item": "cornbread",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Poultry seasoning, for sprinkling over the cornbread (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "poultry seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "6 eggs, boiled and chopped",
+        "qty": 6,
+        "unit": "count",
+        "item": "eggs",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 fully cooked and deboned hen",
+        "qty": 1,
+        "unit": "count",
+        "item": "cooked chicken",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Melt the butter and cook the onion, celery, and 1 bunch of green onions with the black pepper, poultry seasoning, garlic powder, and Flavor-Time until the vegetables soften.",
+      "Stir in the cream of chicken soup, evaporated milk, and 3 cups of the chicken broth. Bring to a low simmer and cook 15 minutes.",
+      "In a large foil pan, add the crumbled cornbread and lightly sprinkle with a little more poultry seasoning. Add 1 bunch diced green onions, the chopped boiled eggs, and the deboned hen.",
+      "Pour the hot mixture over the top, add the remaining 1 cup of broth, and mix until everything is well incorporated.",
+      "The short ends after the mixing step and does not give a baking time or temperature."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "Pete calls for a fully cooked, deboned hen; a chicken or rotisserie chicken is the usual stand-in."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/a6FJvIsZ6nw"
+  },
+  {
+    "id": "ks_a3G4CRk4",
+    "title": "Fried Chicken Stew",
+    "category": "Chicken Soup & Stew",
+    "servings": "",
+    "time": "2 hours of simmering, plus time to fry the chicken and make the roux",
+    "summary": "Cubed chicken thighs fried with a crust, then simmered with smoked sausage, okra, and a seasoned-flour roux. Serve over rice.",
+    "ingredients": [
+      {
+        "text": "1 1/2 cups oil",
+        "qty": 1.5,
+        "unit": "cup",
+        "item": "oil",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 lb chicken thighs, cubed",
+        "qty": 2,
+        "unit": "lb",
+        "item": "chicken thighs",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Seasoned flour, for coating the chicken (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "all-purpose flour",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 cup seasoned flour (seasoned with black pepper and Flavor-Time Southern Seasoning)",
+        "qty": 1,
+        "unit": "cup",
+        "item": "Flavor-Time Southern Seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 medium onion, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 2 cups bell pepper, chopped",
+        "qty": 2,
+        "unit": "cup",
+        "item": "bell pepper",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "3 ribs celery, chopped",
+        "qty": 3,
+        "unit": "count",
+        "item": "celery",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 2 tbsp garlic",
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "garlic",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "2 lb smoked sausage",
+        "qty": 2,
+        "unit": "lb",
+        "item": "smoked sausage",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 lb okra, seared in a skillet",
+        "qty": 1,
+        "unit": "lb",
+        "item": "okra",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp garlic powder",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "garlic powder",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp black pepper",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "black pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp dried parsley",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "parsley",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp Pepperbellypete's Flavor-Time Southern Seasoning",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Flavor-Time Southern Seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "48 oz chicken broth",
+        "qty": 48,
+        "unit": "oz",
+        "item": "chicken broth",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Rice, for serving (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "long-grain rice",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Splash of Zippy Zap, to taste",
+        "qty": null,
+        "unit": "splash",
+        "item": "Zippy Zap",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Heat the oil in a pot. Lightly coat the cubed chicken thighs in seasoned flour and fry just long enough to get a crust; don't cook them all the way through. Remove the chicken once all 2 pounds are browned.",
+      "Add 1 cup seasoned flour (black pepper and Flavor-Time) to the pot. Stir continuously over medium heat until the roux is a deep color.",
+      "Add the onion, bell pepper, celery, garlic, smoked sausage, and seared okra. Return the chicken to the pot. Add the garlic powder, black pepper, parsley, and another tablespoon of Flavor-Time.",
+      "Pour in the chicken broth, bring to a simmer, and cover for 2 hours.",
+      "Serve over rice, with a splash of Zippy Zap if you like."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "Chicken and Sausage Gumbo is a close variation (4 ribs of celery, 1 1/2 lb sausage, and a 1 1/2-hour simmer) and is kept as a separate recipe.",
+      "Also shown in: https://www.youtube.com/shorts/gaunsJyNfLY"
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/ks_a3G4CRk4"
+  },
+  {
+    "id": "3sTO-ShPO8s",
+    "title": "Chicken Bombs",
+    "category": "Chicken",
+    "servings": "",
+    "time": "Cook to 165°F inside",
+    "summary": "Thin-sliced chicken breasts rolled around a breakfast-sausage and three-cheese jalapeño filling, wrapped in bacon, and cooked to 165°F.",
+    "ingredients": [
+      {
+        "text": "1 lb breakfast sausage",
+        "qty": 1,
+        "unit": "lb",
+        "item": "breakfast sausage",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Garlic powder (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "garlic powder",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Black pepper (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "black pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Parsley (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "parsley",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Pepperbellypete's Flavor-Time Southern Seasoning (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "Flavor-Time Southern Seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1/2 cup green onions, chopped",
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp Worcestershire sauce",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Worcestershire sauce",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "8 oz cream cheese",
+        "qty": 8,
+        "unit": "oz",
+        "item": "cream cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 cup Parmesan cheese",
+        "qty": 1,
+        "unit": "cup",
+        "item": "Parmesan cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 cup Colby Jack cheese",
+        "qty": 1,
+        "unit": "cup",
+        "item": "Colby Jack cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 cup pickled jalapeños",
+        "qty": 1,
+        "unit": "cup",
+        "item": "pickled jalapeños",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Chicken breasts, sliced thin (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "chicken breasts",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Pepperbellypete's Flavor-Time Southern Seasoning, for the chicken (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "Flavor-Time Southern Seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Bacon, for wrapping (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "bacon",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Barbecue sauce, for brushing (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "barbecue sauce",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Break up the breakfast sausage and cook it fully. Season with garlic powder, black pepper, parsley, and Flavor-Time. Stir in the green onions and Worcestershire sauce, then turn off the heat.",
+      "When the mixture has cooled some, mix in the cream cheese, Parmesan, Colby Jack, and pickled jalapeños.",
+      "Slice the chicken breasts thin. Put filling in the middle of each piece, season with Flavor-Time, and roll the chicken around the filling.",
+      "Wrap each roll with a strip of bacon end to end, then a couple more pieces around it.",
+      "Cook in the oven, on the grill, or in the smoker until the internal temperature is 165°F. Brush with your favorite barbecue sauce."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "Pete doesn't say how many chicken breasts or how much bacon to use."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/3sTO-ShPO8s"
+  },
+  {
+    "id": "T7rc-ee4giw",
+    "title": "Crockpot Chicken and Dumplings",
+    "category": "Chicken Soup & Stew",
+    "servings": "",
+    "time": "About 5 hours on low, plus 1.5 hours on high with the dumplings",
+    "summary": "Cubed chicken and vegetables cooked in the crockpot, then finished with cheddar-buttermilk drop dumplings.",
+    "ingredients": [
+      {
+        "text": "3 lb chicken, cubed",
+        "qty": 3,
+        "unit": "lb",
+        "item": "chicken",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp poultry seasoning",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "poultry seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1/2 tbsp black pepper",
+        "qty": 0.5,
+        "unit": "tbsp",
+        "item": "black pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 1 tbsp Pepperbellypete's Flavor-Time Southern Seasoning",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Flavor-Time Southern Seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "1 onion, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 cups carrots, chopped",
+        "qty": 2,
+        "unit": "cup",
+        "item": "carrots",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "4 ribs celery, chopped",
+        "qty": 4,
+        "unit": "count",
+        "item": "celery",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 bunch green onions",
+        "qty": 1,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 can (22 oz) cream of chicken soup",
+        "qty": 1,
+        "unit": "can",
+        "item": "cream of chicken soup",
+        "shop": "canned",
+        "each_oz": 22,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "32 oz chicken broth",
+        "qty": 32,
+        "unit": "oz",
+        "item": "chicken broth",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1/2 cup shredded cheddar cheese, for the dumplings",
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "cheddar cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Buttermilk, for the dumplings (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "buttermilk",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 cup milk, for the dumplings",
+        "qty": 1,
+        "unit": "cup",
+        "item": "milk",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Add the chicken, poultry seasoning, black pepper, Flavor-Time, onion, carrots, celery, green onions, cream of chicken soup, and chicken broth to the crockpot. (Pete also uses a little water to rinse the rest of the soup out of the can.) Cover and cook on low.",
+      "After 5 hours, make the dumplings: mix the shredded cheddar, buttermilk, and 1 cup milk. Drop the dumplings into the pot.",
+      "Turn the crockpot to high, cover, and cook 1 1/2 hours."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "The short never gives a flour amount for the dumplings — Pete jumps from cheddar and buttermilk to a cup of milk and starts dropping them in. Don't invent a flour measure; use a dumpling dough you already know, or watch the video and judge the consistency.",
+      "This is the crockpot version. The stovetop drop-dumpling pot and the buttermilk-biscuit version are kept as separate recipes."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/T7rc-ee4giw"
+  },
+  {
+    "id": "6DarZUa3P04",
+    "title": "Southern Fried Chicken",
+    "category": "Fried Chicken & Wings",
+    "servings": "",
+    "time": "8 hours to marinate, plus 30 minutes of rest and frying to 165°F",
+    "summary": "Eight pieces of chicken marinated in seasoned buttermilk and eggs, dredged in seasoned flour, and fried in shortening at 350°F.",
+    "ingredients": [
+      {
+        "text": "1 whole chicken, cut into 8 pieces",
+        "qty": 1,
+        "unit": "count",
+        "item": "whole chicken",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp Morton Nature's Seasons",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Morton Nature's Seasons",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp onion powder",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "onion powder",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp garlic salt",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "garlic salt",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp smoked paprika",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "smoked paprika",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp black pepper",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "black pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp cayenne pepper",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "cayenne pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 tbsp Creole seasoning",
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "Creole seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp lemon pepper",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "lemon pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "3 tbsp Pepperbellypete's Zippy Zap",
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "Zippy Zap",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "4 eggs",
+        "qty": 4,
+        "unit": "count",
+        "item": "eggs",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "3 cups buttermilk",
+        "qty": 3,
+        "unit": "cup",
+        "item": "buttermilk",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Seasoned flour (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "all-purpose flour",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Vegetable shortening, for frying (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "vegetable shortening",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Mix the Morton seasoning, onion powder, garlic salt, smoked paprika, black pepper, cayenne, Creole seasoning, lemon pepper, Zippy Zap, eggs, and buttermilk. Add the chicken and refrigerate 8 hours.",
+      "Dredge the marinated chicken in seasoned flour and rest it on a rack 30 minutes. Let it come closer to room temperature before frying.",
+      "Heat vegetable shortening to 350°F and fry the chicken, turning so it doesn't burn, until the internal temperature is 165°F."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "One short calls the blend 'Morton seasoning'; the amounts and the rest of the marinade match the other. The 3 tablespoons of Zippy Zap and the 8 pieces of chicken are taken from the more complete telling.",
+      "The Best Fried Chicken is a close variation (garlic powder instead of garlic salt, 1 tablespoon Creole seasoning, and 4 cups buttermilk) and is kept as a separate recipe.",
+      "Also shown in: https://www.youtube.com/shorts/7nHWvvp3Ues"
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/6DarZUa3P04"
+  },
+  {
+    "id": "vSj4ZF_TVlU",
+    "title": "Broccoli-Chicken Casserole",
+    "category": "Chicken Casserole",
+    "servings": "",
+    "time": "About 10 minutes on the stove and 1 hour in the oven (45 minutes covered, 15 uncovered)",
+    "summary": "A baked casserole of cooked chicken, broccoli, and cauliflower in a cream-of-chicken and cheese sauce, topped with mozzarella and cheddar.",
+    "ingredients": [
+      {
+        "text": "1 stick unsalted butter",
+        "qty": 1,
+        "unit": "stick",
+        "item": "unsalted butter",
+        "shop": "dairy",
+        "each_oz": 4,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 onion, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 tbsp Pepperbellypete's Zippy Zap",
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "Zippy Zap",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1/2 tbsp garlic powder",
+        "qty": 0.5,
+        "unit": "tbsp",
+        "item": "garlic powder",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1/2 tbsp black pepper",
+        "qty": 0.5,
+        "unit": "tbsp",
+        "item": "black pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1/2 tbsp smoked paprika",
+        "qty": 0.5,
+        "unit": "tbsp",
+        "item": "smoked paprika",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1/2 tbsp cayenne pepper",
+        "qty": 0.5,
+        "unit": "tbsp",
+        "item": "cayenne pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 head cauliflower, chopped and washed",
+        "qty": 1,
+        "unit": "count",
+        "item": "cauliflower",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 can (10 oz) cream of chicken soup",
+        "qty": 1,
+        "unit": "can",
+        "item": "cream of chicken soup",
+        "shop": "canned",
+        "each_oz": 10,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "16 oz American cheese (from the grocery store deli)",
+        "qty": 16,
+        "unit": "oz",
+        "item": "American cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 1/2 cups half-and-half",
+        "qty": 1.5,
+        "unit": "cup",
+        "item": "half-and-half",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 block (8 oz) cream cheese",
+        "qty": 1,
+        "unit": "block",
+        "item": "cream cheese",
+        "shop": "dairy",
+        "each_oz": 8,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "4 cups fully cooked chicken (boil it, bake it, or buy a rotisserie)",
+        "qty": 4,
+        "unit": "cup",
+        "item": "cooked chicken",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "6 cups broccoli florets, washed",
+        "qty": 6,
+        "unit": "cup",
+        "item": "broccoli",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "8 oz mozzarella cheese",
+        "qty": 8,
+        "unit": "oz",
+        "item": "mozzarella cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "8 oz cheddar cheese",
+        "qty": 8,
+        "unit": "oz",
+        "item": "cheddar cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Melt the butter and cook the onion with the Zippy Zap, garlic powder, black pepper, smoked paprika, and cayenne. Add the cauliflower, cream of chicken soup, American cheese, half-and-half, cream cheese, chicken, and broccoli.",
+      "Cook on low about 10 minutes, until the cauliflower starts to soften, and mix well.",
+      "Spread into a greased oven-safe dish and top with the mozzarella and cheddar. Cover with foil and bake at 350°F for 45 minutes, then uncover and bake 15 minutes more (about 1 hour total)."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "In one telling the half-and-half sounds like 'a cup and a half, a half and a half' — 1 1/2 cups half-and-half. The 2 tablespoons of Zippy Zap and the total one-hour bake come from the other posting of this same casserole.",
+      "Also shown in: https://www.youtube.com/shorts/IlhNBgIhadc"
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/vSj4ZF_TVlU"
+  },
+  {
+    "id": "YcerDsdJCCY",
+    "title": "Crockpot Chicken Rigatoni",
+    "category": "Chicken Pasta & Rice",
+    "servings": "",
+    "time": "2 hours on low, plus 45 minutes after adding the pasta",
+    "summary": "Four chicken breasts slow-cooked with cream of chicken, cream cheese, and heavy cream, then finished with rigatoni, Parmesan, and smoked Gouda.",
+    "ingredients": [
+      {
+        "text": "4 chicken breasts",
+        "qty": 4,
+        "unit": "count",
+        "item": "chicken breasts",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp Italian seasoning",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Italian seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1/2 tbsp black pepper",
+        "qty": 0.5,
+        "unit": "tbsp",
+        "item": "black pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1/2 tbsp garlic powder",
+        "qty": 0.5,
+        "unit": "tbsp",
+        "item": "garlic powder",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 packet Lipton onion soup mix",
+        "qty": 1,
+        "unit": "packet",
+        "item": "Lipton onion soup mix",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 can (10.5 oz) cream of chicken soup",
+        "qty": 1,
+        "unit": "can",
+        "item": "cream of chicken soup",
+        "shop": "canned",
+        "each_oz": 10.5,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 cups heavy cream",
+        "qty": 2,
+        "unit": "cup",
+        "item": "heavy cream",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "4 tbsp unsalted butter",
+        "qty": 4,
+        "unit": "tbsp",
+        "item": "unsalted butter",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "8 oz cream cheese",
+        "qty": 8,
+        "unit": "oz",
+        "item": "cream cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 1/2 cups chicken broth",
+        "qty": 1.5,
+        "unit": "cup",
+        "item": "chicken broth",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 2 tbsp Pepperbellypete's Zippy Zap",
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "Zippy Zap",
+        "shop": "other",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "1 lb rigatoni pasta",
+        "qty": 1,
+        "unit": "lb",
+        "item": "rigatoni",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "8 oz shredded Parmesan cheese",
+        "qty": 8,
+        "unit": "oz",
+        "item": "Parmesan cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 1/2 cups chicken broth, added with the pasta",
+        "qty": 1.5,
+        "unit": "cup",
+        "item": "chicken broth",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "8 oz smoked Gouda",
+        "qty": 8,
+        "unit": "oz",
+        "item": "smoked Gouda",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Add the chicken breasts, Italian seasoning, black pepper, garlic powder, onion soup mix, cream of chicken soup, heavy cream, butter, cream cheese, 1 1/2 cups chicken broth, and Zippy Zap to the crockpot. Stir, cover, and cook on low for 2 hours.",
+      "Shred the chicken with forks.",
+      "Stir in the rigatoni, Parmesan, the remaining 1 1/2 cups chicken broth, and the smoked Gouda. Cover and cook 45 minutes more."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "Also shown in: https://www.youtube.com/shorts/E6SI4IhNO9w"
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/YcerDsdJCCY"
+  },
+  {
+    "id": "AP-rrTP--Gw",
+    "title": "Chicken Pot Pie",
+    "category": "Chicken Casserole",
+    "servings": "",
+    "time": "35 minutes in the oven, plus time to cook the filling",
+    "summary": "A double-crust pot pie filled with a whole deboned chicken, bacon, fried potatoes, and a cream-of-chicken gravy.",
+    "ingredients": [
+      {
+        "text": "5 slices bacon, chopped",
+        "qty": 5,
+        "unit": "count",
+        "item": "bacon",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 medium potatoes, diced",
+        "qty": 2,
+        "unit": "count",
+        "item": "potatoes",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Salt (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "salt",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Black pepper, for the potatoes (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "black pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Garlic, for the potatoes (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "garlic",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 small onion, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 stalks celery, chopped",
+        "qty": 2,
+        "unit": "count",
+        "item": "celery",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 carrots, chopped",
+        "qty": 2,
+        "unit": "count",
+        "item": "carrots",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 1 tbsp Worcestershire sauce",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Worcestershire sauce",
+        "shop": "other",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "1 1/2 tbsp garlic",
+        "qty": 1.5,
+        "unit": "tbsp",
+        "item": "garlic",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp black pepper",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "black pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp oregano",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "dried oregano",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp garlic powder",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "garlic powder",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp poultry seasoning",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "poultry seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 cup heavy cream",
+        "qty": 1,
+        "unit": "cup",
+        "item": "heavy cream",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1/2 stick unsalted butter",
+        "qty": 0.5,
+        "unit": "stick",
+        "item": "unsalted butter",
+        "shop": "dairy",
+        "each_oz": 4,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "A couple sprigs of thyme",
+        "qty": 2,
+        "unit": "count",
+        "item": "thyme",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "About 1 cup chicken stock",
+        "qty": 1,
+        "unit": "cup",
+        "item": "chicken broth",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "1 can (10 oz) cream of chicken soup",
+        "qty": 1,
+        "unit": "can",
+        "item": "cream of chicken soup",
+        "shop": "canned",
+        "each_oz": 10,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 fully cooked, deboned chicken",
+        "qty": 1,
+        "unit": "count",
+        "item": "cooked chicken",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Pie crust, for a bottom and top crust (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "pie crust",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Cook the chopped bacon until done; remove it from the pot. In the same pot, cook the diced potatoes with salt, pepper, and garlic until they're cooked through, then remove them.",
+      "Add the onion, celery, carrots, Worcestershire sauce, garlic, black pepper, oregano, garlic powder, and poultry seasoning. Stir in the heavy cream, butter, thyme, chicken stock, and cream of chicken soup. Bring back to a simmer and reduce a little.",
+      "Stir in the deboned chicken, cooked potatoes, and bacon.",
+      "Fit a pie crust into a greased oven-safe dish, add the filling, and cover with the top crust. Bake 35 minutes (oven temperature not specified in the short)."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "Pete doesn't give an oven temperature or a brand or size for the pie crusts."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/AP-rrTP--Gw"
+  },
+  {
+    "id": "kZSIWYppNQo",
+    "title": "Tuscan Chicken and Pasta",
+    "category": "Chicken Pasta & Rice",
+    "servings": "",
+    "time": "About 30 minutes after the chicken is cooked (20 minutes for the pasta, plus 10 more)",
+    "summary": "Thin-sliced chicken breasts with a one-pot cherry-tomato, spinach, Parmesan, and pasta sauce.",
+    "ingredients": [
+      {
+        "text": "Oil, for cooking (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "oil",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "6 thin-sliced chicken breasts",
+        "qty": 6,
+        "unit": "count",
+        "item": "chicken breasts",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Smoked paprika (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "smoked paprika",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Oregano, for the chicken (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "dried oregano",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Salt (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "salt",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Black pepper, for the chicken (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "black pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 medium onion, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 2 tbsp Worcestershire sauce",
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "Worcestershire sauce",
+        "shop": "other",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "10 oz cherry tomatoes",
+        "qty": 10,
+        "unit": "oz",
+        "item": "cherry tomatoes",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 1 tbsp garlic",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "garlic",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "1/2 tbsp garlic powder",
+        "qty": 0.5,
+        "unit": "tbsp",
+        "item": "garlic powder",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Black pepper (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "black pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Oregano (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "dried oregano",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Crushed red pepper flakes (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "crushed red pepper flakes",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 2 tbsp tomato paste",
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "tomato paste",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "1 1/2 cups heavy cream",
+        "qty": 1.5,
+        "unit": "cup",
+        "item": "heavy cream",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 cup chicken stock",
+        "qty": 1,
+        "unit": "cup",
+        "item": "chicken broth",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 2 oz baby spinach",
+        "qty": 2,
+        "unit": "oz",
+        "item": "spinach",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "2 cups Parmesan cheese",
+        "qty": 2,
+        "unit": "cup",
+        "item": "Parmesan cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 cups pasta (your favorite)",
+        "qty": 2,
+        "unit": "cup",
+        "item": "pasta",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Season about 6 thin-sliced chicken breasts with smoked paprika, oregano, salt, and black pepper. Cook in a hot skillet with a little oil until cooked through, then remove from the pan.",
+      "Add the onion and Worcestershire sauce and sweat them down. Stir in the cherry tomatoes, garlic, garlic powder, black pepper, oregano, crushed red pepper flakes, tomato paste, heavy cream, chicken stock, spinach, Parmesan, and pasta.",
+      "Cook on low 20 minutes. Set the chicken back on top and cook 10 minutes more. Stir it all together or just scoop it out."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "The 6 cutlets, 1 cup of chicken stock, and extra 10 minutes come from the more complete telling of this same pot. The other short doesn't measure the stock.",
+      "Also shown in: https://www.youtube.com/shorts/lv3L0nTB_ZU"
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/kZSIWYppNQo"
+  },
+  {
+    "id": "Mu9tYWXz92s",
+    "title": "Chicken and Dumplings with Buttermilk Biscuits",
+    "category": "Chicken Soup & Stew",
+    "servings": "",
+    "time": "About 15 minutes covered after the biscuits go in, plus time to soften the vegetables",
+    "summary": "A stovetop pot of chicken and dumplings that uses canned buttermilk biscuits instead of from-scratch dough.",
+    "ingredients": [
+      {
+        "text": "1 stick unsalted butter",
+        "qty": 1,
+        "unit": "stick",
+        "item": "unsalted butter",
+        "shop": "dairy",
+        "each_oz": 4,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 large onion, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "4 carrots, chopped",
+        "qty": 4,
+        "unit": "count",
+        "item": "carrots",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "4 stalks celery, chopped",
+        "qty": 4,
+        "unit": "count",
+        "item": "celery",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 tbsp Worcestershire sauce",
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "Worcestershire sauce",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp black pepper",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "black pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp Morton Nature's Seasons",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Morton Nature's Seasons",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tbsp parsley",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "parsley",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 can (22 oz) cream of chicken soup",
+        "qty": 1,
+        "unit": "can",
+        "item": "cream of chicken soup",
+        "shop": "canned",
+        "each_oz": 22,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "64 oz chicken broth",
+        "qty": 64,
+        "unit": "oz",
+        "item": "chicken broth",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 1/2 cups whole milk",
+        "qty": 1.5,
+        "unit": "cup",
+        "item": "milk",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 fully cooked, deboned chicken (Pete uses a large chicken)",
+        "qty": 1,
+        "unit": "count",
+        "item": "cooked chicken",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "3 cans (7.5 oz each) small buttermilk biscuits",
+        "qty": 3,
+        "unit": "can",
+        "item": "buttermilk",
+        "shop": "dairy",
+        "each_oz": 7.5,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Melt the butter over medium heat and cook the onion, carrots, celery, and Worcestershire sauce until the vegetables start to soften.",
+      "Add the black pepper, Nature's Seasoning, and parsley. Whisk in the cream of chicken soup, chicken broth, and milk and bring back to a boil.",
+      "Stir in the deboned chicken. Cut the biscuits in half and drop them into the pot.",
+      "Bring back to a slow boil over medium heat, cover, and cook 15 minutes."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "Pete says 'nature's seasoning' here; that matches Morton Nature's Seasons in his other videos.",
+      "This is the biscuit-dumpling version. The from-scratch drop dumplings and the crockpot pot are kept as separate recipes."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/Mu9tYWXz92s"
+  },
+  {
+    "id": "Q3sR76Vy31Q",
+    "title": "Texican Ranch Chicken",
+    "category": "Chicken Soup & Stew",
+    "servings": "",
+    "time": "8 hours on low",
+    "summary": "A crockpot taco-and-ranch chicken with potatoes, carrots, Rotel, and a top layer of mini ears of corn.",
+    "ingredients": [
+      {
+        "text": "3 lb chicken thighs, cubed",
+        "qty": 3,
+        "unit": "lb",
+        "item": "chicken thighs",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 packets (1 oz each) taco seasoning",
+        "qty": 2,
+        "unit": "packet",
+        "item": "taco seasoning",
+        "shop": "spices",
+        "each_oz": 1,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 packets (1 oz each) ranch seasoning",
+        "qty": 2,
+        "unit": "packet",
+        "item": "ranch seasoning",
+        "shop": "spices",
+        "each_oz": 1,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 1 tbsp Mexican oregano",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Mexican oregano",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "1 tsp ground cumin",
+        "qty": 1,
+        "unit": "tsp",
+        "item": "cumin",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 large onion, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 jalapeños, chopped",
+        "qty": 2,
+        "unit": "count",
+        "item": "jalapeños",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 serranos, chopped",
+        "qty": 2,
+        "unit": "count",
+        "item": "serranos",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "5 carrots, chopped",
+        "qty": 5,
+        "unit": "count",
+        "item": "carrots",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 tbsp tomato-chicken bouillon",
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "tomato-chicken bouillon",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 cans (10 oz each) Rotel",
+        "qty": 2,
+        "unit": "can",
+        "item": "Rotel",
+        "shop": "canned",
+        "each_oz": 10,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "32 oz chicken broth",
+        "qty": 32,
+        "unit": "oz",
+        "item": "chicken broth",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 2 tbsp lime juice",
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "lime",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "About 2 tbsp Pepperbellypete's Zippy Zap",
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "Zippy Zap",
+        "shop": "other",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "1 bunch cilantro, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "cilantro",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 large potatoes, chopped",
+        "qty": 2,
+        "unit": "count",
+        "item": "potatoes",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "12 ears mini corn",
+        "qty": 12,
+        "unit": "ear",
+        "item": "fresh corn",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Toss the chicken with the taco seasoning, ranch seasoning, Mexican oregano, and cumin until well coated.",
+      "Add the onion, jalapeños, serranos, carrots, tomato-chicken bouillon, Rotel, chicken broth, lime juice, Zippy Zap, cilantro, and potatoes. Lay the 12 mini ears of corn on top.",
+      "Cover and cook on low for 8 hours."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "The Most Flavorful Chicken Dish is a closely related crockpot pot with different amounts (2 1/2 lb chicken, fewer peppers and carrots, and an unmeasured layer of frozen corn) and is kept as a separate recipe."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/Q3sR76Vy31Q"
+  },
+  {
+    "id": "k40NXBatRbA",
+    "title": "Birria Chicken Dip",
+    "category": "Dip",
+    "servings": "",
+    "time": "4 hours on low, plus time to blend and melt the cheese",
+    "summary": "Chicken breasts slow-cooked with dried chiles and tomatoes, blended into a consommé, then finished as a queso dip.",
+    "ingredients": [
+      {
+        "text": "1 large onion, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "4 fresh tomatoes, chopped",
+        "qty": 4,
+        "unit": "count",
+        "item": "tomatoes",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "4 ancho chiles, stems and seeds removed",
+        "qty": 4,
+        "unit": "count",
+        "item": "ancho chiles",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "8 guajillo chiles, stems and seeds removed",
+        "qty": 8,
+        "unit": "count",
+        "item": "guajillo chiles",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "5 árbol chiles, stems and seeds removed",
+        "qty": 5,
+        "unit": "count",
+        "item": "árbol chiles",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "3 chicken breasts",
+        "qty": 3,
+        "unit": "count",
+        "item": "chicken breasts",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "8 cloves garlic",
+        "qty": 8,
+        "unit": "clove",
+        "item": "garlic",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Mexican oregano (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "Mexican oregano",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Peppercorns (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "peppercorns",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Salt (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "salt",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Cumin (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "cumin",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "3 bay leaves",
+        "qty": 3,
+        "unit": "count",
+        "item": "bay leaf",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 cinnamon stick",
+        "qty": 1,
+        "unit": "count",
+        "item": "cinnamon stick",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "4 cups chicken stock",
+        "qty": 4,
+        "unit": "cup",
+        "item": "chicken broth",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "16 oz queso quesadilla",
+        "qty": 16,
+        "unit": "oz",
+        "item": "queso quesadilla",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "32 oz pepper jack cheese",
+        "qty": 32,
+        "unit": "oz",
+        "item": "pepper jack cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 2 tbsp Pepperbellypete's Zippy Zap",
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "Zippy Zap",
+        "shop": "other",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "1 can (12 oz) evaporated milk",
+        "qty": 1,
+        "unit": "can",
+        "item": "evaporated milk",
+        "shop": "dairy",
+        "each_oz": 12,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Add the onion, tomatoes, ancho, guajillo, and árbol chiles, chicken breasts, garlic, Mexican oregano, peppercorns, salt, cumin, bay leaves, cinnamon stick, and chicken stock to the crockpot. Push everything down, stir, cover, and cook on low for 4 hours.",
+      "Remove the chicken. Lift out the vegetables, blend them, and return the puree and the chicken to the crockpot.",
+      "Stir in the queso quesadilla, pepper jack, Zippy Zap, and evaporated milk until the dip comes together."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/k40NXBatRbA"
+  },
+  {
+    "id": "khH1tgLtHB4",
+    "title": "One-Pot Chicken and Orzo",
+    "category": "Chicken Pasta & Rice",
+    "servings": "",
+    "time": "About 20 minutes of simmering, plus time to finish the orzo",
+    "summary": "A skillet of deboned chicken, orzo, broccoli, and American cheese finished with a little heavy cream.",
+    "ingredients": [
+      {
+        "text": "2 tbsp olive oil",
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "oil",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "3 tbsp unsalted butter",
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "unsalted butter",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 medium onion, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 2 tbsp Pepperbellypete's Zippy Zap",
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "Zippy Zap",
+        "shop": "other",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "2 tbsp minced garlic",
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "garlic",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Black pepper (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "black pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Crushed red pepper flakes (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "crushed red pepper flakes",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Garlic powder (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "garlic powder",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "3 cups broccoli florets",
+        "qty": 3,
+        "unit": "cup",
+        "item": "broccoli",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "4 cups orzo pasta",
+        "qty": 4,
+        "unit": "cup",
+        "item": "orzo",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "4 cups chicken stock",
+        "qty": 4,
+        "unit": "cup",
+        "item": "chicken broth",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "4 cups fully cooked chicken (a whole deboned chicken)",
+        "qty": 4,
+        "unit": "cup",
+        "item": "cooked chicken",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "8 oz American cheese",
+        "qty": 8,
+        "unit": "oz",
+        "item": "American cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1/2 cup heavy cream",
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "heavy cream",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Heat the olive oil and butter. Add the onion, Zippy Zap, garlic, black pepper, crushed red pepper flakes, and garlic powder.",
+      "Stir in the broccoli, orzo, chicken stock, cooked chicken, and American cheese. Bring to a simmer on low and cook about 20 minutes.",
+      "Stir in the heavy cream and keep cooking, stirring, until the pasta is done."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "Also shown in: https://www.youtube.com/shorts/bCgIa55523g"
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/khH1tgLtHB4"
+  },
+  {
+    "id": "4pCg7Cxaflo",
+    "title": "King Ranch Chicken Dip",
+    "category": "Dip",
+    "servings": "",
+    "time": "About 1 hour in the crockpot (30 minutes, then 30 more after stirring)",
+    "summary": "A quicker King Ranch dip with 4 cups of cooked chicken, pepper jack, American cheese, mushrooms, and ranch mix.",
+    "ingredients": [
+      {
+        "text": "1 medium onion, diced",
+        "qty": 1,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 jalapeños, diced",
+        "qty": 2,
+        "unit": "count",
+        "item": "jalapeños",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "4 oz fresh mushrooms, diced",
+        "qty": 4,
+        "unit": "oz",
+        "item": "mushrooms",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "4 oz Hatch green chiles",
+        "qty": 4,
+        "unit": "oz",
+        "item": "green chiles",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "10 oz Rotel",
+        "qty": 10,
+        "unit": "oz",
+        "item": "Rotel",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 can cream of chicken soup with herbs",
+        "qty": 1,
+        "unit": "can",
+        "item": "cream of chicken soup",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "4 cups fully cooked chicken",
+        "qty": 4,
+        "unit": "cup",
+        "item": "cooked chicken",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "16 oz pepper jack cheese",
+        "qty": 16,
+        "unit": "oz",
+        "item": "pepper jack cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "8 oz American cheese",
+        "qty": 8,
+        "unit": "oz",
+        "item": "American cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 1/2 cup heavy cream",
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "heavy cream",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "About 1 cup chicken broth",
+        "qty": 1,
+        "unit": "cup",
+        "item": "chicken broth",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "1 packet (1 oz) ranch seasoning",
+        "qty": 1,
+        "unit": "packet",
+        "item": "ranch seasoning",
+        "shop": "spices",
+        "each_oz": 1,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Pepperbellypete's Zippy Zap (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "Zippy Zap",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Add the onion, jalapeños, mushrooms, Hatch green chiles, Rotel, cream of chicken soup, chicken, pepper jack, American cheese, heavy cream, chicken broth, and ranch mix to the crockpot.",
+      "Cover and cook 30 minutes without stirring. Stir, add Zippy Zap, and cook 30 more minutes, until the onions and mushrooms are soft."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "Leave the onion out if you don't like it. The cream of chicken can is not given a size, and Pete doesn't measure the Zippy Zap in this short.",
+      "Crockpot King Ranch Chicken Dip is a closely related version with more mushrooms, American cheese, and cream, cooked on high then low; it's kept as a separate recipe."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/4pCg7Cxaflo"
+  },
+  {
+    "id": "l_iPEbke7y8",
+    "title": "Turkey Smash Burgers",
+    "category": "Turkey",
+    "servings": "",
+    "time": "Cook the patties to 165°F",
+    "summary": "Ground turkey smash burgers mixed with grated onion, jalapeño, and garlic, topped with pepper jack.",
+    "ingredients": [
+      {
+        "text": "2 lb ground turkey",
+        "qty": 2,
+        "unit": "lb",
+        "item": "ground turkey",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 small onion, grated",
+        "qty": 1,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 fresh jalapeño, grated",
+        "qty": 1,
+        "unit": "count",
+        "item": "jalapeños",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "3 cloves garlic, minced",
+        "qty": 3,
+        "unit": "clove",
+        "item": "garlic",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1/2 tbsp black pepper",
+        "qty": 0.5,
+        "unit": "tbsp",
+        "item": "black pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1/2 tbsp Cajun seasoning",
+        "qty": 0.5,
+        "unit": "tbsp",
+        "item": "Cajun seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1/2 tbsp smoked paprika",
+        "qty": 0.5,
+        "unit": "tbsp",
+        "item": "smoked paprika",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 eggs",
+        "qty": 2,
+        "unit": "count",
+        "item": "eggs",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Pepper jack cheese, for the patties (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "pepper jack cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Burger buns (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "burger buns",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Stone-ground mustard, for serving (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "stone-ground mustard",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Tomato, sliced, for serving (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "tomatoes",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Grilled onion, for serving (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Baby spinach, for serving (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "spinach",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Splash of Zippy Zap, to taste",
+        "qty": null,
+        "unit": "splash",
+        "item": "Zippy Zap",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Mix the ground turkey with the grated onion, grated jalapeño, garlic, black pepper, Cajun seasoning, smoked paprika, and eggs. Roll into balls and smash them on the griddle.",
+      "Cook the patties to 165°F inside — Pete notes that turkey needs to reach that temperature. Lay pepper jack on them to melt.",
+      "Build the burgers on buns with stone-ground mustard, a patty, a slice of tomato, grilled onion, and baby spinach. Finish with Zippy Zap if you like."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "Pete doesn't give a patty weight or count, or amounts for the buns and toppings."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/l_iPEbke7y8"
+  },
+  {
+    "id": "Ry3ODXeKVtQ",
+    "title": "Creamy Chicken Noodle Soup",
+    "category": "Chicken Soup & Stew",
+    "servings": "",
+    "time": "About 15 minutes covered, plus 20 minutes after adding the pasta",
+    "summary": "A creamy chicken noodle soup with white American cheese, heavy cream, and a whole deboned chicken.",
+    "ingredients": [
+      {
+        "text": "1 stick unsalted butter",
+        "qty": 1,
+        "unit": "stick",
+        "item": "unsalted butter",
+        "shop": "dairy",
+        "each_oz": 4,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 onion, chopped",
+        "qty": 1,
+        "unit": "count",
+        "item": "onion",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "4 carrots, chopped",
+        "qty": 4,
+        "unit": "count",
+        "item": "carrots",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "4 stalks celery, chopped",
+        "qty": 4,
+        "unit": "count",
+        "item": "celery",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 1 tbsp Pepperbellypete's Zippy Zap",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Zippy Zap",
+        "shop": "other",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "1/2 tbsp black pepper",
+        "qty": 0.5,
+        "unit": "tbsp",
+        "item": "black pepper",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1/2 tbsp smoked paprika",
+        "qty": 0.5,
+        "unit": "tbsp",
+        "item": "smoked paprika",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1/2 tbsp poultry seasoning",
+        "qty": 0.5,
+        "unit": "tbsp",
+        "item": "poultry seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1/2 tbsp Cajun Two-Step",
+        "qty": 0.5,
+        "unit": "tbsp",
+        "item": "Cajun Two-Step",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 tsp tomato-chicken bouillon",
+        "qty": 1,
+        "unit": "tsp",
+        "item": "tomato-chicken bouillon",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "5 cloves garlic, minced",
+        "qty": 5,
+        "unit": "clove",
+        "item": "garlic",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "12 oz white American cheese, freshly grated",
+        "qty": 12,
+        "unit": "oz",
+        "item": "white American cheese",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "16 oz heavy cream",
+        "qty": 16,
+        "unit": "oz",
+        "item": "heavy cream",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 fully cooked, deboned chicken",
+        "qty": 1,
+        "unit": "count",
+        "item": "cooked chicken",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "8 cups chicken stock",
+        "qty": 8,
+        "unit": "cup",
+        "item": "chicken broth",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "1 lb pasta (your favorite)",
+        "qty": 1,
+        "unit": "lb",
+        "item": "pasta",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "2 cups chicken broth, added with the pasta",
+        "qty": 2,
+        "unit": "cup",
+        "item": "chicken broth",
+        "shop": "canned",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Melt the butter and cook the onion, carrots, and celery with the Zippy Zap, black pepper, smoked paprika, poultry seasoning, Cajun Two-Step, and tomato-chicken bouillon until the vegetables start to soften. Add the garlic.",
+      "Stir in the white American cheese, heavy cream, deboned chicken, and 8 cups of chicken stock. Bring back to a simmer, cover, and cook about 15 minutes.",
+      "Add the pasta and the remaining 2 cups of chicken broth. Simmer about 20 minutes, until the pasta is done."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "Cajun Two-Step is the name Pete uses for that seasoning; swap in your favorite Cajun blend if you don't have it."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/Ry3ODXeKVtQ"
+  },
+  {
+    "id": "GvNKcnitNxE",
+    "title": "Air-Fried Nacho Wings",
+    "category": "Fried Chicken & Wings",
+    "servings": "",
+    "time": "25 minutes at 350°F in the air fryer",
+    "summary": "Chicken wings tossed with taco seasoning and crushed tortilla chips, then air-fried and topped with pico and queso.",
+    "ingredients": [
+      {
+        "text": "Chicken wings (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "chicken wings",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 2 tbsp olive oil",
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "oil",
+        "shop": "other",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "About 2 tbsp taco seasoning (your favorite)",
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "taco seasoning",
+        "shop": "spices",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "8 oz tortilla chips, crushed",
+        "qty": 8,
+        "unit": "oz",
+        "item": "tortilla chips",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Pico de gallo, for serving (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "pico de gallo",
+        "shop": "produce",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Queso, for serving (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "queso",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Toss the wings with the olive oil, taco seasoning, and crushed tortilla chips until well coated.",
+      "Air-fry at 350°F for 25 minutes. Serve with pico de gallo and queso."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/GvNKcnitNxE"
+  },
+  {
+    "id": "3MYsspbJjkw",
+    "title": "Chicken à la Delicious",
+    "category": "Fried Chicken & Wings",
+    "servings": "",
+    "time": "30 minutes in the freezer, then cook to 165°F",
+    "summary": "Chicken breasts chilled in the freezer, dipped in Zippy Zap buttermilk, and double-coated in seasoned flour and breadcrumbs.",
+    "ingredients": [
+      {
+        "text": "Chicken breasts (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "chicken breasts",
+        "shop": "meat",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Buttermilk (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "buttermilk",
+        "shop": "dairy",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "About 2 tbsp Pepperbellypete's Zippy Zap",
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "Zippy Zap",
+        "shop": "other",
+        "each_oz": null,
+        "approx": true,
+        "optional": false
+      },
+      {
+        "text": "Seasoned flour (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "all-purpose flour",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      },
+      {
+        "text": "Seasoned breadcrumbs (amount not specified)",
+        "qty": null,
+        "unit": null,
+        "item": "breadcrumbs",
+        "shop": "other",
+        "each_oz": null,
+        "approx": false,
+        "optional": false
+      }
+    ],
+    "instructions": [
+      "Put the chicken breasts in the freezer about 30 minutes so they firm up.",
+      "Whisk the buttermilk with the Zippy Zap. Dip the chicken in the buttermilk, then into seasoned flour, back into the buttermilk, and then into seasoned breadcrumbs.",
+      "Cook until the internal temperature is 165°F. The short doesn't spell out whether Pete fries, bakes, or air-fries them."
+    ],
+    "notes": [
+      "Flavor-Time Southern Seasoning and Zippy Zap are Pete's own products; swap in your favorite seasoning blend or hot sauce if you don't have them.",
+      "Pete doesn't say how many chicken breasts or how much buttermilk, flour, or breadcrumbs to use."
+    ],
+    "channel": "Pepperbellypete",
+    "added": "2026-11-19",
+    "url": "https://www.youtube.com/shorts/3MYsspbJjkw"
   }
 ]
